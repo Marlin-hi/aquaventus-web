@@ -1,12 +1,48 @@
 "use client";
 
+import { useEffect, useRef, useCallback } from "react";
+
+const WAVE_SPEEDS = [0.08, 0.12, 0.06, 0.10];
+const SHARP_SPEEDS = [0.15, 0.18, 0.13];
+const SHARP_ROTATIONS = [-4, 3, -2];
+
 export default function GlassWaves() {
+  const wavesRef = useRef<(HTMLDivElement | null)[]>([]);
+  const sharpsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const rafRef = useRef<number>(0);
+
+  const handleScroll = useCallback(() => {
+    cancelAnimationFrame(rafRef.current);
+    rafRef.current = requestAnimationFrame(() => {
+      const y = window.scrollY;
+      for (let i = 0; i < wavesRef.current.length; i++) {
+        const el = wavesRef.current[i];
+        if (el) el.style.transform = `translateY(${y * WAVE_SPEEDS[i]}px)`;
+      }
+      for (let i = 0; i < sharpsRef.current.length; i++) {
+        const el = sharpsRef.current[i];
+        if (el) {
+          el.style.transform = `rotate(${SHARP_ROTATIONS[i]}deg) translateY(${y * SHARP_SPEEDS[i]}px)`;
+        }
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(rafRef.current);
+    };
+  }, [handleScroll]);
+
   return (
     <div className="glass-waves" aria-hidden="true">
       {/* === Soft glow layers (background atmosphere) === */}
 
       {/* Glow 1 — large primary sweep, top-left */}
       <div
+        ref={(el) => { wavesRef.current[0] = el; }}
         className="glass-wave glass-wave-1"
         style={{
           width: "120vw",
@@ -19,6 +55,7 @@ export default function GlassWaves() {
       />
       {/* Glow 2 — accent diagonal, mid-right */}
       <div
+        ref={(el) => { wavesRef.current[1] = el; }}
         className="glass-wave glass-wave-2"
         style={{
           width: "100vw",
@@ -31,6 +68,7 @@ export default function GlassWaves() {
       />
       {/* Glow 3 — blended hues, bottom-left */}
       <div
+        ref={(el) => { wavesRef.current[2] = el; }}
         className="glass-wave glass-wave-3"
         style={{
           width: "90vw",
@@ -43,6 +81,7 @@ export default function GlassWaves() {
       />
       {/* Glow 4 — deep subtle, center */}
       <div
+        ref={(el) => { wavesRef.current[3] = el; }}
         className="glass-wave glass-wave-4"
         style={{
           width: "80vw",
@@ -58,6 +97,7 @@ export default function GlassWaves() {
 
       {/* Sharp 1 — wide ribbon cutting diagonally across top */}
       <div
+        ref={(el) => { sharpsRef.current[0] = el; }}
         className="glass-sharp glass-sharp-1"
         style={{
           width: "130vw",
@@ -70,6 +110,7 @@ export default function GlassWaves() {
       />
       {/* Sharp 2 — mid-page glass sheet */}
       <div
+        ref={(el) => { sharpsRef.current[1] = el; }}
         className="glass-sharp glass-sharp-2"
         style={{
           width: "110vw",
@@ -82,6 +123,7 @@ export default function GlassWaves() {
       />
       {/* Sharp 3 — lower ribbon, narrower */}
       <div
+        ref={(el) => { sharpsRef.current[2] = el; }}
         className="glass-sharp glass-sharp-3"
         style={{
           width: "100vw",
