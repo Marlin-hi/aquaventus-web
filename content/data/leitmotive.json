@@ -1,0 +1,29 @@
+{
+  "leitmotive": [
+    {
+      "titel": "Klimaschutz",
+      "beschreibung": "Grüner Wasserstoff aus Offshore-Windenergie als Schlüssel zur Dekarbonisierung der Industrie.",
+      "icon": "Leaf"
+    },
+    {
+      "titel": "Energiewende",
+      "beschreibung": "Von fossilen Brennstoffen zu erneuerbaren Energien — Wasserstoff als Brücke zwischen Erzeugung und Verbrauch.",
+      "icon": "Zap"
+    },
+    {
+      "titel": "Versorgungssicherheit",
+      "beschreibung": "Unabhängige Energieversorgung durch heimische Offshore-Produktion in der Nordsee.",
+      "icon": "Shield"
+    },
+    {
+      "titel": "Wertschöpfung",
+      "beschreibung": "Neue Industrien, Arbeitsplätze und wirtschaftliches Wachstum entlang der gesamten Wasserstoff-Wertschöpfungskette.",
+      "icon": "TrendingUp"
+    },
+    {
+      "titel": "Stabile Energiepreise",
+      "beschreibung": "Langfristig planbare Energiekosten durch skalierbare Offshore-Wasserstoffproduktion.",
+      "icon": "BarChart3"
+    }
+  ]
+}

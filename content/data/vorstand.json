@@ -1,0 +1,22 @@
+{
+  "vorstand": [
+    {
+      "name": "Jörg Singer",
+      "rolle": "Vorsitzender",
+      "organisation": "Gemeinde Helgoland",
+      "beschreibung": "Bürgermeister von Helgoland und treibende Kraft hinter der Vision, die Insel zum Zentrum der Offshore-Wasserstoffproduktion zu machen."
+    },
+    {
+      "name": "Melanie Bethke",
+      "rolle": "Stellvertretende Vorsitzende",
+      "organisation": "RWE",
+      "beschreibung": "Vertritt die Perspektive der Energiewirtschaft und bringt Erfahrung aus der industriellen Skalierung erneuerbarer Energien ein."
+    },
+    {
+      "name": "Stefan Westhoff",
+      "rolle": "Schatzmeister",
+      "organisation": "Gasunie Deutschland",
+      "beschreibung": "Verantwortet die Finanzstrategie des Vereins und bringt Expertise aus dem Bereich Gasinfrastruktur und -transport ein."
+    }
+  ]
+}

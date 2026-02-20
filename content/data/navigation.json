@@ -1,0 +1,12 @@
+{
+  "hauptmenu": [
+    { "label": "Startseite", "href": "/" },
+    { "label": "Projekte", "href": "/projekte" },
+    { "label": "Über uns", "href": "/ueber-uns" },
+    { "label": "Kontakt", "href": "/kontakt" }
+  ],
+  "cta": {
+    "label": "Mitglied werden",
+    "href": "/kontakt"
+  }
+}

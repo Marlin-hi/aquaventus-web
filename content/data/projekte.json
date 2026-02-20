@@ -1,0 +1,44 @@
+{
+  "projekte": [
+    {
+      "slug": "aquaductus",
+      "name": "AquaDuctus",
+      "kurz": "Pipeline-Infrastruktur für grünen Offshore-Wasserstoff",
+      "beschreibung": "AquaDuctus ist das zentrale Infrastrukturprojekt: eine Wasserstoff-Pipeline von den Offshore-Erzeugungsstandorten in der Nordsee an Land. Die Pipeline soll bis 2035 eine Transportkapazität von bis zu 10 GW grünem Wasserstoff ermöglichen.",
+      "status": "In Planung",
+      "kategorie": "Infrastruktur"
+    },
+    {
+      "slug": "aquaprimus",
+      "name": "AquaPrimus",
+      "kurz": "Erste Offshore-Elektrolyse auf See — das Pionierprojekt",
+      "beschreibung": "AquaPrimus demonstriert erstmals die Erzeugung von grünem Wasserstoff direkt auf See mittels Offshore-Elektrolyse. Als Pionierprojekt legt es die technologische Grundlage für die industrielle Skalierung.",
+      "status": "In Entwicklung",
+      "kategorie": "Erzeugung"
+    },
+    {
+      "slug": "sen-1",
+      "name": "SEN-1 Pionierprojekte",
+      "kurz": "Sustainable Energy North Sea — erste Schritte zur Umsetzung",
+      "beschreibung": "Die SEN-1 Pionierprojekte bündeln verschiedene Vorhaben zur nachhaltigen Energieerzeugung in der Nordsee. Sie testen Technologien und Geschäftsmodelle für die Offshore-Wasserstoffproduktion im realen Umfeld.",
+      "status": "In Entwicklung",
+      "kategorie": "Erzeugung"
+    },
+    {
+      "slug": "aquacampus",
+      "name": "AquaCampus",
+      "kurz": "Wissenstransfer und Fachkräfteausbildung für die Wasserstoffwirtschaft",
+      "beschreibung": "AquaCampus verbindet Forschung, Industrie und Bildung. Das Projekt entwickelt Ausbildungsprogramme und Wissenstransfer-Formate, um Fachkräfte für die aufkommende Offshore-Wasserstoffwirtschaft zu qualifizieren.",
+      "status": "Aktiv",
+      "kategorie": "Bildung"
+    },
+    {
+      "slug": "aquanavis",
+      "name": "AquaNavis",
+      "kurz": "Maritime Logistik für Offshore-Wasserstoff",
+      "beschreibung": "AquaNavis entwickelt Konzepte für den maritimen Transport von Wasserstoff. Das Projekt untersucht Schiffsdesigns, Hafeninfrastruktur und Logistikketten für eine effiziente Verteilung des auf See erzeugten Wasserstoffs.",
+      "status": "Konzeptphase",
+      "kategorie": "Logistik"
+    }
+  ]
+}
