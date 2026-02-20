@@ -1,12 +1,14 @@
 {
   "hauptmenu": [
-    { "label": "Startseite", "href": "/" },
     { "label": "Projekte", "href": "/projekte" },
+    { "label": "Leitstudien", "href": "/leitstudien" },
+    { "label": "Politik", "href": "/politik" },
+    { "label": "News", "href": "/news" },
     { "label": "Über uns", "href": "/ueber-uns" },
     { "label": "Kontakt", "href": "/kontakt" }
   ],
   "cta": {
     "label": "Mitglied werden",
-    "href": "/kontakt"
+    "href": "/mitgliedschaft"
   }
 }

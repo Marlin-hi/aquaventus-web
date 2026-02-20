@@ -26,7 +26,7 @@ export default function Navigation() {
               key={item.href}
               href={item.href}
               className={`text-sm font-medium transition-colors hover:text-primary ${
-                pathname === item.href
+                pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href))
                   ? "text-primary"
                   : "text-muted-foreground"
               }`}
@@ -61,7 +61,7 @@ export default function Navigation() {
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-                  pathname === item.href
+                  pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href))
                     ? "text-primary"
                     : "text-muted-foreground"
                 }`}
