@@ -1,0 +1,32 @@
+{
+  "leitstudien": [
+    {
+      "titel": "Systemkosten senken durch Offshore-Sektorenkopplung — bis zu 1,7 Mrd. €/Jahr",
+      "datum": "2025-11",
+      "datumLabel": "November 2025",
+      "quelle": "Frontier Economics Studie",
+      "beschreibung": "Die Studie von Frontier Economics zeigt: Durch Offshore-Sektorenkopplung lassen sich Systemkosten um bis zu 1,7 Milliarden Euro pro Jahr senken."
+    },
+    {
+      "titel": "Kombinierte Transportsysteme senken Ausbaukosten um 31 Mrd. €",
+      "datum": "2024-09",
+      "datumLabel": "September 2024",
+      "quelle": "Kurzstudie",
+      "beschreibung": "Kombinierte Transport- und Anschlusskonzepte für Offshore-Wasserstoff können die Ausbaukosten um 31 Milliarden Euro reduzieren."
+    },
+    {
+      "titel": "Wasserstoffgewinnung auf Hoher See — großes Potential bestätigt",
+      "datum": "2023-02",
+      "datumLabel": "Februar 2023",
+      "quelle": "DNV Study",
+      "beschreibung": "Die DNV-Studie bestätigt das große Potenzial der Wasserstoffgewinnung auf hoher See und untersucht technische wie wirtschaftliche Machbarkeit."
+    },
+    {
+      "titel": "Klare Vorteile der Wasserstoffproduktion auf See",
+      "datum": "2022-03",
+      "datumLabel": "März 2022",
+      "quelle": "AquaDuctus Short Study",
+      "beschreibung": "Die Kurzstudie belegt klare Vorteile der dezentralen Wasserstoffproduktion auf See gegenüber zentralen Onshore-Lösungen."
+    }
+  ]
+}

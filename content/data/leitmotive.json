@@ -2,28 +2,28 @@
   "leitmotive": [
     {
       "titel": "Klimaschutz",
-      "beschreibung": "Grüner Wasserstoff aus Offshore-Windenergie als Schlüssel zur Dekarbonisierung der Industrie.",
+      "beschreibung": "Unser Engagement für den Klimaschutz ist unerschütterlich. AquaVentus setzt auf erneuerbare Energien, um grünen Wasserstoff zu erzeugen, der keine Treibhausgase freisetzt. So leisten wir einen entscheidenden Beitrag zur Erreichung der globalen Klimaziele und zum Schutz unseres Planeten.",
       "icon": "Leaf"
     },
     {
       "titel": "Energiewende",
-      "beschreibung": "Von fossilen Brennstoffen zu erneuerbaren Energien — Wasserstoff als Brücke zwischen Erzeugung und Verbrauch.",
+      "beschreibung": "AquaVentus revolutioniert die Energiewende, indem es die Kraft des Meeres nutzt. Durch die Produktion von grünem Wasserstoff aus Offshore-Windenergie schaffen wir eine saubere und nachhaltige Alternative zu fossilen Brennstoffen, die den CO2-Ausstoß drastisch reduziert.",
       "icon": "Zap"
     },
     {
-      "titel": "Versorgungssicherheit",
-      "beschreibung": "Unabhängige Energieversorgung durch heimische Offshore-Produktion in der Nordsee.",
-      "icon": "Shield"
+      "titel": "Stabile Energiepreise",
+      "beschreibung": "Mit AquaVentus sorgen wir für stabile Energiepreise. Durch die Unabhängigkeit von fossilen Brennstoffen und die Nutzung erneuerbarer Energien schaffen wir eine verlässliche und kosteneffiziente Energieversorgung, die Verbraucher und Unternehmen vor Preisschwankungen schützt.",
+      "icon": "BarChart3"
     },
     {
-      "titel": "Wertschöpfung",
-      "beschreibung": "Neue Industrien, Arbeitsplätze und wirtschaftliches Wachstum entlang der gesamten Wasserstoff-Wertschöpfungskette.",
+      "titel": "Wertschöpfung & Arbeitsplätze",
+      "beschreibung": "AquaVentus ist ein Motor für wirtschaftlichen Aufschwung. Unsere Projekte schaffen zahlreiche Arbeitsplätze und fördern die Wertschöpfung in der Region. Von der Installation der Offshore-Anlagen bis zur Wasserstoffverarbeitung bieten wir vielfältige Beschäftigungsmöglichkeiten und stärken den regionalen Wohlstand.",
       "icon": "TrendingUp"
     },
     {
-      "titel": "Stabile Energiepreise",
-      "beschreibung": "Langfristig planbare Energiekosten durch skalierbare Offshore-Wasserstoffproduktion.",
-      "icon": "BarChart3"
+      "titel": "Versorgungssicherheit",
+      "beschreibung": "Mit AquaVentus sichern wir die Energieversorgung der Zukunft. Die Nutzung von Offshore-Windenergie zur Wasserstoffproduktion erhöht die Resilienz unseres Energiesystems und reduziert die Abhängigkeit von importierten fossilen Brennstoffen.",
+      "icon": "Shield"
     }
   ]
 }

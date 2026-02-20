@@ -3,42 +3,79 @@
     {
       "slug": "aquaductus",
       "name": "AquaDuctus",
-      "kurz": "Pipeline-Infrastruktur für grünen Offshore-Wasserstoff",
-      "beschreibung": "AquaDuctus ist das zentrale Infrastrukturprojekt: eine Wasserstoff-Pipeline von den Offshore-Erzeugungsstandorten in der Nordsee an Land. Die Pipeline soll bis 2035 eine Transportkapazität von bis zu 10 GW grünem Wasserstoff ermöglichen.",
-      "status": "In Planung",
-      "kategorie": "Infrastruktur"
+      "kurz": "Offshore-Wasserstoff-Pipeline — 400 km offshore, 100 km onshore",
+      "beschreibung": "AquaDuctus ist das zentrale Infrastrukturprojekt von AquaVentus: eine Wasserstoff-Pipeline von den Offshore-Erzeugungsstandorten in der Nordsee an Land. Als einziges Pipeline-Projekt für die deutsche Nordsee im Wasserstoff-Kernnetz verbindet AquaDuctus die Offshore-Produktion mit den Bedarfszentren an Land — Industrie, Speicher und das europäische Wasserstoff-Kernnetz.",
+      "details": "Am 22. Oktober 2024 wurde AquaDuctus vom Bundesamt für Seeschifffahrt und Hydrographie (BSH) als Teil des Wasserstoff-Kernnetzes genehmigt. Das Projekt ist IPCEI-notifiziert und hat PCI-Status (Project of Common Interest) der Europäischen Union. Über den European Hydrogen Backbone bestehen Verbindungsoptionen zu den Niederlanden, Belgien, Dänemark, dem Vereinigten Königreich und Norwegen.",
+      "status": "Vom BSH genehmigt (Okt 2024)",
+      "kategorie": "Infrastruktur",
+      "fakten": [
+        { "label": "Offshore-Strecke", "wert": "400 km" },
+        { "label": "Onshore-Strecke", "wert": "100 km" },
+        { "label": "Kapazität", "wert": "Bis zu 20 GW (zweistufig)" },
+        { "label": "EU-Status", "wert": "IPCEI-notifiziert, PCI" },
+        { "label": "Kernnetz", "wert": "9.040 km gesamt" },
+        { "label": "Anbindung", "wert": "NL, BE, DK, UK, NO" }
+      ]
     },
     {
       "slug": "aquaprimus",
       "name": "AquaPrimus",
-      "kurz": "Erste Offshore-Elektrolyse auf See — das Pionierprojekt",
-      "beschreibung": "AquaPrimus demonstriert erstmals die Erzeugung von grünem Wasserstoff direkt auf See mittels Offshore-Elektrolyse. Als Pionierprojekt legt es die technologische Grundlage für die industrielle Skalierung.",
+      "kurz": "Demonstrator-Elektrolyseur — 1 bis 5 MW auf See",
+      "beschreibung": "AquaPrimus ist der Demonstrator für Offshore-Elektrolyse: ein 1–5 MW Elektrolyseur, der erstmals die gesamte Wertschöpfungskette der Wasserstoffproduktion auf See testet und optimiert — von der Seewasseraufbereitung über die Elektrolyse bis zur Kompression und Speicherung.",
+      "details": "Als Entwicklungs- und Demonstrationsplattform bringt AquaPrimus Forschung und Industrie zusammen. Das flexible Konsortialmodell ermöglicht es verschiedenen Akteuren, Technologien im realen Offshore-Umfeld zu erproben. AquaPrimus dient als Testfeld für Konsortien, die sich auf zukünftige SEN-1-Ausschreibungen vorbereiten.",
       "status": "In Entwicklung",
-      "kategorie": "Erzeugung"
+      "kategorie": "Erzeugung",
+      "fakten": [
+        { "label": "Leistung", "wert": "1–5 MW" },
+        { "label": "Technologien", "wert": "Seewasseraufbereitung, Elektrolyse, Kompression, Speicherung" },
+        { "label": "Konsortium", "wert": "Flexibles Modell — Forschung & Industrie" },
+        { "label": "Ziel", "wert": "Vorbereitung auf SEN-1-Ausschreibungen" }
+      ]
     },
     {
       "slug": "sen-1",
       "name": "SEN-1 Pionierprojekte",
-      "kurz": "Sustainable Energy North Sea — erste Schritte zur Umsetzung",
-      "beschreibung": "Die SEN-1 Pionierprojekte bündeln verschiedene Vorhaben zur nachhaltigen Energieerzeugung in der Nordsee. Sie testen Technologien und Geschäftsmodelle für die Offshore-Wasserstoffproduktion im realen Umfeld.",
-      "status": "In Entwicklung",
-      "kategorie": "Erzeugung"
+      "kurz": "Erste großskalige Offshore-Wasserstoffproduktion — 1.000 MW auf 100 km²",
+      "beschreibung": "Die SEN-1 Pionierprojekte markieren den Übergang von der Demonstration zur industriellen Produktion: 1.000 MW Elektrolyseleistung auf einer 100 km² großen Zone in der Nordsee, die bis zu 100.000 Tonnen grünen Wasserstoff pro Jahr erzeugen soll.",
+      "details": "Das BSH hat die SEN-1-Zone mit 102 km² im Flächenentwicklungsplan 2023 festgelegt. Die Anbindung erfolgt über die AquaDuctus-Pipeline. Das BMWK führt das Ausschreibungsverfahren für die Flächen durch.",
+      "status": "Regulierung läuft",
+      "kategorie": "Erzeugung",
+      "fakten": [
+        { "label": "Elektrolyse", "wert": "1.000 MW" },
+        { "label": "Fläche", "wert": "102 km² (BSH FEP 2023)" },
+        { "label": "Produktion", "wert": "100.000 t grüner H₂/Jahr" },
+        { "label": "Anbindung", "wert": "AquaDuctus-Pipeline" },
+        { "label": "Ausschreibung", "wert": "BMWK" }
+      ]
     },
     {
       "slug": "aquacampus",
       "name": "AquaCampus",
-      "kurz": "Wissenstransfer und Fachkräfteausbildung für die Wasserstoffwirtschaft",
-      "beschreibung": "AquaCampus verbindet Forschung, Industrie und Bildung. Das Projekt entwickelt Ausbildungsprogramme und Wissenstransfer-Formate, um Fachkräfte für die aufkommende Offshore-Wasserstoffwirtschaft zu qualifizieren.",
+      "kurz": "Europaweit einzigartiges Forschungsareal vor Helgoland",
+      "beschreibung": "AquaCampus ist ein 3 km² großes Forschungsareal wenige Seemeilen vor Helgoland — markiert durch 8 gelbe Bojen in Wassertiefen bis 45 Meter. Hier testen Forschende und Unternehmen Über- und Unterwasser-Technologien unter realen Offshore-Bedingungen.",
+      "details": "Von Hochleistungs-Offshore-Drohnen über neue Materialien bis zu Sensoren und Langzeitversuchen: AquaCampus bietet permanenten Zugang zu einem Testfeld, für das man früher Schiffe und gutes Wetter brauchte. Das macht es europaweit einzigartig als Offshore-Forschungsinfrastruktur.",
       "status": "Aktiv",
-      "kategorie": "Bildung"
+      "kategorie": "Forschung",
+      "fakten": [
+        { "label": "Fläche", "wert": "3 km²" },
+        { "label": "Wassertiefe", "wert": "Bis 45 m" },
+        { "label": "Markierung", "wert": "8 gelbe Bojen" },
+        { "label": "Standort", "wert": "Wenige Seemeilen vor Helgoland" }
+      ]
     },
     {
       "slug": "aquanavis",
       "name": "AquaNavis",
-      "kurz": "Maritime Logistik für Offshore-Wasserstoff",
-      "beschreibung": "AquaNavis entwickelt Konzepte für den maritimen Transport von Wasserstoff. Das Projekt untersucht Schiffsdesigns, Hafeninfrastruktur und Logistikketten für eine effiziente Verteilung des auf See erzeugten Wasserstoffs.",
+      "kurz": "Grüner Wasserstoff als Energiequelle für die maritime Schifffahrt",
+      "beschreibung": "AquaNavis widmet sich der Dekarbonisierung der Schifffahrt: 90 % des Welthandels laufen über den Seeweg und verursachen rund 3 % der globalen CO₂-Emissionen. Das Projekt entwickelt und erprobt innovative wasserstoffbetriebene Schiffstechnologien.",
+      "details": "Ziel ist der Einsatz von grünem Wasserstoff als Energiequelle für maritime Anwendungen — von der Technologieentwicklung über Antriebskonzepte bis zur Integration in bestehende Flotten.",
       "status": "Konzeptphase",
-      "kategorie": "Logistik"
+      "kategorie": "Maritime Anwendung",
+      "fakten": [
+        { "label": "Seehandel", "wert": "90 % des Welthandels" },
+        { "label": "CO₂-Anteil Schifffahrt", "wert": "~3 % global" },
+        { "label": "Fokus", "wert": "Wasserstoffbetriebene Schiffstechnologien" }
+      ]
     }
   ]
 }

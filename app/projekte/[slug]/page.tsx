@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import projekteData from "@/content/data/projekte.json";
 
 interface PageProps {
@@ -54,8 +55,31 @@ export default async function ProjektDetailPage({ params }: PageProps) {
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
-          <div className="prose prose-lg max-w-none text-muted-foreground">
-            <p>{projekt.beschreibung}</p>
+          <div className="grid gap-12 lg:grid-cols-[1fr_320px]">
+            <div className="prose prose-lg max-w-none text-muted-foreground">
+              <p>{projekt.beschreibung}</p>
+              {projekt.details && <p>{projekt.details}</p>}
+            </div>
+
+            {projekt.fakten && projekt.fakten.length > 0 && (
+              <Card className="h-fit">
+                <CardContent className="pt-6">
+                  <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Kerndaten
+                  </h3>
+                  <dl className="space-y-3">
+                    {projekt.fakten.map((fakt) => (
+                      <div key={fakt.label}>
+                        <dt className="text-xs font-medium uppercase tracking-wide text-muted-foreground/70">
+                          {fakt.label}
+                        </dt>
+                        <dd className="text-sm font-medium">{fakt.wert}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
       </section>
