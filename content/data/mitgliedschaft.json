@@ -1,0 +1,53 @@
+{
+  "vorteile": [
+    {
+      "titel": "Netzwerk",
+      "beschreibung": "Zugang zu 100+ Mitgliedsunternehmen und Experten"
+    },
+    {
+      "titel": "Do-Tank statt Think-Tank",
+      "beschreibung": "Fokus auf Umsetzung, nicht nur Theorie"
+    },
+    {
+      "titel": "Projekte",
+      "beschreibung": "Beteiligung an SEN-1, AquaDuctus, AquaCampus"
+    },
+    {
+      "titel": "Arbeitsgruppen",
+      "beschreibung": "Aktive Mitarbeit in Fachgruppen"
+    },
+    {
+      "titel": "AquaNews",
+      "beschreibung": "Exklusiver Newsletter"
+    },
+    {
+      "titel": "Member Portal",
+      "beschreibung": "Diskussionen, Ressourcen, Zugang zu Entscheidern"
+    },
+    {
+      "titel": "Mitgestalten",
+      "beschreibung": "Ideen einbringen, Expertise teilen"
+    }
+  ],
+  "arbeitsgruppen": [
+    {
+      "name": "AG Technologie",
+      "thema": "Neue Technologien im Bereich grünen Wasserstoffs"
+    },
+    {
+      "name": "AG Regulatorik",
+      "thema": "Regulatorische Herausforderungen und Chancen"
+    },
+    {
+      "name": "AG Kommunikation",
+      "thema": "Kommunikation und Öffentlichkeitsarbeit"
+    },
+    {
+      "name": "WG International",
+      "thema": "Internationale Zusammenarbeit und Projekte"
+    }
+  ],
+  "aquaSummit": {
+    "beschreibung": "Das Offshore-Wasserstoff-Highlight des Jahres — ein exklusives Mitgliedertreffen mit führenden Köpfen aus Industrie, Politik und Wissenschaft. Groß genug um den Sektor zu prägen, klein genug für Vertrauen. An ungewöhnlichen Locations — auf dem Wasser und anderswo."
+  }
+}
