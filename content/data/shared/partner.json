@@ -1,14 +1,14 @@
 {
   "partner": [
-    { "name": "BWO — Bundesverband Windparkbetreiber Offshore" },
+    { "name": "BWO — Bundesverband Windparkbetreiber Offshore", "logo": "/images/partners/bwo.jpg" },
     { "name": "BDEW" },
-    { "name": "DWV — Deutscher Wasserstoff-Verband" },
-    { "name": "Erneuerbare Energien Hamburg" },
-    { "name": "IG Metall Küste" },
-    { "name": "Gemeinde Helgoland" },
+    { "name": "DWV — Deutscher Wasserstoff-Verband", "logo": "/images/partners/dwv.jpg" },
+    { "name": "Erneuerbare Energien Hamburg", "logo": "/images/partners/eehh.jpg" },
+    { "name": "IG Metall Küste", "logo": "/images/partners/igm.jpg" },
+    { "name": "Gemeinde Helgoland", "logo": "/images/members/helgoland.jpeg" },
     { "name": "Hydrogen Scotland" },
-    { "name": "Netzwerkagentur EE Schleswig-Holstein" },
-    { "name": "Stiftung Offshore Windenergie" },
-    { "name": "WAB Branchennetzwerk Windenergie" }
+    { "name": "Netzwerkagentur EE Schleswig-Holstein", "logo": "/images/partners/eesh.png" },
+    { "name": "Stiftung Offshore Windenergie", "logo": "/images/partners/stiftung-offshore.jpg" },
+    { "name": "WAB Branchennetzwerk Windenergie", "logo": "/images/partners/wab.jpg" }
   ]
 }

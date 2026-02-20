@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(ssh root@187.77.65.131 \"cd /home/aquaventus-web && git pull && npm ci && npx next build && pm2 restart aquaventus-web\")",
+      "Bash(npx next build:*)",
+      "Bash(git pull:*)",
+      "Bash(git merge:*)",
+      "Bash(git worktree remove:*)",
+      "Bash(git branch:*)",
+      "Bash(node -e:*)",
+      "Bash(git worktree add:*)",
+      "Bash(npm ci:*)",
+      "Bash(git worktree:*)",
+      "Bash(du:*)",
+      "Bash(wc:*)",
+      "Bash(git stash:*)",
+      "Bash(py:*)",
+      "Bash(python:*)",
+      "Bash(ssh:*)",
+      "Bash(TOKEN=\"dKFz7mveT7SdUnn9lsELG20NuiAsSM9S7rLXbBnnPsmQQD6OUkM0xYzuBBWBMX/JkfkR6LJriTtTVI+/R9VF4jLE0aLvry6aFuVLpNTlES3wA1y2d9poWtG+OvOsPScWGiThOMQjo5cmversFI2iwx0xcnQ9wSVy8L6mE01C7zlsqxcUGZdKCR0XhEbCXB1M4h2HiJ9ZB6kYdtRYfYHqVTOr2jcds5PZIq6aEizFcH/ip44KQ+l//avsYH8dtbBglXkIQBSzWM9WfpXwLVECRMCDTdMtUvBCzbfxkkOSt3O3z7UF+aJrAOK5TYk7fx6CoXd9ynA1aDPC/iDxMpPZOH7EGFUov8x3YIoazk4xISdEcOB09sgsqDQmTK7s\")",
+      "Bash(ls:*)",
+      "Bash(where:*)",
+      "Bash(python -c:*)",
+      "Bash(curl:*)",
+      "Bash(npm run build:*)",
+      "Bash(nslookup:*)",
+      "Bash(git status:*)"
+    ]
+  }
+}

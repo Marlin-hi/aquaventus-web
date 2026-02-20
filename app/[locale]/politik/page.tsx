@@ -1,18 +1,20 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import { Card, CardContent } from "@/components/ui/card";
+import ContentCard from "@/components/ContentCard";
 import { FileText, ScrollText } from "lucide-react";
 import { loadContent } from "@/lib/content";
 
 interface Stellungnahme {
   datum: string;
   titel: string;
+  inhalt?: string;
 }
 
 interface PolicyPaper {
   datum: string;
   titel: string;
+  inhalt?: string;
 }
 
 function formatDatum(datum: string, locale: string) {
@@ -64,14 +66,13 @@ export default async function PolitikPage({
           </div>
           <div className="space-y-3">
             {stellungnahmenData.stellungnahmen.map((item) => (
-              <Card key={item.datum + item.titel}>
-                <CardContent className="flex items-start gap-4 py-4">
-                  <span className="shrink-0 text-sm text-muted-foreground min-w-[5.5rem]">
-                    {formatDatum(item.datum, locale)}
-                  </span>
-                  <span className="font-medium">{item.titel}</span>
-                </CardContent>
-              </Card>
+              <ContentCard
+                key={item.datum + item.titel}
+                datum={item.datum}
+                datumFormatted={formatDatum(item.datum, locale)}
+                titel={item.titel}
+                inhalt={item.inhalt}
+              />
             ))}
           </div>
         </div>
@@ -86,14 +87,13 @@ export default async function PolitikPage({
           </div>
           <div className="space-y-3">
             {policyPapersData.policyPapers.map((item) => (
-              <Card key={item.datum + item.titel}>
-                <CardContent className="flex items-start gap-4 py-4">
-                  <span className="shrink-0 text-sm text-muted-foreground min-w-[5.5rem]">
-                    {formatDatum(item.datum, locale)}
-                  </span>
-                  <span className="font-medium">{item.titel}</span>
-                </CardContent>
-              </Card>
+              <ContentCard
+                key={item.datum + item.titel}
+                datum={item.datum}
+                datumFormatted={formatDatum(item.datum, locale)}
+                titel={item.titel}
+                inhalt={item.inhalt}
+              />
             ))}
           </div>
         </div>

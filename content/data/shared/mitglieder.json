@@ -1,59 +1,334 @@
 {
-  "hinweis": "Liste zeigt die von der Webseite gescrapten Mitglieder (~54 von über 100). Vollständige Liste folgt.",
   "mitglieder": [
-    { "name": "ABL Group" },
-    { "name": "AG EMS" },
-    { "name": "Agentur für Wirtschaftsförderung Cuxhaven" },
-    { "name": "AUCOTEC AG" },
-    { "name": "AVIA" },
-    { "name": "BDEW" },
-    { "name": "BEST Fluidsysteme" },
-    { "name": "BIS Bremerhaven" },
-    { "name": "Boge Drucksysteme" },
-    { "name": "Bosch" },
-    { "name": "Brunel" },
-    { "name": "Brunsbüttel Ports" },
-    { "name": "Bureau Veritas" },
-    { "name": "Continental AG" },
-    { "name": "control-f" },
-    { "name": "Copenhagen Energy Islands" },
-    { "name": "cruh21" },
-    { "name": "Cuxport" },
-    { "name": "DFKI" },
-    { "name": "DLR" },
-    { "name": "DNV" },
-    { "name": "DWV" },
-    { "name": "EBRO Armaturen" },
-    { "name": "EDF Renewables" },
-    { "name": "EnBW" },
-    { "name": "EnTec Industrial Services" },
-    { "name": "ERM" },
-    { "name": "Europipe" },
-    { "name": "Fluxys Belgium" },
-    { "name": "Fraunhofer IFAM" },
-    { "name": "GASCADE" },
-    { "name": "Gasunie" },
-    { "name": "German LNG Terminal" },
-    { "name": "Gemeinde Helgoland" },
-    { "name": "GÖRG" },
-    { "name": "H.C. Hagemann" },
-    { "name": "H&R ChemPharm" },
-    { "name": "HanseWerk" },
-    { "name": "Heinrich Hirdes" },
-    { "name": "HydePoint" },
-    { "name": "HYTORC" },
-    { "name": "İ2k Services" },
-    { "name": "Innovation Norway" },
-    { "name": "INP International Projects" },
-    { "name": "IKEM" },
-    { "name": "ISOflanges" },
-    { "name": "J-Power" },
-    { "name": "Jörss-Blunck-Ordemann" },
-    { "name": "Kremsmüller" },
-    { "name": "Landeskompetenzzentrum H2 SH" },
-    { "name": "Latent Drive" },
-    { "name": "Lhyfe" },
-    { "name": "LRQA Deutschland" },
-    { "name": "Scottish Enterprise" }
+    {
+      "name": "ABL Group"
+    },
+    {
+      "name": "AG \"EMS\"",
+      "logo": "/images/members/ems.jpg"
+    },
+    {
+      "name": "Agentur für Wirtschaftsförderung Cuxhaven",
+      "logo": "/images/members/cuxhaven.jpg"
+    },
+    {
+      "name": "AUCOTEC AG"
+    },
+    {
+      "name": "AVIA",
+      "logo": "/images/members/avia.jpg"
+    },
+    {
+      "name": "BDEW Bundesverband der Energie und Wasserwirtschaft"
+    },
+    {
+      "name": "BEST Fluidsysteme GmbH"
+    },
+    {
+      "name": "BIS Bremerhavener Gesellschaft für Investitionsförderung und Stadtentwicklung mbH"
+    },
+    {
+      "name": "Boge Drucksysteme GmbH & Co AG."
+    },
+    {
+      "name": "Bosch",
+      "logo": "/images/members/bosch.png"
+    },
+    {
+      "name": "Brunel"
+    },
+    {
+      "name": "Brunsbüttel Ports",
+      "logo": "/images/members/brunsbuettel-ports.jpg"
+    },
+    {
+      "name": "Bureau Veritas",
+      "logo": "/images/members/bureau-veritas.jpg"
+    },
+    {
+      "name": "Continental AG",
+      "logo": "/images/members/continental.png"
+    },
+    {
+      "name": "control-f GmbH"
+    },
+    {
+      "name": "Copenhagen Energy Islands ApS"
+    },
+    {
+      "name": "cruh21"
+    },
+    {
+      "name": "Cuxport",
+      "logo": "/images/members/cuxport.png"
+    },
+    {
+      "name": "Deutscher Wasserstoff-Verband (DWV) e.V."
+    },
+    {
+      "name": "Deutsches Forschungszentrum für Künstliche Intelligenz",
+      "logo": "/images/members/dfki.jpg"
+    },
+    {
+      "name": "Deutsches Zentrum für Luft und Raumfahrt",
+      "logo": "/images/members/dlr.png"
+    },
+    {
+      "name": "DFDS"
+    },
+    {
+      "name": "DNV",
+      "logo": "/images/members/dnv.jpg"
+    },
+    {
+      "name": "EBRO Armaturen"
+    },
+    {
+      "name": "EDF Renewables Deutschland",
+      "logo": "/images/members/edf-renewables.jpg"
+    },
+    {
+      "name": "EnBW Energie Baden-Württemberg",
+      "logo": "/images/members/enbw.png"
+    },
+    {
+      "name": "EnTec Industrial Services",
+      "logo": "/images/members/entec.jpg"
+    },
+    {
+      "name": "ERM",
+      "logo": "/images/members/erm.jpg"
+    },
+    {
+      "name": "Europipe",
+      "logo": "/images/members/europipe.jpg"
+    },
+    {
+      "name": "Fluxys Belgium"
+    },
+    {
+      "name": "Fraunhofer IFAM",
+      "logo": "/images/members/ifam.jpg"
+    },
+    {
+      "name": "GASCADE Gastransport",
+      "logo": "/images/members/gascade.png"
+    },
+    {
+      "name": "Gasunie",
+      "logo": "/images/members/gasunie.jpg"
+    },
+    {
+      "name": "Gemeinde Helgoland",
+      "logo": "/images/members/helgoland.jpeg"
+    },
+    {
+      "name": "German LNG Terminal",
+      "logo": "/images/members/lng.jpg"
+    },
+    {
+      "name": "GÖRG",
+      "logo": "/images/members/goerg.jpg"
+    },
+    {
+      "name": "H&R ChemPharm",
+      "logo": "/images/members/hr.jpg"
+    },
+    {
+      "name": "H. C. Hagemann",
+      "logo": "/images/members/hchagemann.png"
+    },
+    {
+      "name": "HanseWerk",
+      "logo": "/images/members/hansewerk.jpg"
+    },
+    {
+      "name": "Heinrich Hirdes",
+      "logo": "/images/members/hirdes.jpg"
+    },
+    {
+      "name": "HydePoint"
+    },
+    {
+      "name": "HYTORC Barbarino & Kilp",
+      "logo": "/images/members/hytorc.png"
+    },
+    {
+      "name": "Innovation Norway"
+    },
+    {
+      "name": "INP International Projects"
+    },
+    {
+      "name": "Institut für Klimaschutz, Energie und Mobilität (IKEM)",
+      "logo": "/images/members/ikem.png"
+    },
+    {
+      "name": "ISOflanges"
+    },
+    {
+      "name": "İ2k Services GmbH"
+    },
+    {
+      "name": "J-Power",
+      "logo": "/images/members/j-power.jpg"
+    },
+    {
+      "name": "Jörss-Blunck-Ordemann GmbH"
+    },
+    {
+      "name": "Kreis Pinneberg",
+      "logo": "/images/members/pinneberg.jpg"
+    },
+    {
+      "name": "Kremsmüller Anlagenbau GmbH"
+    },
+    {
+      "name": "Landeskompetenzzentrum Wasserstoffforschung Schleswig-Holstein"
+    },
+    {
+      "name": "Latent Drive"
+    },
+    {
+      "name": "Lhyfe",
+      "logo": "/images/members/lhyfe.png"
+    },
+    {
+      "name": "LRQA Deutschland GmbH"
+    },
+    {
+      "name": "Mannesmann Line Pipe GmbH"
+    },
+    {
+      "name": "McDermott International, Ltd (\"McDermott\")",
+      "logo": "/images/members/cbi-mcdermott.jpg"
+    },
+    {
+      "name": "N Sea Offshore Wind",
+      "logo": "/images/members/n-sea.png"
+    },
+    {
+      "name": "Natixis Deutschland",
+      "logo": "/images/members/natixis.jpg"
+    },
+    {
+      "name": "Neptune Energy",
+      "logo": "/images/members/neptune.jpg"
+    },
+    {
+      "name": "NGT",
+      "logo": "/images/members/ngt.jpg"
+    },
+    {
+      "name": "Nogat",
+      "logo": "/images/members/nogat.jpg"
+    },
+    {
+      "name": "NorthH2 Projektgesellschaft mbH"
+    },
+    {
+      "name": "OneSubsea",
+      "logo": "/images/members/onesubsea.jpg"
+    },
+    {
+      "name": "OWT Offshore Wind Technology",
+      "logo": "/images/members/owt.jpg"
+    },
+    {
+      "name": "Parkwind",
+      "logo": "/images/members/parkwind.png"
+    },
+    {
+      "name": "Ramboll Deutschland",
+      "logo": "/images/members/ramboll.png"
+    },
+    {
+      "name": "ROSEN Technology and Research Center",
+      "logo": "/images/members/rosen.jpg"
+    },
+    {
+      "name": "Rosenxt"
+    },
+    {
+      "name": "Roxtec GmbH"
+    },
+    {
+      "name": "RWE Renewables",
+      "logo": "/images/members/rwe.jpg"
+    },
+    {
+      "name": "Scottish Enterprise"
+    },
+    {
+      "name": "Seaway7 / Subsea7",
+      "logo": "/images/members/subsea7.jpg"
+    },
+    {
+      "name": "Shell Deutschland",
+      "logo": "/images/members/shell.jpg"
+    },
+    {
+      "name": "Shuangliang Clyde Bergmann"
+    },
+    {
+      "name": "SOBIS Software GmbH"
+    },
+    {
+      "name": "Stablegrid Engineers"
+    },
+    {
+      "name": "Stiftung Offshore Windenergie",
+      "logo": "/images/partners/stiftung-offshore.jpg"
+    },
+    {
+      "name": "TenneT Offshore",
+      "logo": "/images/members/tennet.png"
+    },
+    {
+      "name": "Tewis-Projektmanagement GmbH"
+    },
+    {
+      "name": "THIELE",
+      "logo": "/images/members/thiele.jpg"
+    },
+    {
+      "name": "TotalEnergies"
+    },
+    {
+      "name": "TÜV NORD GROUP"
+    },
+    {
+      "name": "TÜV SÜD",
+      "logo": "/images/members/tuev-sued.jpg"
+    },
+    {
+      "name": "Van Oord Offshore Wind Germany",
+      "logo": "/images/members/van-oord.jpg"
+    },
+    {
+      "name": "VERBUND"
+    },
+    {
+      "name": "Versorgungsbetriebe Helgoland",
+      "logo": "/images/members/vbh.jpg"
+    },
+    {
+      "name": "VIRYA ENERGY",
+      "logo": "/images/members/virya.jpg"
+    },
+    {
+      "name": "Weidmüller Interface",
+      "logo": "/images/members/weidmueller.png"
+    },
+    {
+      "name": "WindMW",
+      "logo": "/images/members/windmw.png"
+    },
+    {
+      "name": "WTSH Wirtschaftsförderung und Technologietransfer Schleswig-Holstein GmbH"
+    },
+    {
+      "name": "Yokogawa"
+    }
   ]
 }

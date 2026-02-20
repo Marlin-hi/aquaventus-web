@@ -26,11 +26,13 @@ interface GeschaeftsstellePerson {
 interface Mitglied {
   name: string;
   url?: string;
+  logo?: string;
 }
 
 interface Partner {
   name: string;
   url?: string;
+  logo?: string;
 }
 
 export async function generateMetadata({
@@ -128,14 +130,39 @@ export default async function UeberUnsPage({
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-4 text-3xl font-bold">{t("mitgliederTitel")}</h2>
           <p className="mb-12 text-lg text-muted-foreground">{t("mitgliederText")}</p>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {mitgliederData.mitglieder.map((m) => (
-              <div key={m.name} className="flex items-center gap-2 rounded-lg border bg-card px-3 py-2.5 text-sm">
-                <Building2 className="h-4 w-4 shrink-0 text-primary/60" />
-                <span className="truncate">{m.name}</span>
-              </div>
-            ))}
+          {/* Logo-Grid */}
+          <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+            {mitgliederData.mitglieder
+              .filter((m) => m.logo)
+              .map((m) => (
+                <div
+                  key={m.name}
+                  className="flex h-20 items-center justify-center rounded-lg border border-black/5 bg-white/80 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-white/90"
+                  title={m.name}
+                >
+                  <Image
+                    src={m.logo!}
+                    alt={m.name}
+                    width={120}
+                    height={60}
+                    className="max-h-12 w-auto object-contain"
+                  />
+                </div>
+              ))}
           </div>
+          {/* Mitglieder ohne Logo als Text */}
+          {mitgliederData.mitglieder.filter((m) => !m.logo).length > 0 && (
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+              {mitgliederData.mitglieder
+                .filter((m) => !m.logo)
+                .map((m) => (
+                  <div key={m.name} className="flex items-center gap-2 rounded-lg border bg-card px-3 py-2.5 text-sm">
+                    <Building2 className="h-4 w-4 shrink-0 text-primary/60" />
+                    <span className="truncate">{m.name}</span>
+                  </div>
+                ))}
+            </div>
+          )}
           <p className="mt-6 text-center text-sm text-muted-foreground">{t("mitgliederHinweis")}</p>
         </div>
       </section>
@@ -145,11 +172,25 @@ export default async function UeberUnsPage({
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-4 text-3xl font-bold">{t("partnerTitel")}</h2>
           <p className="mb-12 text-muted-foreground">{t("partnerText")}</p>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
             {partnerData.partner.map((p) => (
-              <div key={p.name} className="flex items-center gap-3 rounded-lg border bg-card px-4 py-3">
-                <Handshake className="h-5 w-5 shrink-0 text-primary/60" />
-                <span className="text-sm font-medium">{p.name}</span>
+              <div key={p.name} className="flex flex-col items-center gap-2 rounded-lg border border-black/5 bg-white/80 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-white/90">
+                {p.logo ? (
+                  <div className="flex h-14 items-center justify-center">
+                    <Image
+                      src={p.logo}
+                      alt={p.name}
+                      width={120}
+                      height={56}
+                      className="max-h-12 w-auto object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex h-14 items-center justify-center">
+                    <Handshake className="h-8 w-8 text-primary/40" />
+                  </div>
+                )}
+                <span className="text-center text-xs text-gray-600">{p.name}</span>
               </div>
             ))}
           </div>

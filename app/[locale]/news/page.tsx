@@ -1,12 +1,13 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import { Card, CardContent } from "@/components/ui/card";
+import ContentCard from "@/components/ContentCard";
 import { loadContent } from "@/lib/content";
 
 interface Pressemeldung {
   datum: string;
   titel: string;
+  inhalt?: string;
 }
 
 export async function generateMetadata({
@@ -38,18 +39,17 @@ export default async function NewsPage({
         <div className="mx-auto max-w-4xl">
           <div className="space-y-3">
             {data.pressemeldungen.map((item) => (
-              <Card key={item.datum + item.titel}>
-                <CardContent className="flex items-start gap-4 py-4">
-                  <span className="shrink-0 text-sm text-muted-foreground min-w-[5.5rem]">
-                    {new Date(item.datum).toLocaleDateString(dateLocale, {
-                      day: "2-digit",
-                      month: "2-digit",
-                      year: "numeric",
-                    })}
-                  </span>
-                  <span className="font-medium">{item.titel}</span>
-                </CardContent>
-              </Card>
+              <ContentCard
+                key={item.datum + item.titel}
+                datum={item.datum}
+                datumFormatted={new Date(item.datum).toLocaleDateString(dateLocale, {
+                  day: "2-digit",
+                  month: "2-digit",
+                  year: "numeric",
+                })}
+                titel={item.titel}
+                inhalt={item.inhalt}
+              />
             ))}
           </div>
         </div>
