@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import TeamCard from "@/components/TeamCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Mail, Phone, Building2, Handshake } from "lucide-react";
+import Image from "next/image";
 import { loadContent, loadSharedContent } from "@/lib/content";
 
 interface VorstandMitglied {
@@ -11,6 +12,7 @@ interface VorstandMitglied {
   rolle: string;
   organisation: string;
   beschreibung: string;
+  bild?: string;
 }
 
 interface GeschaeftsstellePerson {
@@ -18,6 +20,7 @@ interface GeschaeftsstellePerson {
   rolle: string;
   email: string | null;
   telefon: string | null;
+  bild?: string;
 }
 
 interface Mitglied {
@@ -90,8 +93,14 @@ export default async function UeberUnsPage({
             {geschaeftsstelleData.geschaeftsstelle.map((person) => (
               <Card key={person.name} className="h-full">
                 <CardContent className="pt-6">
-                  <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <User className="h-8 w-8 text-primary" />
+                  <div className="mb-4 h-16 w-16 overflow-hidden rounded-full bg-primary/10">
+                    {person.bild ? (
+                      <Image src={person.bild} alt={person.name} width={64} height={64} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <User className="h-8 w-8 text-primary" />
+                      </div>
+                    )}
                   </div>
                   <h3 className="text-lg font-semibold">{person.name}</h3>
                   <p className="text-sm font-medium text-primary">{person.rolle}</p>

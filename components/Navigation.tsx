@@ -5,7 +5,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Menu, X, Waves, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { loadContent } from "@/lib/content";
 import SearchDialog from "@/components/SearchDialog";
@@ -48,7 +49,7 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary">
-          <Waves className="h-7 w-7" />
+          <Image src="/images/logo/aquaventus-logo-rund.png" alt="AquaVentus" width={32} height={32} className="h-8 w-8" />
           <span>AquaVentus</span>
         </Link>
 

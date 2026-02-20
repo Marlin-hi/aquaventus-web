@@ -10,6 +10,7 @@ interface Projekt {
   kurz: string;
   status: string;
   kategorie: string;
+  bild?: string;
 }
 
 export async function generateMetadata({

@@ -4,7 +4,8 @@
       "name": "Robert Seehawer",
       "rolle": "Geschäftsführer",
       "email": "seehawer@aquaventus.org",
-      "telefon": "+49 152 26349789"
+      "telefon": "+49 152 26349789",
+      "bild": "/images/team/robert-seehawer.jpg"
     },
     {
       "name": "Sebastian Himstedt",
@@ -16,13 +17,15 @@
       "name": "Alara Dürür",
       "rolle": "Marketing",
       "email": null,
-      "telefon": null
+      "telefon": null,
+      "bild": "/images/team/alara-dueruer.png"
     },
     {
       "name": "Marlin Klag",
       "rolle": "Organisation & Datenanalyse",
       "email": null,
-      "telefon": null
+      "telefon": null,
+      "bild": "/images/team/marlin-klag.jpg"
     }
   ],
   "adresse": "c/o Deutscher Wasserstoff-Verband, Robert-Koch-Platz 4, 10115 Berlin"
