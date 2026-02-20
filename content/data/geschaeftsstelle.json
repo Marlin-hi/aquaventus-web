@@ -1,0 +1,29 @@
+{
+  "geschaeftsstelle": [
+    {
+      "name": "Robert Seehawer",
+      "rolle": "Geschäftsführer",
+      "email": "seehawer@aquaventus.org",
+      "telefon": "+49 152 26349789"
+    },
+    {
+      "name": "Sebastian Himstedt",
+      "rolle": "Presse und Öffentlichkeitsarbeit",
+      "email": "press@aquaventus.org",
+      "telefon": null
+    },
+    {
+      "name": "Alara Dürür",
+      "rolle": "Marketing",
+      "email": null,
+      "telefon": null
+    },
+    {
+      "name": "Marlin Klag",
+      "rolle": "Organisation & Datenanalyse",
+      "email": null,
+      "telefon": null
+    }
+  ],
+  "adresse": "c/o Deutscher Wasserstoff-Verband, Robert-Koch-Platz 4, 10115 Berlin"
+}

@@ -2,21 +2,39 @@
   "vorstand": [
     {
       "name": "Jörg Singer",
-      "rolle": "Vorsitzender",
-      "organisation": "Gemeinde Helgoland",
-      "beschreibung": "Bürgermeister von Helgoland und treibende Kraft hinter der Vision, die Insel zum Zentrum der Offshore-Wasserstoffproduktion zu machen."
+      "rolle": "1. Vorsitzender",
+      "organisation": "Unternehmer, ehem. Bürgermeister Helgoland",
+      "beschreibung": "Treibende Kraft hinter der Vision, Helgoland zum Zentrum der Offshore-Wasserstoffproduktion zu machen. Initiator von AquaVentus."
     },
     {
-      "name": "Melanie Bethke",
-      "rolle": "Stellvertretende Vorsitzende",
-      "organisation": "RWE",
-      "beschreibung": "Vertritt die Perspektive der Energiewirtschaft und bringt Erfahrung aus der industriellen Skalierung erneuerbarer Energien ein."
+      "name": "Dr. Christoph von dem Bussche",
+      "rolle": "Stv. Vorsitzender",
+      "organisation": "GASCADE Gastransport GmbH",
+      "beschreibung": "CEO von GASCADE und verantwortlich für die Entwicklung der Wasserstoff-Transportinfrastruktur in Deutschland."
     },
     {
-      "name": "Stefan Westhoff",
+      "name": "Dr. Kirsten Westphal",
+      "rolle": "Stv. Vorsitzende",
+      "organisation": "BDEW / Nationaler Wasserstoffrat",
+      "beschreibung": "Mitglied der BDEW-Geschäftsführung und des Nationalen Wasserstoffrats. Bringt energie- und geopolitische Expertise ein."
+    },
+    {
+      "name": "Robert Eschenauer",
+      "rolle": "Stv. Vorsitzender",
+      "organisation": "Robert Bosch GmbH",
+      "beschreibung": "Verantwortet das Produktmanagement für Elektrolyseure bei Bosch und vertritt die Perspektive der Industrietechnologie."
+    },
+    {
+      "name": "Martin Neubert",
+      "rolle": "Stv. Vorsitzender",
+      "organisation": "Copenhagen Infrastructure Partners",
+      "beschreibung": "Bringt internationale Investoren-Perspektive und Erfahrung aus der Entwicklung großskaliger Infrastrukturprojekte ein."
+    },
+    {
+      "name": "Kay Martens",
       "rolle": "Schatzmeister",
-      "organisation": "Gasunie Deutschland",
-      "beschreibung": "Verantwortet die Finanzstrategie des Vereins und bringt Expertise aus dem Bereich Gasinfrastruktur und -transport ein."
+      "organisation": "Versorgungsbetriebe Helgoland",
+      "beschreibung": "Geschäftsführer der Versorgungsbetriebe Helgoland. Verantwortet die Finanzstrategie des Vereins."
     }
   ]
 }
