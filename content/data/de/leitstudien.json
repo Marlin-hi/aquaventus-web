@@ -7,7 +7,8 @@
       "quelle": "Frontier Economics",
       "beschreibung": "Die Studie von Frontier Economics zeigt: Durch Offshore-Sektorenkopplung lassen sich Systemkosten um bis zu 1,7 Milliarden Euro pro Jahr senken. Die Analyse belegt, dass kombinierte Strom- und Wasserstofftransportsysteme die kosteneffizienteste Lösung für weit entfernte Offshore-Windgebiete darstellen. Die Ergebnisse sind robust über verschiedene Sensitivitätsanalysen hinweg.",
       "pdf": "/downloads/studien/frontier-economics-2025-de.pdf",
-      "pdfEn": "/downloads/studien/frontier-economics-2025-en.pdf"
+      "pdfEn": "/downloads/studien/frontier-economics-2025-en.pdf",
+      "bild": "/images/studien/frontier-economics-deckblatt.png"
     },
     {
       "titel": "Kombinierte Transportsysteme senken Ausbaukosten um 31 Mrd. €",
@@ -53,7 +54,8 @@
       "datumLabel": "2025",
       "quelle": "npj Ocean Sustainability (Nature)",
       "beschreibung": "Wissenschaftliche Studie des Helmholtz-Zentrums Hereon über die hydrographischen Auswirkungen der Offshore-Wasserstoffproduktion in der Nordsee. Abwärme verursacht lokale Temperaturänderungen von bis zu 2 °C im Umkreis von Zehnern von Metern um eine 500-MW-Anlage. Großräumige Effekte sind gering und vernachlässigbar gegenüber Offshore-Windpark-Nachlaufeffekten.",
-      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf"
+      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf",
+      "bild": "/images/studien/nature-npj-deckblatt.png"
     },
     {
       "titel": "Kombinierte Anschlusskonzepte für die Wasserstofferzeugung auf See",
@@ -70,7 +72,8 @@
       "datumLabel": "2024",
       "quelle": "KlimR — Zeitschrift für Klimaschutzrecht",
       "beschreibung": "Fachbeitrag von Dr. Benjamin Baur und Robert Seehawer (AquaVentus) über die Offshore-Wasserstoff-Produktion im Kontext internationaler Politik und nationaler Ausbaupfade. Die Analyse beleuchtet die geoenergetische Dimension der Nordsee-Wasserstoffproduktion, den Status quo der deutschen Offshore-Wasserstoff-Wirtschaft und die AquaVentus-Projektfamilie.",
-      "pdf": "/downloads/studien/klimr-2024.pdf"
+      "pdf": "/downloads/studien/klimr-2024.pdf",
+      "bild": "/images/studien/klimr-deckblatt.png"
     },
     {
       "titel": "H₂ aus der Nordsee — AquaVentus und seine Projekte",
@@ -78,7 +81,8 @@
       "datumLabel": "11-12/2023",
       "quelle": "gwf Gas + Energie",
       "beschreibung": "Ausführlicher Fachartikel über das AquaVentus-Projekt und seine Pionierprojekte. Der Beitrag beschreibt die Initiative für 10 GW Offshore-Elektrolyse bis 2035, das 1-GW-Testfeld SEN-1, die AquaDuctus-Pipeline sowie die Rolle der Offshore-Elektrolyse als integraler Bestandteil einer grünen Wasserstoffversorgung.",
-      "pdf": "/downloads/studien/gwf-gas-2023.pdf"
+      "pdf": "/downloads/studien/gwf-gas-2023.pdf",
+      "bild": "/images/studien/gwf-gas-deckblatt.png"
     }
   ]
 }

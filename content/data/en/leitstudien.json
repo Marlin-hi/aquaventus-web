@@ -7,7 +7,8 @@
       "quelle": "Frontier Economics",
       "beschreibung": "The Frontier Economics study demonstrates that offshore sector coupling can reduce system costs by up to EUR 1.7 billion per year. The analysis shows that combined electricity and hydrogen transport systems are the most cost-effective solution for distant offshore wind areas. Results are robust across various sensitivity analyses.",
       "pdf": "/downloads/studien/frontier-economics-2025-en.pdf",
-      "pdfDe": "/downloads/studien/frontier-economics-2025-de.pdf"
+      "pdfDe": "/downloads/studien/frontier-economics-2025-de.pdf",
+      "bild": "/images/studien/frontier-economics-deckblatt.png"
     },
     {
       "titel": "Combined transport systems reduce expansion costs by EUR 31 bn",
@@ -53,7 +54,8 @@
       "datumLabel": "2025",
       "quelle": "npj Ocean Sustainability (Nature)",
       "beschreibung": "Scientific study by the Helmholtz-Zentrum Hereon on the hydrographic impact of offshore hydrogen production in the North Sea. Waste heat causes local temperature changes of up to 2 °C within tens of metres of a 500 MW plant. Large-scale effects are minor and negligible compared to offshore wind farm wake effects.",
-      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf"
+      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf",
+      "bild": "/images/studien/nature-npj-deckblatt.png"
     },
     {
       "titel": "Combined connection concepts for offshore hydrogen production",
@@ -70,7 +72,8 @@
       "datumLabel": "2024",
       "quelle": "KlimR — Journal for Climate Protection Law",
       "beschreibung": "Technical article by Dr. Benjamin Baur and Robert Seehawer (AquaVentus) on offshore hydrogen production in the context of international policy and national expansion paths. The analysis examines the geoenergetic dimension of North Sea hydrogen production, the status quo of Germany's offshore hydrogen industry and the AquaVentus project family.",
-      "pdf": "/downloads/studien/klimr-2024.pdf"
+      "pdf": "/downloads/studien/klimr-2024.pdf",
+      "bild": "/images/studien/klimr-deckblatt.png"
     },
     {
       "titel": "H₂ from the North Sea — AquaVentus and its projects",
@@ -78,7 +81,8 @@
       "datumLabel": "11-12/2023",
       "quelle": "gwf Gas + Energie",
       "beschreibung": "Detailed technical article on the AquaVentus project and its pioneer projects. The article describes the initiative for 10 GW offshore electrolysis by 2035, the 1 GW test field SEN-1, the AquaDuctus pipeline and the role of offshore electrolysis as an integral part of a green hydrogen supply chain.",
-      "pdf": "/downloads/studien/gwf-gas-2023.pdf"
+      "pdf": "/downloads/studien/gwf-gas-2023.pdf",
+      "bild": "/images/studien/gwf-gas-deckblatt.png"
     }
   ]
 }
