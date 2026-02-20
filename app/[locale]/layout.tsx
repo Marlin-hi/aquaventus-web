@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ThemeProvider from "@/components/ThemeProvider";
+import Fireflies from "@/components/Fireflies";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,14 +53,17 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navigation />
-          <main className="min-h-[calc(100vh-4rem)]">{children}</main>
-          <Footer />
+          <ThemeProvider>
+            <Navigation />
+            <Fireflies />
+            <main className="relative z-10 min-h-[calc(100vh-4rem)]">{children}</main>
+            <Footer />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

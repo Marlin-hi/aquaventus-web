@@ -3,8 +3,9 @@
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
-import { useState } from "react";
-import { Menu, X, Waves } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { Menu, X, Waves, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { loadContent } from "@/lib/content";
 import SearchDialog from "@/components/SearchDialog";
@@ -25,6 +26,9 @@ export default function Navigation() {
   const router = useRouter();
   const t = useTranslations("nav");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const navigationData = loadContent<NavData>("navigation", locale as "de" | "en");
 
@@ -63,6 +67,19 @@ export default function Navigation() {
 
           <SearchDialog />
 
+          {/* Theme Toggle */}
+          <button
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label={t("themeToggle")}
+          >
+            {mounted && resolvedTheme === "dark" ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
+          </button>
+
           {/* Language Switcher */}
           <div className="flex items-center gap-1 text-xs">
             <button
@@ -93,6 +110,18 @@ export default function Navigation() {
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-3 md:hidden">
+          {/* Theme Toggle Mobile */}
+          <button
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label={t("themeToggle")}
+          >
+            {mounted && resolvedTheme === "dark" ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
+          </button>
           {/* Language Switcher Mobile */}
           <div className="flex items-center gap-1 text-xs">
             <button

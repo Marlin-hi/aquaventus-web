@@ -107,7 +107,8 @@
     "copyright": "AquaVentus Förderverein e.V. All rights reserved."
   },
   "nav": {
-    "menuLabel": "Menu"
+    "menuLabel": "Menu",
+    "themeToggle": "Toggle dark mode"
   },
   "search": {
     "label": "Search",
