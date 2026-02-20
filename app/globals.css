@@ -518,40 +518,41 @@
 .dark .glass-wave-1 {
   background: linear-gradient(
     135deg,
-    oklch(0.35 0.14 var(--theme-hue) / 55%),
-    oklch(0.30 0.12 var(--theme-accent-hue) / 30%),
+    oklch(0.55 0.18 var(--theme-hue) / 70%),
+    oklch(0.45 0.16 var(--theme-accent-hue) / 45%),
     transparent
   );
-  opacity: 0.15;
+  opacity: 0.25;
 }
 
 .dark .glass-wave-2 {
   background: linear-gradient(
     -45deg,
-    oklch(0.32 0.13 var(--theme-accent-hue) / 50%),
-    oklch(0.28 0.10 var(--theme-hue) / 25%),
+    oklch(0.50 0.17 var(--theme-accent-hue) / 65%),
+    oklch(0.42 0.14 var(--theme-hue) / 35%),
     transparent
   );
-  opacity: 0.12;
+  opacity: 0.20;
 }
 
 .dark .glass-wave-3 {
   background: linear-gradient(
     90deg,
-    oklch(0.30 0.11 var(--theme-hue) / 45%),
-    oklch(0.25 0.09 var(--theme-accent-hue) / 22%),
+    oklch(0.48 0.15 var(--theme-hue) / 60%),
+    oklch(0.40 0.13 var(--theme-accent-hue) / 30%),
     transparent 70%
   );
-  opacity: 0.10;
+  opacity: 0.18;
 }
 
 .dark .glass-wave-4 {
   background: linear-gradient(
     180deg,
-    oklch(0.33 0.12 var(--theme-hue) / 40%),
+    oklch(0.52 0.16 var(--theme-hue) / 55%),
+    oklch(0.38 0.12 var(--theme-accent-hue) / 25%),
     transparent 80%
   );
-  opacity: 0.08;
+  opacity: 0.14;
 }
 
 /* Wave drift animations — slow, organic, ocean-like */
@@ -599,10 +600,10 @@
   .glass-wave-2 { opacity: 0.03; }
   .glass-wave-3 { opacity: 0.03; }
   .glass-wave-4 { opacity: 0.02; }
-  .dark .glass-wave-1 { opacity: 0.08; }
-  .dark .glass-wave-2 { opacity: 0.06; }
-  .dark .glass-wave-3 { opacity: 0.05; }
-  .dark .glass-wave-4 { opacity: 0.04; }
+  .dark .glass-wave-1 { opacity: 0.15; }
+  .dark .glass-wave-2 { opacity: 0.12; }
+  .dark .glass-wave-3 { opacity: 0.10; }
+  .dark .glass-wave-4 { opacity: 0.08; }
 }
 
 /* Reduced motion for waves */
