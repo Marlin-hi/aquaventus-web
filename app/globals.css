@@ -97,7 +97,7 @@
 
   /* Primary: turquoise/cyan accent */
   --primary: oklch(0.72 0.15 195);
-  --primary-foreground: oklch(0.13 0.015 230);
+  --primary-foreground: oklch(0.95 0.01 220);
 
   /* Secondary: dark teal surface */
   --secondary: oklch(0.22 0.025 220);
