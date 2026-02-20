@@ -4,29 +4,81 @@
       "titel": "Systemkosten senken durch Offshore-Sektorenkopplung — bis zu 1,7 Mrd. €/Jahr",
       "datum": "2025-11",
       "datumLabel": "November 2025",
-      "quelle": "Frontier Economics Studie",
-      "beschreibung": "Die Studie von Frontier Economics zeigt: Durch Offshore-Sektorenkopplung lassen sich Systemkosten um bis zu 1,7 Milliarden Euro pro Jahr senken."
+      "quelle": "Frontier Economics",
+      "beschreibung": "Die Studie von Frontier Economics zeigt: Durch Offshore-Sektorenkopplung lassen sich Systemkosten um bis zu 1,7 Milliarden Euro pro Jahr senken. Die Analyse belegt, dass kombinierte Strom- und Wasserstofftransportsysteme die kosteneffizienteste Lösung für weit entfernte Offshore-Windgebiete darstellen. Die Ergebnisse sind robust über verschiedene Sensitivitätsanalysen hinweg.",
+      "pdf": "/downloads/studien/frontier-economics-2025-de.pdf",
+      "pdfEn": "/downloads/studien/frontier-economics-2025-en.pdf"
     },
     {
       "titel": "Kombinierte Transportsysteme senken Ausbaukosten um 31 Mrd. €",
       "datum": "2024-09",
       "datumLabel": "September 2024",
-      "quelle": "Kurzstudie",
-      "beschreibung": "Kombinierte Transport- und Anschlusskonzepte für Offshore-Wasserstoff können die Ausbaukosten um 31 Milliarden Euro reduzieren."
+      "quelle": "E-Bridge Consulting",
+      "beschreibung": "Die E-Bridge-Kurzstudie bewertet Anschlusskonzepte für weit entfernte Offshore-Windgebiete in der deutschen Nordsee. Kombinierte Transport- und Anschlusskonzepte können die Ausbaukosten um 31 Milliarden Euro reduzieren. Die Studie untersucht auf 88 Seiten Energieszenarien, Anschlusskonzepte, Kostenanalysen sowie Umwelt- und Rechtsaspekte.",
+      "pdf": "/downloads/studien/kurzstudie-2024-de.pdf",
+      "pdfEn": "/downloads/studien/kurzstudie-2024-en.pdf",
+      "bild": "/images/studien/kurzstudie-2024-de.png"
     },
     {
-      "titel": "Wasserstoffgewinnung auf Hoher See — großes Potential bestätigt",
+      "titel": "Offshore-Energieinseln im europäischen Energiesystem",
+      "datum": "2024-09",
+      "datumLabel": "September 2024",
+      "quelle": "Fraunhofer IEE",
+      "beschreibung": "Die Fraunhofer-IEE-Studie analysiert die Rolle deutscher Offshore-Energieinseln im europäischen Energiesystem. Im Auftrag von Copenhagen Energy Islands ApS untersucht sie, wie künstliche Energieinseln in der Nordsee als Knotenpunkte für Windenergieerzeugung und Wasserstoffproduktion fungieren können.",
+      "pdf": "/downloads/studien/fraunhofer-iee-energy-islands-2024.pdf",
+      "bild": "/images/studien/fraunhofer-deckblatt.png"
+    },
+    {
+      "titel": "Europäisches Offshore-Wasserstoff-Backbone — großes Potential bestätigt",
       "datum": "2023-02",
       "datumLabel": "Februar 2023",
-      "quelle": "DNV Study",
-      "beschreibung": "Die DNV-Studie bestätigt das große Potenzial der Wasserstoffgewinnung auf hoher See und untersucht technische wie wirtschaftliche Machbarkeit."
+      "quelle": "DNV",
+      "beschreibung": "Die DNV-Studie spezifiziert ein europäisches Offshore-Wasserstoff-Backbone-Netzwerk und bestätigt das große Potenzial der Wasserstoffgewinnung auf hoher See. Sie untersucht Wasserstoffbedarf, Produktionspotenziale sowie den Vergleich von Onshore- und Offshore-Produktion. Das Backbone verbindet Produktionsstandorte in der Nordsee mit Verbrauchszentren an Land.",
+      "pdf": "/downloads/studien/dnv-offshore-hydrogen-backbone.pdf",
+      "bild": "/images/studien/dnv-deckblatt.png"
     },
     {
       "titel": "Klare Vorteile der Wasserstoffproduktion auf See",
       "datum": "2022-03",
       "datumLabel": "März 2022",
-      "quelle": "AquaDuctus Short Study",
-      "beschreibung": "Die Kurzstudie belegt klare Vorteile der dezentralen Wasserstoffproduktion auf See gegenüber zentralen Onshore-Lösungen."
+      "quelle": "AFRY Management Consulting",
+      "beschreibung": "Die AFRY-Studie vergleicht Systemvarianten zur Wasserstoffbereitstellung aus Offshore-Windkraft. Im Auftrag von RWE, Gasunie, Gascade, Equinor und Shell belegt sie klare Vorteile der dezentralen Wasserstoffproduktion auf See gegenüber zentralen Onshore-Lösungen. Ziel: Realisierung der AquaVentus-Vision von 10 GW Offshore-Elektrolysekapazität bis 2035.",
+      "pdf": "/downloads/studien/aquaductus-short-study-de.pdf",
+      "pdfEn": "/downloads/studien/aquaductus-short-study-en.pdf",
+      "bild": "/images/studien/afry-deckblatt.png"
+    },
+    {
+      "titel": "Hydrographischer Fußabdruck der Offshore-Wasserstoffproduktion",
+      "datum": "2025-01",
+      "datumLabel": "2025",
+      "quelle": "npj Ocean Sustainability (Nature)",
+      "beschreibung": "Wissenschaftliche Studie des Helmholtz-Zentrums Hereon über die hydrographischen Auswirkungen der Offshore-Wasserstoffproduktion in der Nordsee. Abwärme verursacht lokale Temperaturänderungen von bis zu 2 °C im Umkreis von Zehnern von Metern um eine 500-MW-Anlage. Großräumige Effekte sind gering und vernachlässigbar gegenüber Offshore-Windpark-Nachlaufeffekten.",
+      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf"
+    },
+    {
+      "titel": "Kombinierte Anschlusskonzepte für die Wasserstofferzeugung auf See",
+      "datum": "2025-01",
+      "datumLabel": "1/2025",
+      "quelle": "VIK Mitteilungen",
+      "beschreibung": "Fachartikel von Robert Seehawer und Dr. Benjamin Baur über kombinierte Anschlusskonzepte als Schlüssel zur Offshore-Wasserstofferzeugung. Die Autoren erläutern die Vorteile hybrider Transportinfrastruktur (Seekabel + Pipeline), die Kosteneinsparungen gegenüber separaten Systemen und die Bedeutung für die energieintensive Industrie.",
+      "pdf": "/downloads/studien/vik-mitteilungen-2025.pdf",
+      "bild": "/images/studien/vik-deckblatt.png"
+    },
+    {
+      "titel": "Offshore-Wasserstoff im Spannungsbogen internationaler Politik",
+      "datum": "2024-06",
+      "datumLabel": "2024",
+      "quelle": "KlimR — Zeitschrift für Klimaschutzrecht",
+      "beschreibung": "Fachbeitrag von Dr. Benjamin Baur und Robert Seehawer (AquaVentus) über die Offshore-Wasserstoff-Produktion im Kontext internationaler Politik und nationaler Ausbaupfade. Die Analyse beleuchtet die geoenergetische Dimension der Nordsee-Wasserstoffproduktion, den Status quo der deutschen Offshore-Wasserstoff-Wirtschaft und die AquaVentus-Projektfamilie.",
+      "pdf": "/downloads/studien/klimr-2024.pdf"
+    },
+    {
+      "titel": "H₂ aus der Nordsee — AquaVentus und seine Projekte",
+      "datum": "2023-11",
+      "datumLabel": "11-12/2023",
+      "quelle": "gwf Gas + Energie",
+      "beschreibung": "Ausführlicher Fachartikel über das AquaVentus-Projekt und seine Pionierprojekte. Der Beitrag beschreibt die Initiative für 10 GW Offshore-Elektrolyse bis 2035, das 1-GW-Testfeld SEN-1, die AquaDuctus-Pipeline sowie die Rolle der Offshore-Elektrolyse als integraler Bestandteil einer grünen Wasserstoffversorgung.",
+      "pdf": "/downloads/studien/gwf-gas-2023.pdf"
     }
   ]
 }

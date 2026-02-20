@@ -4,29 +4,81 @@
       "titel": "Reducing system costs through offshore sector coupling — up to EUR 1.7 bn/year",
       "datum": "2025-11",
       "datumLabel": "November 2025",
-      "quelle": "Frontier Economics Study",
-      "beschreibung": "The Frontier Economics study demonstrates that offshore sector coupling can reduce system costs by up to EUR 1.7 billion per year."
+      "quelle": "Frontier Economics",
+      "beschreibung": "The Frontier Economics study demonstrates that offshore sector coupling can reduce system costs by up to EUR 1.7 billion per year. The analysis shows that combined electricity and hydrogen transport systems are the most cost-effective solution for distant offshore wind areas. Results are robust across various sensitivity analyses.",
+      "pdf": "/downloads/studien/frontier-economics-2025-en.pdf",
+      "pdfDe": "/downloads/studien/frontier-economics-2025-de.pdf"
     },
     {
       "titel": "Combined transport systems reduce expansion costs by EUR 31 bn",
       "datum": "2024-09",
       "datumLabel": "September 2024",
-      "quelle": "Brief study",
-      "beschreibung": "Combined transport and connection concepts for offshore hydrogen can reduce expansion costs by EUR 31 billion."
+      "quelle": "E-Bridge Consulting",
+      "beschreibung": "The E-Bridge study evaluates connection concepts for distant offshore wind areas in the German North Sea. Combined transport and connection concepts can reduce expansion costs by EUR 31 billion. The 88-page study examines energy scenarios, connection concepts, cost analyses as well as environmental and legal aspects.",
+      "pdf": "/downloads/studien/kurzstudie-2024-en.pdf",
+      "pdfDe": "/downloads/studien/kurzstudie-2024-de.pdf",
+      "bild": "/images/studien/kurzstudie-2024-en.png"
     },
     {
-      "titel": "Hydrogen production at sea — significant potential confirmed",
+      "titel": "German Offshore Energy Islands in the European Energy System",
+      "datum": "2024-09",
+      "datumLabel": "September 2024",
+      "quelle": "Fraunhofer IEE",
+      "beschreibung": "The Fraunhofer IEE study analyses the role of German offshore energy islands in the European energy system. Commissioned by Copenhagen Energy Islands ApS, it examines how artificial energy islands in the North Sea can serve as hubs for wind energy generation and hydrogen production.",
+      "pdf": "/downloads/studien/fraunhofer-iee-energy-islands-2024.pdf",
+      "bild": "/images/studien/fraunhofer-deckblatt.png"
+    },
+    {
+      "titel": "European Offshore Hydrogen Backbone — significant potential confirmed",
       "datum": "2023-02",
       "datumLabel": "February 2023",
-      "quelle": "DNV Study",
-      "beschreibung": "The DNV study confirms the significant potential of hydrogen production at sea and examines both technical and economic feasibility."
+      "quelle": "DNV",
+      "beschreibung": "The DNV study specifies a European offshore hydrogen backbone network and confirms the significant potential of hydrogen production at sea. It examines hydrogen demand, production potentials and the comparison of onshore vs. offshore production. The backbone connects production sites in the North Sea with consumption centres onshore.",
+      "pdf": "/downloads/studien/dnv-offshore-hydrogen-backbone.pdf",
+      "bild": "/images/studien/dnv-deckblatt.png"
     },
     {
       "titel": "Clear advantages of hydrogen production at sea",
       "datum": "2022-03",
       "datumLabel": "March 2022",
-      "quelle": "AquaDuctus Short Study",
-      "beschreibung": "The brief study demonstrates clear advantages of decentralised hydrogen production at sea compared to centralised onshore solutions."
+      "quelle": "AFRY Management Consulting",
+      "beschreibung": "The AFRY study compares system variants for hydrogen supply from offshore wind power. Commissioned by RWE, Gasunie, Gascade, Equinor and Shell, it demonstrates clear advantages of decentralised hydrogen production at sea compared to centralised onshore solutions. Target: realisation of the AquaVentus vision of 10 GW offshore electrolysis capacity by 2035.",
+      "pdf": "/downloads/studien/aquaductus-short-study-en.pdf",
+      "pdfDe": "/downloads/studien/aquaductus-short-study-de.pdf",
+      "bild": "/images/studien/afry-deckblatt.png"
+    },
+    {
+      "titel": "Hydrographic footprint of offshore hydrogen production",
+      "datum": "2025-01",
+      "datumLabel": "2025",
+      "quelle": "npj Ocean Sustainability (Nature)",
+      "beschreibung": "Scientific study by the Helmholtz-Zentrum Hereon on the hydrographic impact of offshore hydrogen production in the North Sea. Waste heat causes local temperature changes of up to 2 °C within tens of metres of a 500 MW plant. Large-scale effects are minor and negligible compared to offshore wind farm wake effects.",
+      "pdf": "/downloads/studien/nature-npj-offshore-hydrogen-2025.pdf"
+    },
+    {
+      "titel": "Combined connection concepts for offshore hydrogen production",
+      "datum": "2025-01",
+      "datumLabel": "1/2025",
+      "quelle": "VIK Mitteilungen",
+      "beschreibung": "Technical article by Robert Seehawer and Dr. Benjamin Baur on combined connection concepts as the key to offshore hydrogen production. The authors explain the advantages of hybrid transport infrastructure (subsea cable + pipeline), cost savings compared to separate systems and the significance for energy-intensive industry.",
+      "pdf": "/downloads/studien/vik-mitteilungen-2025.pdf",
+      "bild": "/images/studien/vik-deckblatt.png"
+    },
+    {
+      "titel": "Offshore hydrogen in the context of international policy",
+      "datum": "2024-06",
+      "datumLabel": "2024",
+      "quelle": "KlimR — Journal for Climate Protection Law",
+      "beschreibung": "Technical article by Dr. Benjamin Baur and Robert Seehawer (AquaVentus) on offshore hydrogen production in the context of international policy and national expansion paths. The analysis examines the geoenergetic dimension of North Sea hydrogen production, the status quo of Germany's offshore hydrogen industry and the AquaVentus project family.",
+      "pdf": "/downloads/studien/klimr-2024.pdf"
+    },
+    {
+      "titel": "H₂ from the North Sea — AquaVentus and its projects",
+      "datum": "2023-11",
+      "datumLabel": "11-12/2023",
+      "quelle": "gwf Gas + Energie",
+      "beschreibung": "Detailed technical article on the AquaVentus project and its pioneer projects. The article describes the initiative for 10 GW offshore electrolysis by 2035, the 1 GW test field SEN-1, the AquaDuctus pipeline and the role of offshore electrolysis as an integral part of a green hydrogen supply chain.",
+      "pdf": "/downloads/studien/gwf-gas-2023.pdf"
     }
   ]
 }

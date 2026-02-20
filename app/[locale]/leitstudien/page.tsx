@@ -10,6 +10,10 @@ interface Studie {
   datumLabel: string;
   quelle: string;
   beschreibung: string;
+  pdf?: string;
+  pdfEn?: string;
+  pdfDe?: string;
+  bild?: string;
 }
 
 export async function generateMetadata({
@@ -40,7 +44,7 @@ export default async function LeitstudienPage({
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 md:grid-cols-2">
             {data.leitstudien.map((studie) => (
-              <StudyCard key={studie.datum} {...studie} />
+              <StudyCard key={studie.datum + studie.quelle} {...studie} />
             ))}
           </div>
         </div>
