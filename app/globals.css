@@ -451,3 +451,163 @@
     animation: none;
   }
 }
+
+/* ===== Glass Wave Background ===== */
+
+.glass-waves {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.glass-wave {
+  position: absolute;
+  border-radius: var(--wave-br);
+  filter: blur(var(--wave-blur, 60px));
+  will-change: transform;
+  opacity: 0;
+}
+
+/* Light mode — subtle, barely perceptible */
+.glass-wave-1 {
+  background: linear-gradient(
+    135deg,
+    oklch(0.78 0.08 var(--theme-hue) / 50%),
+    oklch(0.82 0.06 var(--theme-accent-hue) / 25%),
+    transparent
+  );
+  opacity: 0.07;
+  animation: waveFloat1 45s ease-in-out infinite;
+}
+
+.glass-wave-2 {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.80 0.07 var(--theme-accent-hue) / 45%),
+    oklch(0.75 0.09 var(--theme-hue) / 20%),
+    transparent
+  );
+  opacity: 0.06;
+  animation: waveFloat2 55s ease-in-out infinite;
+}
+
+.glass-wave-3 {
+  background: linear-gradient(
+    90deg,
+    oklch(0.82 0.06 var(--theme-hue) / 40%),
+    oklch(0.78 0.07 var(--theme-accent-hue) / 20%),
+    transparent 70%
+  );
+  opacity: 0.05;
+  animation: waveFloat3 65s ease-in-out infinite;
+}
+
+.glass-wave-4 {
+  background: linear-gradient(
+    180deg,
+    oklch(0.76 0.07 var(--theme-hue) / 35%),
+    transparent 80%
+  );
+  opacity: 0.04;
+  animation: waveFloat4 50s ease-in-out infinite;
+}
+
+/* Dark mode — prominent aurora/ribbon effect */
+.dark .glass-wave-1 {
+  background: linear-gradient(
+    135deg,
+    oklch(0.35 0.14 var(--theme-hue) / 55%),
+    oklch(0.30 0.12 var(--theme-accent-hue) / 30%),
+    transparent
+  );
+  opacity: 0.15;
+}
+
+.dark .glass-wave-2 {
+  background: linear-gradient(
+    -45deg,
+    oklch(0.32 0.13 var(--theme-accent-hue) / 50%),
+    oklch(0.28 0.10 var(--theme-hue) / 25%),
+    transparent
+  );
+  opacity: 0.12;
+}
+
+.dark .glass-wave-3 {
+  background: linear-gradient(
+    90deg,
+    oklch(0.30 0.11 var(--theme-hue) / 45%),
+    oklch(0.25 0.09 var(--theme-accent-hue) / 22%),
+    transparent 70%
+  );
+  opacity: 0.10;
+}
+
+.dark .glass-wave-4 {
+  background: linear-gradient(
+    180deg,
+    oklch(0.33 0.12 var(--theme-hue) / 40%),
+    transparent 80%
+  );
+  opacity: 0.08;
+}
+
+/* Wave drift animations — slow, organic, ocean-like */
+@keyframes waveFloat1 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  20%  { transform: translate(3vw, 2vh) rotate(1.5deg); }
+  40%  { transform: translate(-1vw, -2vh) rotate(-0.5deg); }
+  60%  { transform: translate(-3vw, 1vh) rotate(-1.5deg); }
+  80%  { transform: translate(2vw, 3vh) rotate(1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes waveFloat2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  16%  { transform: translate(-4vw, 1vh) rotate(-2deg); }
+  33%  { transform: translate(2vw, -2vh) rotate(1deg); }
+  50%  { transform: translate(-1vw, 3vh) rotate(-1.5deg); }
+  66%  { transform: translate(3vw, -1vh) rotate(2deg); }
+  83%  { transform: translate(-2vw, 2vh) rotate(-0.5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes waveFloat3 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(2vw, -3vh) rotate(1deg); }
+  50%  { transform: translate(-3vw, 2vh) rotate(-2deg); }
+  75%  { transform: translate(1vw, -1vh) rotate(0.5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes waveFloat4 {
+  0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+  25%  { transform: translate(-2vw, -2vh) rotate(-1deg) scale(1.02); }
+  50%  { transform: translate(3vw, 1vh) rotate(1.5deg) scale(0.98); }
+  75%  { transform: translate(-1vw, 3vh) rotate(-0.5deg) scale(1.01); }
+  100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+}
+
+/* Mobile — reduced intensity */
+@media (max-width: 768px) {
+  .glass-wave {
+    filter: blur(calc(var(--wave-blur, 60px) * 0.6));
+  }
+  .glass-wave-1 { opacity: 0.04; }
+  .glass-wave-2 { opacity: 0.03; }
+  .glass-wave-3 { opacity: 0.03; }
+  .glass-wave-4 { opacity: 0.02; }
+  .dark .glass-wave-1 { opacity: 0.08; }
+  .dark .glass-wave-2 { opacity: 0.06; }
+  .dark .glass-wave-3 { opacity: 0.05; }
+  .dark .glass-wave-4 { opacity: 0.04; }
+}
+
+/* Reduced motion for waves */
+@media (prefers-reduced-motion: reduce) {
+  .glass-wave {
+    animation: none !important;
+  }
+}

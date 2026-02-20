@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import Fireflies from "@/components/Fireflies";
+import GlassWaves from "@/components/GlassWaves";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
             <Navigation />
+            <GlassWaves />
             <Fireflies />
             <main className="relative z-10 min-h-[calc(100vh-4rem)]">{children}</main>
             <Footer />
