@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Waves } from "lucide-react";
+import { Waves, Instagram, Linkedin } from "lucide-react";
 import { loadContent } from "@/lib/content";
 
 interface NavItem {
@@ -34,6 +34,26 @@ export default function Footer() {
               <br />
               {t("tagline2")}
             </p>
+            <div className="mt-4 flex gap-3">
+              <a
+                href="https://www.instagram.com/aquaventus_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/aquaventus-f%C3%B6rderverein"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           <div>
