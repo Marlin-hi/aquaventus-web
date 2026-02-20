@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe, Instagram, Linkedin } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -143,6 +143,33 @@ export default async function KontaktPage({
               <CardContent>
                 <a href="https://aquaventus.org" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline">
                   aquaventus.org
+                </a>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center gap-2 text-base">
+                  {t("social")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/company/aquaventus-f%C3%B6rderverein"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-primary hover:underline"
+                >
+                  <Linkedin className="h-5 w-5" />
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/aquaventus_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-primary hover:underline"
+                >
+                  <Instagram className="h-5 w-5" />
+                  Instagram
                 </a>
               </CardContent>
             </Card>
