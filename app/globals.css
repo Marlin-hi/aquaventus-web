@@ -716,6 +716,8 @@
 
 /* Dark mode — glowing glass panes (no backdrop-filter → blurbar by card) */
 .dark .glass-sharp-1 {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   background: linear-gradient(
     110deg,
     oklch(0.25 0.08 var(--theme-hue) / 25%),
@@ -729,6 +731,8 @@
 }
 
 .dark .glass-sharp-2 {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   background: linear-gradient(
     -70deg,
     oklch(0.22 0.07 var(--theme-accent-hue) / 20%),
@@ -741,6 +745,8 @@
 }
 
 .dark .glass-sharp-3 {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   background: linear-gradient(
     95deg,
     oklch(0.28 0.09 var(--theme-hue) / 22%),
