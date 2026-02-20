@@ -55,7 +55,8 @@
     "warumTitel": "Warum Mitglied werden?",
     "warumText": "Sieben gute Gründe, Teil von AquaVentus zu werden.",
     "arbeitsgruppenTitel": "Arbeitsgruppen",
-    "jetztMitglied": "Jetzt Mitglied werden"
+    "jetztMitglied": "Jetzt Mitglied werden",
+    "aquaSummitMehr": "Mehr erfahren"
   },
   "ueberUns": {
     "title": "Über uns",
@@ -118,6 +119,14 @@
     "tiefsee": "Tiefsee",
     "kuestennebel": "Nebel",
     "polarlicht": "Polarlicht"
+  },
+  "aquasummit": {
+    "title": "AquaSummit",
+    "description": "Der AquaSummit — das exklusive Jahrestreffen der Offshore-Wasserstoffwirtschaft.",
+    "heroTitel": "AquaSummit",
+    "heroUntertitel": "Das exklusive Jahrestreffen der Offshore-Wasserstoffwirtschaft — wo Entscheider aus Industrie, Politik und Wissenschaft zusammenkommen.",
+    "galerieTitel": "Impressionen",
+    "mitgliedCta": "Jetzt Mitglied werden"
   },
   "search": {
     "label": "Suche",

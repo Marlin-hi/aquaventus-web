@@ -121,21 +121,21 @@ export default async function MitgliedschaftPage({
 
       {/* AquaSummit */}
       <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl text-center">
-          <Sparkles className="mx-auto mb-4 h-10 w-10 text-primary" />
-          <h2 className="mb-4 text-3xl font-bold">AquaSummit</h2>
+        <Link href={`/${locale}/aquasummit`} className="mx-auto block max-w-4xl text-center group">
+          <Sparkles className="mx-auto mb-4 h-10 w-10 text-primary transition-transform duration-300 group-hover:scale-110" />
+          <h2 className="mb-4 text-3xl font-bold group-hover:text-primary transition-colors duration-300">AquaSummit</h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
             {data.aquaSummit.beschreibung}
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="gap-2">
-              <Link href={`/${locale}/kontakt`}>
-                {t("jetztMitglied")}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              <span>
+                {t("aquaSummitMehr")}
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
             </Button>
           </div>
-        </div>
+        </Link>
       </section>
     </>
   );

@@ -55,7 +55,8 @@
     "warumTitel": "Why Become a Member?",
     "warumText": "Seven good reasons to join AquaVentus.",
     "arbeitsgruppenTitel": "Working Groups",
-    "jetztMitglied": "Join Now"
+    "jetztMitglied": "Join Now",
+    "aquaSummitMehr": "Learn More"
   },
   "ueberUns": {
     "title": "About Us",
@@ -118,6 +119,14 @@
     "tiefsee": "Deep Sea",
     "kuestennebel": "Fog",
     "polarlicht": "Aurora"
+  },
+  "aquasummit": {
+    "title": "AquaSummit",
+    "description": "The AquaSummit — the exclusive annual gathering of the offshore hydrogen economy.",
+    "heroTitel": "AquaSummit",
+    "heroUntertitel": "The exclusive annual gathering of the offshore hydrogen economy — where decision-makers from industry, politics and science come together.",
+    "galerieTitel": "Impressions",
+    "mitgliedCta": "Become a Member"
   },
   "search": {
     "label": "Search",
