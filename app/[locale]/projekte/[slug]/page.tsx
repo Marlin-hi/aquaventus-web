@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,6 +23,8 @@ interface Projekt {
   status: string;
   kategorie: string;
   fakten?: Fakt[];
+  bild?: string;
+  bilder?: string[];
 }
 
 interface PageProps {
@@ -79,6 +82,21 @@ export default async function ProjektDetailPage({ params }: PageProps) {
         </div>
       </section>
 
+      {projekt.bild && (
+        <section className="px-6 pt-12">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-xl">
+            <Image
+              src={projekt.bild}
+              alt={projekt.name}
+              width={1200}
+              height={600}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
+        </section>
+      )}
+
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-12 lg:grid-cols-[1fr_320px]">
@@ -109,6 +127,26 @@ export default async function ProjektDetailPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {projekt.bilder && projekt.bilder.length > 0 && (
+        <section className="px-6 pb-20">
+          <div className="mx-auto max-w-4xl">
+            <div className="grid gap-4 sm:grid-cols-2">
+              {projekt.bilder.map((bild) => (
+                <div key={bild} className="overflow-hidden rounded-xl">
+                  <Image
+                    src={bild}
+                    alt={projekt.name}
+                    width={600}
+                    height={400}
+                    className="w-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

@@ -2,7 +2,8 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Waves, Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 import { loadContent } from "@/lib/content";
 
 interface NavItem {
@@ -26,8 +27,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <Link href="/" className="flex items-center gap-2 text-lg font-bold text-primary">
-              <Waves className="h-6 w-6" />
-              <span>AquaVentus</span>
+              <Image src="/images/logo/aquaventus-logo.png" alt="AquaVentus" width={140} height={40} className="h-10 w-auto" />
             </Link>
             <p className="mt-3 text-sm text-muted-foreground">
               {t("tagline1")}
