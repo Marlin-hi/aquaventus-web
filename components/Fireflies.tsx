@@ -7,9 +7,10 @@ import { useEffect, useState, useMemo } from "react";
 const HUES = [185, 190, 195, 210, 215, 275, 280];
 
 const SWARMS = [
-  { drift: "drift-a", top: "15%", left: "10%", dur: "95s", depth: 0.15, count: 18 },
-  { drift: "drift-b", top: "45%", left: "55%", dur: "85s", depth: 0.25, count: 14 },
-  { drift: "drift-c", top: "30%", left: "35%", dur: "105s", depth: 0.35, count: 12 },
+  { drift: "drift-a", top: "10%", left: "5%", dur: "95s", depth: 0.15, count: 22 },
+  { drift: "drift-b", top: "50%", left: "60%", dur: "85s", depth: 0.30, count: 18 },
+  { drift: "drift-c", top: "25%", left: "35%", dur: "105s", depth: 0.45, count: 16 },
+  { drift: "drift-a", top: "70%", left: "15%", dur: "110s", depth: 0.20, count: 14 },
 ];
 
 function generateFlies(swarmIndex: number, count: number) {
@@ -23,8 +24,8 @@ function generateFlies(swarmIndex: number, count: number) {
     };
     flies.push({
       hue: HUES[(seed + i) % HUES.length],
-      ox: `${Math.floor((rand(1) - 0.5) * 500)}px`,
-      oy: `${Math.floor((rand(2) - 0.5) * 500)}px`,
+      ox: `${Math.floor((rand(1) - 0.5) * 700)}px`,
+      oy: `${Math.floor((rand(2) - 0.5) * 700)}px`,
       glowDur: `${(5 + rand(3) * 12).toFixed(1)}s`,
       fdur: `${(8 + rand(4) * 6).toFixed(1)}s`,
     });
