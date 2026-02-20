@@ -97,7 +97,7 @@
   --theme-accent-hue: 270;
   --background: oklch(0.13 0.015 var(--theme-hue));
   --foreground: oklch(0.95 0.01 var(--theme-hue));
-  --card: oklch(0.17 0.02 var(--theme-hue) / 38%);
+  --card: oklch(0.17 0.02 var(--theme-hue) / 60%);
   --card-foreground: oklch(0.95 0.01 var(--theme-hue));
   --popover: oklch(0.17 0.02 var(--theme-hue) / 80%);
   --popover-foreground: oklch(0.95 0.01 var(--theme-hue));
@@ -336,12 +336,12 @@
 }
 
 .dark [data-slot="card"] {
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border: 1px solid oklch(0.60 0.12 var(--theme-hue) / 22%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid oklch(0.55 0.10 var(--theme-hue) / 18%);
   box-shadow:
-    0 0 1px oklch(0.72 0.15 var(--theme-hue) / 15%),
-    inset 0 1px 0 oklch(0.80 0.10 var(--theme-hue) / 12%),
+    0 0 1px oklch(0.72 0.15 var(--theme-hue) / 12%),
+    inset 0 1px 0 oklch(0.80 0.10 var(--theme-hue) / 8%),
     0 8px 32px oklch(0.10 0.02 var(--theme-hue) / 50%);
 }
 
@@ -714,10 +714,8 @@
   animation: sharpDrift3 70s ease-in-out infinite;
 }
 
-/* Dark mode — glowing glass panes with visible edges */
+/* Dark mode — glowing glass panes (no backdrop-filter → blurbar by card) */
 .dark .glass-sharp-1 {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   background: linear-gradient(
     110deg,
     oklch(0.25 0.08 var(--theme-hue) / 25%),
@@ -731,8 +729,6 @@
 }
 
 .dark .glass-sharp-2 {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   background: linear-gradient(
     -70deg,
     oklch(0.22 0.07 var(--theme-accent-hue) / 20%),
@@ -745,8 +741,6 @@
 }
 
 .dark .glass-sharp-3 {
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   background: linear-gradient(
     95deg,
     oklch(0.28 0.09 var(--theme-hue) / 22%),
