@@ -17,13 +17,11 @@ export default function GlassWaves() {
       const y = window.scrollY;
       for (let i = 0; i < wavesRef.current.length; i++) {
         const el = wavesRef.current[i];
-        if (el) el.style.transform = `translateY(${y * WAVE_SPEEDS[i]}px)`;
+        if (el) el.style.translate = `0 ${y * WAVE_SPEEDS[i]}px`;
       }
       for (let i = 0; i < sharpsRef.current.length; i++) {
         const el = sharpsRef.current[i];
-        if (el) {
-          el.style.transform = `rotate(${SHARP_ROTATIONS[i]}deg) translateY(${y * SHARP_SPEEDS[i]}px)`;
-        }
+        if (el) el.style.translate = `0 ${y * SHARP_SPEEDS[i]}px`;
       }
     });
   }, []);
