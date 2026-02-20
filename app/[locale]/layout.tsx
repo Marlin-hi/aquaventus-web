@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -60,6 +61,11 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{
             __html: `try{var t=localStorage.getItem("color-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}`,
           }}
+        />
+        <Script
+          src="/umami/script.js"
+          data-website-id="564ad722-d0b2-430d-a77b-42fcbd994781"
+          strategy="afterInteractive"
         />
       </head>
       <body
