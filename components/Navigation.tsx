@@ -9,6 +9,7 @@ import { Menu, X, Waves, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { loadContent } from "@/lib/content";
 import SearchDialog from "@/components/SearchDialog";
+import ColorThemeSwitcher from "@/components/ColorThemeSwitcher";
 
 interface NavItem {
   label: string;
@@ -80,6 +81,9 @@ export default function Navigation() {
             )}
           </button>
 
+          {/* Color Theme Switcher */}
+          <ColorThemeSwitcher />
+
           {/* Language Switcher */}
           <div className="flex items-center gap-1 text-xs">
             <button
@@ -122,6 +126,8 @@ export default function Navigation() {
               <Moon className="h-4 w-4" />
             )}
           </button>
+          {/* Color Theme Switcher Mobile */}
+          <ColorThemeSwitcher />
           {/* Language Switcher Mobile */}
           <div className="flex items-center gap-1 text-xs">
             <button

@@ -110,6 +110,14 @@
     "menuLabel": "Menü",
     "themeToggle": "Dunkelmodus umschalten"
   },
+  "themes": {
+    "label": "Farbschema wählen",
+    "nordsee": "Nordsee",
+    "wasserstoff": "H₂",
+    "tiefstrom": "Tiefstrom",
+    "windkraft": "Windkraft",
+    "arktis": "Arktis"
+  },
   "search": {
     "label": "Suche",
     "placeholder": "Suchen...",

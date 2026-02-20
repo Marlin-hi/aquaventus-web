@@ -2,9 +2,15 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState, useMemo } from "react";
+import { useColorTheme, type ColorTheme } from "./ColorThemeProvider";
 
-// Hue palette: turquoise, blue, light violet
-const HUES = [185, 190, 195, 210, 215, 275, 280];
+const THEME_HUES: Record<ColorTheme, number[]> = {
+  nordsee:     [185, 190, 195, 210, 215, 275, 280],
+  wasserstoff: [120, 135, 145, 155, 165, 175, 190],
+  tiefstrom:   [245, 255, 265, 275, 285, 295, 310],
+  windkraft:   [25, 35, 45, 55, 65, 75, 85],
+  arktis:      [195, 200, 205, 210, 215, 220, 230],
+};
 
 const SWARMS = [
   { drift: "drift-a", top: "10%", left: "5%", dur: "95s", depth: 0.15, count: 22 },
@@ -13,17 +19,16 @@ const SWARMS = [
   { drift: "drift-a", top: "70%", left: "15%", dur: "110s", depth: 0.20, count: 14 },
 ];
 
-function generateFlies(swarmIndex: number, count: number) {
+function generateFlies(swarmIndex: number, count: number, hues: number[]) {
   const flies = [];
   for (let i = 0; i < count; i++) {
-    // Deterministic pseudo-random based on indices
     const seed = swarmIndex * 100 + i;
     const rand = (n: number) => {
       const x = Math.sin(seed * 9301 + n * 49297) * 49297;
       return x - Math.floor(x);
     };
     flies.push({
-      hue: HUES[(seed + i) % HUES.length],
+      hue: hues[(seed + i) % hues.length],
       ox: `${Math.floor((rand(1) - 0.5) * 700)}px`,
       oy: `${Math.floor((rand(2) - 0.5) * 700)}px`,
       glowDur: `${(5 + rand(3) * 12).toFixed(1)}s`,
@@ -35,20 +40,25 @@ function generateFlies(swarmIndex: number, count: number) {
 
 export default function Fireflies() {
   const { resolvedTheme } = useTheme();
+  const { colorTheme } = useColorTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
+  const hues = THEME_HUES[colorTheme] ?? THEME_HUES.nordsee;
+
   const swarmData = useMemo(
-    () => SWARMS.map((s, i) => ({ ...s, flies: generateFlies(i, s.count) })),
-    []
+    () => SWARMS.map((s, i) => ({ ...s, flies: generateFlies(i, s.count, hues) })),
+    [hues]
   );
 
-  if (!mounted || resolvedTheme !== "dark") return null;
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === "dark";
 
   return (
     <div className="fireflies" aria-hidden="true">
-      {swarmData.map((swarm, si) => (
+      {isDark && swarmData.map((swarm, si) => (
         <div
           key={si}
           className={`swarm ${swarm.drift}`}

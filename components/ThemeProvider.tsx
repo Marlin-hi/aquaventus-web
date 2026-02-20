@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { ColorThemeProvider } from "./ColorThemeProvider";
 
 export default function ThemeProvider({
   children,
@@ -14,7 +15,7 @@ export default function ThemeProvider({
       enableSystem
       disableTransitionOnChange
     >
-      {children}
+      <ColorThemeProvider>{children}</ColorThemeProvider>
     </NextThemesProvider>
   );
 }

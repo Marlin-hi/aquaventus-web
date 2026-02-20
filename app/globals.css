@@ -47,26 +47,36 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+/* ================================================================
+   Color Themes — parametric via --theme-hue / --theme-accent-hue
+   Switch: data-theme="name" on <html>
+   Default: Nordsee (no attribute needed)
+   ================================================================ */
+
+/* ===== Default: Nordsee — Blue / Turquoise ===== */
+
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.985 0.002 240);
-  --foreground: oklch(0.17 0.02 250);
+  --theme-hue: 245;
+  --theme-accent-hue: 200;
+  --background: oklch(0.985 0.002 var(--theme-hue));
+  --foreground: oklch(0.17 0.02 var(--theme-hue));
   --card: oklch(1 0 0 / 70%);
-  --card-foreground: oklch(0.17 0.02 250);
+  --card-foreground: oklch(0.17 0.02 var(--theme-hue));
   --popover: oklch(1 0 0 / 85%);
-  --popover-foreground: oklch(0.17 0.02 250);
-  --primary: oklch(0.45 0.17 245);
+  --popover-foreground: oklch(0.17 0.02 var(--theme-hue));
+  --primary: oklch(0.45 0.17 var(--theme-hue));
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.95 0.02 240);
-  --secondary-foreground: oklch(0.25 0.05 245);
-  --muted: oklch(0.95 0.01 240);
-  --muted-foreground: oklch(0.50 0.03 250);
-  --accent: oklch(0.62 0.17 200);
+  --secondary: oklch(0.95 0.02 var(--theme-hue));
+  --secondary-foreground: oklch(0.25 0.05 var(--theme-hue));
+  --muted: oklch(0.95 0.01 var(--theme-hue));
+  --muted-foreground: oklch(0.50 0.03 var(--theme-hue));
+  --accent: oklch(0.62 0.17 var(--theme-accent-hue));
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.02 240);
-  --input: oklch(0.90 0.02 240);
-  --ring: oklch(0.55 0.15 245);
+  --border: oklch(0.90 0.02 var(--theme-hue));
+  --input: oklch(0.90 0.02 var(--theme-hue));
+  --ring: oklch(0.55 0.15 var(--theme-hue));
   --chart-1: oklch(0.45 0.17 245);
   --chart-2: oklch(0.62 0.17 200);
   --chart-3: oklch(0.55 0.12 160);
@@ -83,57 +93,143 @@
 }
 
 .dark {
-  /* Deep dark with subtle ocean-blue tint */
-  --background: oklch(0.13 0.015 230);
-  --foreground: oklch(0.95 0.01 220);
-
-  /* Cards: semi-transparent for glassmorphism */
-  --card: oklch(0.17 0.02 230 / 60%);
-  --card-foreground: oklch(0.95 0.01 220);
-
-  /* Popovers/dialogs: slightly more opaque */
-  --popover: oklch(0.17 0.02 230 / 80%);
-  --popover-foreground: oklch(0.95 0.01 220);
-
-  /* Primary: turquoise/cyan accent */
-  --primary: oklch(0.72 0.15 195);
-  --primary-foreground: oklch(0.95 0.01 220);
-
-  /* Secondary: dark teal surface */
-  --secondary: oklch(0.22 0.025 220);
-  --secondary-foreground: oklch(0.90 0.02 210);
-
-  /* Muted: subdued teal-gray */
-  --muted: oklch(0.20 0.02 225);
-  --muted-foreground: oklch(0.65 0.03 220);
-
-  /* Accent: light violet for highlights */
-  --accent: oklch(0.25 0.04 270);
-  --accent-foreground: oklch(0.92 0.02 260);
-
+  --theme-hue: 195;
+  --theme-accent-hue: 270;
+  --background: oklch(0.13 0.015 var(--theme-hue));
+  --foreground: oklch(0.95 0.01 var(--theme-hue));
+  --card: oklch(0.17 0.02 var(--theme-hue) / 60%);
+  --card-foreground: oklch(0.95 0.01 var(--theme-hue));
+  --popover: oklch(0.17 0.02 var(--theme-hue) / 80%);
+  --popover-foreground: oklch(0.95 0.01 var(--theme-hue));
+  --primary: oklch(0.72 0.15 var(--theme-hue));
+  --primary-foreground: oklch(0.95 0.01 var(--theme-hue));
+  --secondary: oklch(0.22 0.025 var(--theme-hue));
+  --secondary-foreground: oklch(0.90 0.02 var(--theme-hue));
+  --muted: oklch(0.20 0.02 var(--theme-hue));
+  --muted-foreground: oklch(0.65 0.03 var(--theme-hue));
+  --accent: oklch(0.25 0.04 var(--theme-accent-hue));
+  --accent-foreground: oklch(0.92 0.02 var(--theme-accent-hue));
   --destructive: oklch(0.704 0.191 22.216);
-
-  /* Borders: turquoise glow, subtle */
-  --border: oklch(0.50 0.08 195 / 15%);
-  --input: oklch(0.50 0.08 195 / 20%);
-  --ring: oklch(0.72 0.15 195);
-
-  /* Charts: turquoise/blue/violet spectrum */
+  --border: oklch(0.50 0.08 var(--theme-hue) / 15%);
+  --input: oklch(0.50 0.08 var(--theme-hue) / 20%);
+  --ring: oklch(0.72 0.15 var(--theme-hue));
   --chart-1: oklch(0.72 0.15 195);
   --chart-2: oklch(0.65 0.12 220);
   --chart-3: oklch(0.60 0.10 270);
   --chart-4: oklch(0.70 0.14 180);
   --chart-5: oklch(0.55 0.15 250);
+  --sidebar: oklch(0.12 0.015 var(--theme-hue));
+  --sidebar-foreground: oklch(0.95 0.01 var(--theme-hue));
+  --sidebar-primary: oklch(0.72 0.15 var(--theme-hue));
+  --sidebar-primary-foreground: oklch(0.95 0.01 var(--theme-hue));
+  --sidebar-accent: oklch(0.20 0.025 var(--theme-hue));
+  --sidebar-accent-foreground: oklch(0.90 0.02 var(--theme-hue));
+  --sidebar-border: oklch(0.50 0.06 var(--theme-hue) / 12%);
+  --sidebar-ring: oklch(0.72 0.15 var(--theme-hue));
+}
 
-  /* Sidebar */
-  --sidebar: oklch(0.12 0.02 230);
-  --sidebar-foreground: oklch(0.95 0.01 220);
-  --sidebar-primary: oklch(0.72 0.15 195);
-  --sidebar-primary-foreground: oklch(0.95 0.01 220);
-  --sidebar-accent: oklch(0.20 0.025 230);
-  --sidebar-accent-foreground: oklch(0.90 0.02 210);
-  --sidebar-border: oklch(0.50 0.08 195 / 12%);
-  --sidebar-ring: oklch(0.72 0.15 195);
+/* ===== Wasserstoff — Emerald Green ===== */
+
+[data-theme="wasserstoff"] {
+  --theme-hue: 155;
+  --theme-accent-hue: 185;
+  --chart-1: oklch(0.45 0.15 155);
+  --chart-2: oklch(0.55 0.15 185);
+  --chart-3: oklch(0.50 0.12 120);
+  --chart-4: oklch(0.65 0.15 200);
+  --chart-5: oklch(0.60 0.18 90);
+}
+
+[data-theme="wasserstoff"].dark {
+  --theme-hue: 155;
+  --theme-accent-hue: 130;
+  --chart-1: oklch(0.72 0.15 155);
+  --chart-2: oklch(0.65 0.12 185);
+  --chart-3: oklch(0.60 0.10 120);
+  --chart-4: oklch(0.70 0.14 200);
+  --chart-5: oklch(0.55 0.15 90);
+}
+
+/* ===== Tiefstrom — Deep Indigo / Violet ===== */
+
+[data-theme="tiefstrom"] {
+  --theme-hue: 270;
+  --theme-accent-hue: 310;
+  --primary: oklch(0.42 0.17 270);
+  --ring: oklch(0.52 0.15 270);
+  --chart-1: oklch(0.42 0.17 270);
+  --chart-2: oklch(0.55 0.15 310);
+  --chart-3: oklch(0.50 0.12 240);
+  --chart-4: oklch(0.65 0.12 200);
+  --chart-5: oklch(0.60 0.18 340);
+}
+
+[data-theme="tiefstrom"].dark {
+  --theme-hue: 270;
+  --theme-accent-hue: 310;
+  --primary: oklch(0.70 0.15 270);
+  --ring: oklch(0.70 0.15 270);
+  --chart-1: oklch(0.70 0.15 270);
+  --chart-2: oklch(0.65 0.12 310);
+  --chart-3: oklch(0.60 0.10 240);
+  --chart-4: oklch(0.70 0.10 200);
+  --chart-5: oklch(0.55 0.15 340);
+}
+
+/* ===== Windkraft — Amber Gold ===== */
+
+[data-theme="windkraft"] {
+  --theme-hue: 65;
+  --theme-accent-hue: 35;
+  --primary: oklch(0.52 0.14 65);
+  --accent: oklch(0.58 0.17 35);
+  --ring: oklch(0.55 0.14 65);
+  --chart-1: oklch(0.52 0.14 65);
+  --chart-2: oklch(0.58 0.17 35);
+  --chart-3: oklch(0.55 0.12 95);
+  --chart-4: oklch(0.65 0.14 20);
+  --chart-5: oklch(0.48 0.12 145);
+}
+
+[data-theme="windkraft"].dark {
+  --theme-hue: 65;
+  --theme-accent-hue: 35;
+  --primary: oklch(0.75 0.14 65);
+  --ring: oklch(0.75 0.14 65);
+  --chart-1: oklch(0.75 0.14 65);
+  --chart-2: oklch(0.65 0.14 35);
+  --chart-3: oklch(0.60 0.10 95);
+  --chart-4: oklch(0.70 0.12 20);
+  --chart-5: oklch(0.55 0.12 145);
+}
+
+/* ===== Arktis — Steel Blue / Frost ===== */
+
+[data-theme="arktis"] {
+  --theme-hue: 220;
+  --theme-accent-hue: 195;
+  --primary: oklch(0.42 0.10 220);
+  --accent: oklch(0.55 0.10 195);
+  --ring: oklch(0.50 0.10 220);
+  --chart-1: oklch(0.42 0.10 220);
+  --chart-2: oklch(0.55 0.10 195);
+  --chart-3: oklch(0.48 0.08 250);
+  --chart-4: oklch(0.60 0.10 175);
+  --chart-5: oklch(0.55 0.08 150);
+}
+
+[data-theme="arktis"].dark {
+  --theme-hue: 210;
+  --theme-accent-hue: 230;
+  --primary: oklch(0.72 0.08 210);
+  --ring: oklch(0.72 0.08 210);
+  --accent: oklch(0.25 0.03 230);
+  --accent-foreground: oklch(0.92 0.02 220);
+  --chart-1: oklch(0.72 0.08 210);
+  --chart-2: oklch(0.65 0.08 230);
+  --chart-3: oklch(0.60 0.06 250);
+  --chart-4: oklch(0.70 0.08 190);
+  --chart-5: oklch(0.55 0.08 170);
 }
 
 @layer base {
@@ -145,73 +241,72 @@
   }
 }
 
-/* ===== Hero dark mode — subtler gradient, more transparent ===== */
+/* ===== Hero dark mode — parameterized ===== */
 
 .dark .hero-section {
   background: linear-gradient(
     135deg,
-    oklch(0.25 0.10 195 / 60%) 0%,
-    oklch(0.18 0.08 210 / 50%) 40%,
-    oklch(0.15 0.06 260 / 40%) 100%
+    oklch(0.25 0.10 var(--theme-hue) / 60%) 0%,
+    oklch(0.18 0.08 calc(var(--theme-hue) + 20) / 50%) 40%,
+    oklch(0.15 0.06 var(--theme-accent-hue) / 40%) 100%
   );
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* ===== Glassmorphism (both modes) ===== */
+/* ===== Glassmorphism — parameterized ===== */
 
 [data-slot="card"] {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid oklch(0.45 0.10 245 / 10%);
+  border: 1px solid oklch(0.45 0.10 var(--theme-hue) / 10%);
   box-shadow:
-    0 0 1px oklch(0.45 0.10 245 / 8%),
+    0 0 1px oklch(0.45 0.10 var(--theme-hue) / 8%),
     inset 0 1px 0 oklch(1 0 0 / 40%),
-    0 8px 32px oklch(0.50 0.02 240 / 12%);
+    0 8px 32px oklch(0.50 0.02 var(--theme-hue) / 12%);
 }
 
 [data-slot="card"]:hover {
-  border-color: oklch(0.45 0.12 245 / 16%);
+  border-color: oklch(0.45 0.12 var(--theme-hue) / 16%);
   box-shadow:
-    0 0 2px oklch(0.45 0.10 245 / 12%),
-    0 0 12px oklch(0.45 0.10 245 / 4%),
+    0 0 2px oklch(0.45 0.10 var(--theme-hue) / 12%),
+    0 0 12px oklch(0.45 0.10 var(--theme-hue) / 4%),
     inset 0 1px 0 oklch(1 0 0 / 50%),
-    0 8px 32px oklch(0.50 0.02 240 / 18%);
+    0 8px 32px oklch(0.50 0.02 var(--theme-hue) / 18%);
 }
 
 [data-slot="dialog-content"] {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-color: oklch(0.45 0.10 245 / 10%);
+  border-color: oklch(0.45 0.10 var(--theme-hue) / 10%);
 }
 
-/* Dark mode: turquoise glow borders */
 .dark [data-slot="card"] {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid oklch(0.55 0.10 195 / 18%);
+  border: 1px solid oklch(0.55 0.10 var(--theme-hue) / 18%);
   box-shadow:
-    0 0 1px oklch(0.72 0.15 195 / 12%),
-    inset 0 1px 0 oklch(0.80 0.10 195 / 8%),
-    0 8px 32px oklch(0.10 0.02 230 / 50%);
+    0 0 1px oklch(0.72 0.15 var(--theme-hue) / 12%),
+    inset 0 1px 0 oklch(0.80 0.10 var(--theme-hue) / 8%),
+    0 8px 32px oklch(0.10 0.02 var(--theme-hue) / 50%);
 }
 
 .dark [data-slot="card"]:hover {
-  border-color: oklch(0.60 0.12 195 / 25%);
+  border-color: oklch(0.60 0.12 var(--theme-hue) / 25%);
   box-shadow:
-    0 0 3px oklch(0.72 0.15 195 / 20%),
-    0 0 20px oklch(0.72 0.15 195 / 8%),
-    inset 0 1px 0 oklch(0.80 0.10 195 / 12%),
-    0 8px 32px oklch(0.10 0.02 230 / 60%);
+    0 0 3px oklch(0.72 0.15 var(--theme-hue) / 20%),
+    0 0 20px oklch(0.72 0.15 var(--theme-hue) / 8%),
+    inset 0 1px 0 oklch(0.80 0.10 var(--theme-hue) / 12%),
+    0 8px 32px oklch(0.10 0.02 var(--theme-hue) / 60%);
 }
 
 .dark [data-slot="dialog-content"] {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-color: oklch(0.50 0.10 195 / 15%);
+  border-color: oklch(0.50 0.10 var(--theme-hue) / 15%);
 }
 
-/* ===== Fireflies (dark mode background) ===== */
+/* ===== Fireflies background ===== */
 
 .fireflies {
   position: fixed;
@@ -221,16 +316,25 @@
   overflow: hidden;
 }
 
-/* Ambient gradient glow — atmospheric depth like GitHub's dark theme */
+/* Ambient gradient blobs — light mode */
 .fireflies::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 20%, oklch(0.30 0.12 195 / 18%), transparent 70%),
-    radial-gradient(ellipse 60% 60% at 75% 15%, oklch(0.25 0.10 270 / 14%), transparent 65%),
-    radial-gradient(ellipse 70% 40% at 50% 80%, oklch(0.22 0.08 210 / 12%), transparent 60%),
-    radial-gradient(ellipse 50% 50% at 85% 60%, oklch(0.20 0.06 195 / 10%), transparent 55%);
+    radial-gradient(ellipse 70% 50% at 15% 20%, oklch(0.82 0.10 var(--theme-accent-hue) / 22%), transparent 65%),
+    radial-gradient(ellipse 55% 55% at 80% 15%, oklch(0.85 0.08 var(--theme-hue) / 18%), transparent 60%),
+    radial-gradient(ellipse 65% 40% at 50% 85%, oklch(0.88 0.06 calc(var(--theme-hue) + 35) / 14%), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 90% 65%, oklch(0.84 0.07 calc(var(--theme-accent-hue) + 5) / 16%), transparent 50%);
+}
+
+/* Ambient gradient blobs — dark mode */
+.dark .fireflies::before {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 20%, oklch(0.30 0.12 var(--theme-hue) / 18%), transparent 70%),
+    radial-gradient(ellipse 60% 60% at 75% 15%, oklch(0.25 0.10 var(--theme-accent-hue) / 14%), transparent 65%),
+    radial-gradient(ellipse 70% 40% at 50% 80%, oklch(0.22 0.08 calc(var(--theme-hue) + 15) / 12%), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 60%, oklch(0.20 0.06 var(--theme-hue) / 10%), transparent 55%);
 }
 
 .swarm {

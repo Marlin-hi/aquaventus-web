@@ -110,6 +110,14 @@
     "menuLabel": "Menu",
     "themeToggle": "Toggle dark mode"
   },
+  "themes": {
+    "label": "Choose color scheme",
+    "nordsee": "North Sea",
+    "wasserstoff": "H₂",
+    "tiefstrom": "Deep Current",
+    "windkraft": "Wind Power",
+    "arktis": "Arctic"
+  },
   "search": {
     "label": "Search",
     "placeholder": "Search...",
