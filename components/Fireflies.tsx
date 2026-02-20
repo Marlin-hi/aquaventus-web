@@ -5,11 +5,11 @@ import { useEffect, useState, useMemo } from "react";
 import { useColorTheme, type ColorTheme } from "./ColorThemeProvider";
 
 const THEME_HUES: Record<ColorTheme, number[]> = {
-  nordsee:     [185, 190, 195, 210, 215, 275, 280],
-  wasserstoff: [120, 135, 145, 155, 165, 175, 190],
-  tiefstrom:   [245, 255, 265, 275, 285, 295, 310],
-  windkraft:   [25, 35, 45, 55, 65, 75, 85],
-  arktis:      [195, 200, 205, 210, 215, 220, 230],
+  nordsee:      [185, 190, 195, 210, 215, 275, 280],
+  brandung:     [180, 185, 195, 200, 210, 230, 245],
+  tiefsee:      [195, 205, 215, 230, 245, 255, 265],
+  kuestennebel: [185, 190, 195, 200, 210, 220, 230],
+  polarlicht:   [195, 210, 220, 235, 250, 265, 275],
 };
 
 const SWARMS = [

@@ -6,11 +6,11 @@ import { useColorTheme, COLOR_THEMES, type ColorTheme } from "./ColorThemeProvid
 import { useTranslations } from "next-intl";
 
 const THEME_COLORS: Record<ColorTheme, { light: string; dark: string }> = {
-  nordsee:     { light: "oklch(0.45 0.17 245)", dark: "oklch(0.72 0.15 195)" },
-  wasserstoff: { light: "oklch(0.45 0.15 155)", dark: "oklch(0.72 0.15 155)" },
-  tiefstrom:   { light: "oklch(0.42 0.17 270)", dark: "oklch(0.70 0.15 270)" },
-  windkraft:   { light: "oklch(0.52 0.14 65)",  dark: "oklch(0.75 0.14 65)" },
-  arktis:      { light: "oklch(0.42 0.10 220)", dark: "oklch(0.72 0.08 210)" },
+  nordsee:      { light: "oklch(0.45 0.17 245)", dark: "oklch(0.72 0.15 195)" },
+  brandung:     { light: "oklch(0.55 0.15 235)", dark: "oklch(0.80 0.12 195)" },
+  tiefsee:      { light: "oklch(0.35 0.19 250)", dark: "oklch(0.60 0.17 205)" },
+  kuestennebel: { light: "oklch(0.50 0.08 225)", dark: "oklch(0.68 0.07 195)" },
+  polarlicht:   { light: "oklch(0.43 0.20 255)", dark: "oklch(0.72 0.18 215)" },
 };
 
 export default function ColorThemeSwitcher() {

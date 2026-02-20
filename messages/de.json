@@ -113,10 +113,10 @@
   "themes": {
     "label": "Farbschema wählen",
     "nordsee": "Nordsee",
-    "wasserstoff": "H₂",
-    "tiefstrom": "Tiefstrom",
-    "windkraft": "Windkraft",
-    "arktis": "Arktis"
+    "brandung": "Brandung",
+    "tiefsee": "Tiefsee",
+    "kuestennebel": "Nebel",
+    "polarlicht": "Polarlicht"
   },
   "search": {
     "label": "Suche",

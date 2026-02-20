@@ -113,10 +113,10 @@
   "themes": {
     "label": "Choose color scheme",
     "nordsee": "North Sea",
-    "wasserstoff": "H₂",
-    "tiefstrom": "Deep Current",
-    "windkraft": "Wind Power",
-    "arktis": "Arctic"
+    "brandung": "Surf",
+    "tiefsee": "Deep Sea",
+    "kuestennebel": "Fog",
+    "polarlicht": "Aurora"
   },
   "search": {
     "label": "Search",
