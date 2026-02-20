@@ -32,12 +32,12 @@ export default function StudyCard({
   return (
     <Card className="h-full transition-all hover:shadow-lg hover:border-primary/30">
       {bild && (
-        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-t-lg border-b border-black/5 bg-white dark:border-white/10 dark:bg-white/95">
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-t-lg">
           <Image
             src={bild}
             alt={titel}
             fill
-            className="object-contain p-2"
+            className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
