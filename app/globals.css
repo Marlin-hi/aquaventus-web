@@ -286,7 +286,16 @@
   }
 }
 
-/* ===== Hero dark mode — parameterized ===== */
+/* ===== Hero — parameterized gradient ===== */
+
+.hero-section {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    oklch(from var(--primary) l c h / 90%),
+    var(--accent)
+  );
+}
 
 .dark .hero-section {
   background: linear-gradient(
