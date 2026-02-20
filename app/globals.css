@@ -645,6 +645,126 @@
   100% { transform: translate(0, 0) rotate(0deg) scale(1); }
 }
 
+/* ===== Sharp Glass Panes — hard edges with backdrop blur ===== */
+
+.glass-sharp {
+  position: absolute;
+  border-radius: var(--sharp-br);
+  will-change: transform;
+  opacity: 0;
+}
+
+/* Light mode — very subtle frosted ribbons */
+.glass-sharp-1 {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+    110deg,
+    oklch(0.92 0.03 var(--theme-hue) / 12%),
+    oklch(0.95 0.02 var(--theme-accent-hue) / 6%),
+    transparent 70%
+  );
+  border-top: 1px solid oklch(0.80 0.04 var(--theme-hue) / 15%);
+  border-bottom: 1px solid oklch(0.85 0.03 var(--theme-hue) / 8%);
+  opacity: 0.35;
+  animation: sharpDrift1 60s ease-in-out infinite;
+}
+
+.glass-sharp-2 {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: linear-gradient(
+    -70deg,
+    oklch(0.90 0.04 var(--theme-accent-hue) / 10%),
+    oklch(0.93 0.02 var(--theme-hue) / 5%),
+    transparent 65%
+  );
+  border-top: 1px solid oklch(0.82 0.03 var(--theme-accent-hue) / 12%);
+  opacity: 0.28;
+  animation: sharpDrift2 50s ease-in-out infinite;
+}
+
+.glass-sharp-3 {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: linear-gradient(
+    95deg,
+    oklch(0.88 0.03 var(--theme-hue) / 14%),
+    transparent 60%
+  );
+  border-top: 1px solid oklch(0.78 0.04 var(--theme-hue) / 18%);
+  border-bottom: 1px solid oklch(0.82 0.03 var(--theme-accent-hue) / 10%);
+  opacity: 0.22;
+  animation: sharpDrift3 70s ease-in-out infinite;
+}
+
+/* Dark mode — glowing glass panes with visible edges */
+.dark .glass-sharp-1 {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(
+    110deg,
+    oklch(0.25 0.08 var(--theme-hue) / 25%),
+    oklch(0.20 0.06 var(--theme-accent-hue) / 12%),
+    transparent 70%
+  );
+  border-top: 1px solid oklch(0.60 0.12 var(--theme-hue) / 30%);
+  border-bottom: 1px solid oklch(0.50 0.08 var(--theme-hue) / 15%);
+  box-shadow: 0 0 30px oklch(0.50 0.12 var(--theme-hue) / 8%);
+  opacity: 0.55;
+}
+
+.dark .glass-sharp-2 {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: linear-gradient(
+    -70deg,
+    oklch(0.22 0.07 var(--theme-accent-hue) / 20%),
+    oklch(0.18 0.05 var(--theme-hue) / 10%),
+    transparent 65%
+  );
+  border-top: 1px solid oklch(0.55 0.10 var(--theme-accent-hue) / 25%);
+  box-shadow: 0 0 25px oklch(0.45 0.10 var(--theme-accent-hue) / 6%);
+  opacity: 0.45;
+}
+
+.dark .glass-sharp-3 {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: linear-gradient(
+    95deg,
+    oklch(0.28 0.09 var(--theme-hue) / 22%),
+    oklch(0.20 0.06 var(--theme-accent-hue) / 8%),
+    transparent 60%
+  );
+  border-top: 1px solid oklch(0.58 0.11 var(--theme-hue) / 28%);
+  border-bottom: 1px solid oklch(0.48 0.08 var(--theme-accent-hue) / 12%);
+  box-shadow: 0 0 35px oklch(0.48 0.11 var(--theme-hue) / 7%);
+  opacity: 0.40;
+}
+
+/* Sharp pane drift animations — slower, more linear */
+@keyframes sharpDrift1 {
+  0%   { transform: rotate(-4deg) translate(0, 0); }
+  33%  { transform: rotate(-3deg) translate(2vw, 1vh); }
+  66%  { transform: rotate(-5deg) translate(-1vw, -1vh); }
+  100% { transform: rotate(-4deg) translate(0, 0); }
+}
+
+@keyframes sharpDrift2 {
+  0%   { transform: rotate(3deg) translate(0, 0); }
+  25%  { transform: rotate(4deg) translate(-2vw, 1vh); }
+  50%  { transform: rotate(2deg) translate(1vw, -1vh); }
+  75%  { transform: rotate(3.5deg) translate(-1vw, 0.5vh); }
+  100% { transform: rotate(3deg) translate(0, 0); }
+}
+
+@keyframes sharpDrift3 {
+  0%   { transform: rotate(-2deg) translate(0, 0); }
+  50%  { transform: rotate(-1deg) translate(1.5vw, 1vh); }
+  100% { transform: rotate(-2deg) translate(0, 0); }
+}
+
 /* Mobile — reduced intensity */
 @media (max-width: 768px) {
   .glass-wave {
@@ -658,11 +778,14 @@
   .dark .glass-wave-2 { opacity: 0.12; }
   .dark .glass-wave-3 { opacity: 0.10; }
   .dark .glass-wave-4 { opacity: 0.08; }
+
+  .glass-sharp { display: none; }
 }
 
 /* Reduced motion for waves */
 @media (prefers-reduced-motion: reduce) {
-  .glass-wave {
+  .glass-wave,
+  .glass-sharp {
     animation: none !important;
   }
 }
