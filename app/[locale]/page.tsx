@@ -1,11 +1,11 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Zap, Shield, TrendingUp, BarChart3, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import projekteData from "@/content/data/projekte.json";
-import leitmotiveData from "@/content/data/leitmotive.json";
+import { loadContent } from "@/lib/content";
 
 const iconMap: Record<string, React.ReactNode> = {
   Leaf: <Leaf className="h-8 w-8" />,
@@ -15,22 +15,47 @@ const iconMap: Record<string, React.ReactNode> = {
   BarChart3: <BarChart3 className="h-8 w-8" />,
 };
 
-export default function HomePage() {
+interface Leitmotiv {
+  titel: string;
+  beschreibung: string;
+  icon: string;
+}
+
+interface Projekt {
+  slug: string;
+  name: string;
+  kurz: string;
+  status: string;
+  kategorie: string;
+}
+
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("home");
+
+  const leitmotiveData = loadContent<{ leitmotive: Leitmotiv[] }>("leitmotive", locale as "de" | "en");
+  const projekteData = loadContent<{ projekte: Projekt[] }>("projekte", locale as "de" | "en");
+
   return (
     <>
       <Hero
-        titel="Grüner Wasserstoff von der Nordsee"
-        untertitel="AquaVentus vereint über 100 Akteure aus Industrie, Forschung und Politik. Gemeinsam bauen wir die Offshore-Wasserstoffproduktion auf — für 10 GW Erzeugungskapazität bis 2035."
-        ctaText="Unsere Projekte"
-        ctaHref="/projekte"
+        titel={t("heroTitel")}
+        untertitel={t("heroUntertitel")}
+        ctaText={t("heroCta")}
+        ctaHref={`/${locale}/projekte`}
       />
 
       {/* Leitmotive */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-4 text-center text-3xl font-bold">Unsere Leitmotive</h2>
+          <h2 className="mb-4 text-center text-3xl font-bold">{t("leitmotiveTitel")}</h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-            Fünf Ziele treiben uns an — von der Klimapolitik bis zur wirtschaftlichen Wertschöpfung.
+            {t("leitmotiveText")}
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {leitmotiveData.leitmotive.map((motiv) => (
@@ -53,27 +78,25 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 flex items-end justify-between">
             <div>
-              <h2 className="text-3xl font-bold">Projekte</h2>
-              <p className="mt-2 text-muted-foreground">
-                Von der Pipeline bis zur Fachkräfteausbildung — unsere Vorhaben im Überblick.
-              </p>
+              <h2 className="text-3xl font-bold">{t("projekteTitel")}</h2>
+              <p className="mt-2 text-muted-foreground">{t("projekteText")}</p>
             </div>
             <Button asChild variant="ghost" className="hidden gap-2 md:flex">
-              <Link href="/projekte">
-                Alle Projekte
+              <Link href={`/${locale}/projekte`}>
+                {t("alleProjekte")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projekteData.projekte.slice(0, 3).map((projekt) => (
-              <ProjectCard key={projekt.slug} {...projekt} />
+              <ProjectCard key={projekt.slug} locale={locale} {...projekt} />
             ))}
           </div>
           <div className="mt-8 text-center md:hidden">
             <Button asChild variant="outline" className="gap-2">
-              <Link href="/projekte">
-                Alle Projekte
+              <Link href={`/${locale}/projekte`}>
+                {t("alleProjekte")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
@@ -84,20 +107,19 @@ export default function HomePage() {
       {/* Mitglieder CTA */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold">Über 100 Mitglieder</h2>
+          <h2 className="text-3xl font-bold">{t("mitgliederTitel")}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Von der Energiewirtschaft über Forschungsinstitute bis zu politischen
-            Akteuren — AquaVentus verbindet die gesamte Wertschöpfungskette.
+            {t("mitgliederText")}
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg" className="gap-2">
-              <Link href="/kontakt">
-                Mitglied werden
+              <Link href={`/${locale}/kontakt`}>
+                {t("mitgliedWerden")}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/ueber-uns">Mehr erfahren</Link>
+              <Link href={`/${locale}/ueber-uns`}>{t("mehrErfahren")}</Link>
             </Button>
           </div>
         </div>

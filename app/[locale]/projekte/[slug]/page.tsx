@@ -1,32 +1,58 @@
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import projekteData from "@/content/data/projekte.json";
+import { loadContent } from "@/lib/content";
+import { routing } from "@/i18n/routing";
+
+interface Fakt {
+  label: string;
+  wert: string;
+}
+
+interface Projekt {
+  slug: string;
+  name: string;
+  kurz: string;
+  beschreibung: string;
+  details?: string;
+  status: string;
+  kategorie: string;
+  fakten?: Fakt[];
+}
 
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return projekteData.projekte.map((p) => ({ slug: p.slug }));
+  const params: { locale: string; slug: string }[] = [];
+  for (const locale of routing.locales) {
+    const data = loadContent<{ projekte: Projekt[] }>("projekte", locale);
+    for (const p of data.projekte) {
+      params.push({ locale, slug: p.slug });
+    }
+  }
+  return params;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const projekt = projekteData.projekte.find((p) => p.slug === slug);
+  const { locale, slug } = await params;
+  const data = loadContent<{ projekte: Projekt[] }>("projekte", locale as "de" | "en");
+  const projekt = data.projekte.find((p) => p.slug === slug);
   if (!projekt) return {};
-  return {
-    title: projekt.name,
-    description: projekt.kurz,
-  };
+  return { title: projekt.name, description: projekt.kurz };
 }
 
 export default async function ProjektDetailPage({ params }: PageProps) {
-  const { slug } = await params;
-  const projekt = projekteData.projekte.find((p) => p.slug === slug);
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("projekte");
+  const data = loadContent<{ projekte: Projekt[] }>("projekte", locale as "de" | "en");
+  const projekt = data.projekte.find((p) => p.slug === slug);
 
   if (!projekt) notFound();
 
@@ -35,9 +61,9 @@ export default async function ProjektDetailPage({ params }: PageProps) {
       <section className="bg-gradient-to-br from-primary via-primary/90 to-accent px-6 py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl">
           <Button asChild variant="ghost" size="sm" className="mb-6 gap-2 text-primary-foreground/70 hover:text-primary-foreground hover:bg-white/10">
-            <Link href="/projekte">
+            <Link href={`/${locale}/projekte`}>
               <ArrowLeft className="h-4 w-4" />
-              Alle Projekte
+              {t("alleProjekte")}
             </Link>
           </Button>
           <div className="mb-4 flex items-center gap-2">
@@ -65,7 +91,7 @@ export default async function ProjektDetailPage({ params }: PageProps) {
               <Card className="h-fit">
                 <CardContent className="pt-6">
                   <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                    Kerndaten
+                    {t("kerndaten")}
                   </h3>
                   <dl className="space-y-3">
                     {projekt.fakten.map((fakt) => (

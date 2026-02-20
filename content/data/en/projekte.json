@@ -1,0 +1,81 @@
+{
+  "projekte": [
+    {
+      "slug": "aquaductus",
+      "name": "AquaDuctus",
+      "kurz": "Offshore hydrogen pipeline — 400 km offshore, 100 km onshore",
+      "beschreibung": "AquaDuctus is the central infrastructure project of AquaVentus: a hydrogen pipeline from the offshore production sites in the North Sea to the mainland. As the only pipeline project for the German North Sea within the hydrogen core network, AquaDuctus connects offshore production with onshore demand centres — industry, storage facilities, and the European hydrogen core network.",
+      "details": "On 22 October 2024, AquaDuctus was approved by the Federal Maritime and Hydrographic Agency (BSH) as part of the hydrogen core network. The project is IPCEI-notified and holds PCI status (Project of Common Interest) from the European Union. Via the European Hydrogen Backbone, connection options exist to the Netherlands, Belgium, Denmark, the United Kingdom, and Norway.",
+      "status": "Approved by BSH (Oct 2024)",
+      "kategorie": "Infrastructure",
+      "fakten": [
+        { "label": "Offshore route", "wert": "400 km" },
+        { "label": "Onshore route", "wert": "100 km" },
+        { "label": "Capacity", "wert": "Up to 20 GW (two-stage)" },
+        { "label": "EU status", "wert": "IPCEI-notified, PCI" },
+        { "label": "Core network", "wert": "9,040 km total" },
+        { "label": "Connections", "wert": "NL, BE, DK, UK, NO" }
+      ]
+    },
+    {
+      "slug": "aquaprimus",
+      "name": "AquaPrimus",
+      "kurz": "Demonstrator electrolyser — 1 to 5 MW at sea",
+      "beschreibung": "AquaPrimus is the demonstrator for offshore electrolysis: a 1-5 MW electrolyser that tests and optimises the entire hydrogen production value chain at sea for the first time — from seawater treatment and electrolysis to compression and storage.",
+      "details": "As a development and demonstration platform, AquaPrimus brings together research and industry. The flexible consortium model enables various stakeholders to test technologies in a real offshore environment. AquaPrimus serves as a testbed for consortia preparing for future SEN-1 tenders.",
+      "status": "In development",
+      "kategorie": "Production",
+      "fakten": [
+        { "label": "Capacity", "wert": "1-5 MW" },
+        { "label": "Technologies", "wert": "Seawater treatment, electrolysis, compression, storage" },
+        { "label": "Consortium", "wert": "Flexible model — research & industry" },
+        { "label": "Objective", "wert": "Preparation for SEN-1 tenders" }
+      ]
+    },
+    {
+      "slug": "sen-1",
+      "name": "SEN-1 Pioneer Projects",
+      "kurz": "First large-scale offshore hydrogen production — 1,000 MW on 100 km²",
+      "beschreibung": "The SEN-1 pioneer projects mark the transition from demonstration to industrial production: 1,000 MW of electrolysis capacity on a 100 km² zone in the North Sea, intended to produce up to 100,000 tonnes of green hydrogen per year.",
+      "details": "The BSH designated the SEN-1 zone at 102 km² in the Site Development Plan 2023. Connection is provided via the AquaDuctus pipeline. The BMWK is conducting the tendering process for the sites.",
+      "status": "Regulatory process ongoing",
+      "kategorie": "Production",
+      "fakten": [
+        { "label": "Electrolysis", "wert": "1,000 MW" },
+        { "label": "Area", "wert": "102 km² (BSH SDP 2023)" },
+        { "label": "Production", "wert": "100,000 t green H\u2082/year" },
+        { "label": "Connection", "wert": "AquaDuctus pipeline" },
+        { "label": "Tendering", "wert": "BMWK" }
+      ]
+    },
+    {
+      "slug": "aquacampus",
+      "name": "AquaCampus",
+      "kurz": "A research site unique in Europe, located off the coast of Helgoland",
+      "beschreibung": "AquaCampus is a 3 km² research site just a few nautical miles off Helgoland — marked by 8 yellow buoys in water depths of up to 45 metres. Here, researchers and companies test above- and underwater technologies under real offshore conditions.",
+      "details": "From high-performance offshore drones to new materials, sensors, and long-term trials: AquaCampus provides permanent access to a test site that previously required vessels and favourable weather. This makes it unique in Europe as offshore research infrastructure.",
+      "status": "Active",
+      "kategorie": "Research",
+      "fakten": [
+        { "label": "Area", "wert": "3 km²" },
+        { "label": "Water depth", "wert": "Up to 45 m" },
+        { "label": "Markers", "wert": "8 yellow buoys" },
+        { "label": "Location", "wert": "A few nautical miles off Helgoland" }
+      ]
+    },
+    {
+      "slug": "aquanavis",
+      "name": "AquaNavis",
+      "kurz": "Green hydrogen as an energy source for maritime shipping",
+      "beschreibung": "AquaNavis is dedicated to the decarbonisation of shipping: 90% of global trade is transported by sea, accounting for approximately 3% of global CO\u2082 emissions. The project develops and tests innovative hydrogen-powered vessel technologies.",
+      "details": "The objective is to deploy green hydrogen as an energy source for maritime applications — from technology development and propulsion concepts to integration into existing fleets.",
+      "status": "Concept phase",
+      "kategorie": "Maritime application",
+      "fakten": [
+        { "label": "Maritime trade", "wert": "90% of global trade" },
+        { "label": "CO\u2082 share of shipping", "wert": "~3% globally" },
+        { "label": "Focus", "wert": "Hydrogen-powered vessel technologies" }
+      ]
+    }
+  ]
+}

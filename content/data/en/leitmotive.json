@@ -1,0 +1,29 @@
+{
+  "leitmotive": [
+    {
+      "titel": "Climate protection",
+      "beschreibung": "Our commitment to climate protection is unwavering. AquaVentus harnesses renewable energy to produce green hydrogen that releases no greenhouse gases. In doing so, we make a decisive contribution to achieving global climate targets and protecting our planet.",
+      "icon": "Leaf"
+    },
+    {
+      "titel": "Energy transition",
+      "beschreibung": "AquaVentus is revolutionising the energy transition by harnessing the power of the sea. By producing green hydrogen from offshore wind energy, we create a clean and sustainable alternative to fossil fuels that drastically reduces CO\u2082 emissions.",
+      "icon": "Zap"
+    },
+    {
+      "titel": "Stable energy prices",
+      "beschreibung": "With AquaVentus, we ensure stable energy prices. By achieving independence from fossil fuels and utilising renewable energy, we create a reliable and cost-efficient energy supply that shields consumers and businesses from price volatility.",
+      "icon": "BarChart3"
+    },
+    {
+      "titel": "Value creation & employment",
+      "beschreibung": "AquaVentus is a driver of economic growth. Our projects create numerous jobs and promote value creation in the region. From the installation of offshore facilities to hydrogen processing, we offer diverse employment opportunities and strengthen regional prosperity.",
+      "icon": "TrendingUp"
+    },
+    {
+      "titel": "Security of supply",
+      "beschreibung": "With AquaVentus, we secure the energy supply of the future. Utilising offshore wind energy for hydrogen production increases the resilience of our energy system and reduces dependence on imported fossil fuels.",
+      "icon": "Shield"
+    }
+  ]
+}

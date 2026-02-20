@@ -1,7 +1,25 @@
-import Link from "next/link";
+"use client";
+
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Waves } from "lucide-react";
+import { loadContent } from "@/lib/content";
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface NavData {
+  hauptmenu: NavItem[];
+  cta: NavItem;
+}
 
 export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations("footer");
+  const navigationData = loadContent<NavData>("navigation", locale as "de" | "en");
+
   return (
     <footer className="border-t border-border/50 bg-muted/30">
       <div className="mx-auto max-w-6xl px-6 py-12">
@@ -12,23 +30,29 @@ export default function Footer() {
               <span>AquaVentus</span>
             </Link>
             <p className="mt-3 text-sm text-muted-foreground">
-              Grüner Wasserstoff aus Offshore-Windenergie.
+              {t("tagline1")}
               <br />
-              10 GW Erzeugungskapazität bis 2035.
+              {t("tagline2")}
             </p>
           </div>
 
           <div>
-            <h3 className="mb-3 text-sm font-semibold">Navigation</h3>
+            <h3 className="mb-3 text-sm font-semibold">{t("navigation")}</h3>
             <div className="flex flex-col gap-2">
-              <Link href="/projekte" className="text-sm text-muted-foreground hover:text-primary">Projekte</Link>
-              <Link href="/ueber-uns" className="text-sm text-muted-foreground hover:text-primary">Über uns</Link>
-              <Link href="/kontakt" className="text-sm text-muted-foreground hover:text-primary">Kontakt</Link>
+              {navigationData.hauptmenu.slice(0, 3).map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
           </div>
 
           <div>
-            <h3 className="mb-3 text-sm font-semibold">Kontakt</h3>
+            <h3 className="mb-3 text-sm font-semibold">{t("kontakt")}</h3>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <span>AquaVentus Förderverein e.V.</span>
               <span>Helgoland, Deutschland</span>
@@ -40,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border/50 pt-6 text-center text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} AquaVentus Förderverein e.V. Alle Rechte vorbehalten.
+          &copy; {new Date().getFullYear()} {t("copyright")}
         </div>
       </div>
     </footer>

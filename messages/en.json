@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "title": "AquaVentus — Green Hydrogen from Offshore Wind",
+    "titleTemplate": "%s | AquaVentus",
+    "description": "AquaVentus unites over 100 stakeholders from industry, research and policy for the production of green hydrogen from offshore wind energy."
+  },
+  "home": {
+    "heroTitel": "Green Hydrogen from the North Sea",
+    "heroUntertitel": "AquaVentus unites over 100 stakeholders from industry, research and policy. Together we are building offshore hydrogen production — targeting 10 GW generation capacity by 2035.",
+    "heroCta": "Our Projects",
+    "leitmotiveTitel": "Our Guiding Principles",
+    "leitmotiveText": "Five goals drive us — from climate policy to economic value creation.",
+    "projekteTitel": "Projects",
+    "projekteText": "From pipelines to workforce development — an overview of our initiatives.",
+    "alleProjekte": "All Projects",
+    "mitgliederTitel": "Over 100 Members",
+    "mitgliederText": "From energy companies to research institutes to political stakeholders — AquaVentus connects the entire value chain.",
+    "mitgliedWerden": "Become a Member",
+    "mehrErfahren": "Learn More"
+  },
+  "projekte": {
+    "title": "Projects",
+    "description": "AquaVentus projects — from pipeline infrastructure to workforce development.",
+    "heroTitel": "Our Projects",
+    "heroUntertitel": "Across the entire value chain: generation, transport, logistics and knowledge transfer for offshore hydrogen.",
+    "alleProjekte": "All Projects",
+    "kerndaten": "Key Facts"
+  },
+  "leitstudien": {
+    "title": "Key Studies",
+    "description": "Scientific studies on offshore hydrogen production — from system costs to transport concepts.",
+    "heroTitel": "Key Studies",
+    "heroUntertitel": "Scientific foundations and analyses for offshore hydrogen production — independently commissioned, publicly available."
+  },
+  "politik": {
+    "title": "Policy",
+    "description": "Statements and policy papers by AquaVentus on regulatory and energy policy topics.",
+    "heroTitel": "Policy",
+    "heroUntertitel": "AquaVentus brings the perspective of the offshore hydrogen economy into political processes — through statements, policy papers and dialogue formats.",
+    "stellungnahmen": "Statements",
+    "policyPapers": "Policy Papers"
+  },
+  "news": {
+    "title": "News & Press",
+    "description": "Latest press releases and news from AquaVentus.",
+    "heroTitel": "News & Press",
+    "heroUntertitel": "Current announcements, statements and news from the offshore hydrogen economy."
+  },
+  "mitgliedschaft": {
+    "title": "Membership",
+    "description": "Why become a member of AquaVentus? Network, projects, working groups and exclusive formats.",
+    "heroTitel": "Membership",
+    "heroUntertitel": "AquaVentus is a Do-Tank: Members actively shape the offshore hydrogen economy — in projects, working groups and exclusive formats.",
+    "heroCta": "Become a Member",
+    "warumTitel": "Why Become a Member?",
+    "warumText": "Seven good reasons to join AquaVentus.",
+    "arbeitsgruppenTitel": "Working Groups",
+    "jetztMitglied": "Join Now"
+  },
+  "ueberUns": {
+    "title": "About Us",
+    "description": "AquaVentus Förderverein e.V. — Board, Office, Members and Partners.",
+    "heroTitel": "Who We Are",
+    "heroUntertitel": "AquaVentus is a consortium of over 100 stakeholders from industry, research and policy — united by the vision of climate-neutral energy supply through offshore hydrogen.",
+    "missionTitel": "Our Mission",
+    "missionText1": "The AquaVentus Förderverein e.V. was founded with the goal of advancing the production of green hydrogen from offshore wind energy. By 2035, generation capacities of up to 10 GW are to be established in the North Sea.",
+    "missionText2": "Our members cover the entire value chain: from electrolysis technology to pipeline infrastructure to end consumers. Together we create the technological, regulatory and economic foundations for a scalable offshore hydrogen economy.",
+    "vorstandTitel": "Board",
+    "vorstandText": "The association is led by a voluntary board. Election period: 2 years.",
+    "geschaeftsstelleTitel": "Office",
+    "mitgliederTitel": "Our Members",
+    "mitgliederText": "Over 100 companies, research institutions and organizations are part of AquaVentus — from global energy corporations to specialized technology providers.",
+    "mitgliederHinweis": "Shown are the publicly listed members. The complete list comprises over 100 organizations.",
+    "partnerTitel": "Partner Organizations",
+    "partnerText": "AquaVentus works closely with leading industry associations and networks."
+  },
+  "kontakt": {
+    "title": "Contact",
+    "description": "Get in touch with AquaVentus — for membership, partnerships or press inquiries.",
+    "heroTitel": "Contact",
+    "heroUntertitel": "Interested in membership, questions about our projects or press inquiries? We look forward to hearing from you.",
+    "formTitel": "Write to Us",
+    "labelName": "Name",
+    "placeholderName": "Your Name",
+    "labelOrg": "Organization",
+    "placeholderOrg": "Your Organization",
+    "labelEmail": "Email",
+    "placeholderEmail": "your@email.com",
+    "labelBetreff": "Subject",
+    "betreffBitte": "Please select",
+    "betreffMitgliedschaft": "Membership",
+    "betreffKooperation": "Partnership",
+    "betreffPresse": "Press Inquiry",
+    "betreffSonstiges": "Other",
+    "labelNachricht": "Message",
+    "placeholderNachricht": "Your message...",
+    "senden": "Send Message",
+    "kontaktdaten": "Contact Information",
+    "adresse": "Address",
+    "web": "Website"
+  },
+  "footer": {
+    "tagline1": "Green hydrogen from offshore wind energy.",
+    "tagline2": "10 GW generation capacity by 2035.",
+    "navigation": "Navigation",
+    "kontakt": "Contact",
+    "copyright": "AquaVentus Förderverein e.V. All rights reserved."
+  },
+  "nav": {
+    "menuLabel": "Menu"
+  },
+  "search": {
+    "label": "Search",
+    "placeholder": "Search...",
+    "shortcut": "Ctrl+K",
+    "noResults": "No results found.",
+    "categories": {
+      "projekt": "Project",
+      "studie": "Study",
+      "stellungnahme": "Statement",
+      "policyPaper": "Policy Paper",
+      "pressemeldung": "Press",
+      "vorstand": "Board",
+      "geschaeftsstelle": "Office",
+      "mitgliedschaft": "Membership"
+    }
+  }
+}

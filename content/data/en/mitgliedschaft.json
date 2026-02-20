@@ -1,0 +1,53 @@
+{
+  "vorteile": [
+    {
+      "titel": "Network",
+      "beschreibung": "Access to 100+ member organisations and experts"
+    },
+    {
+      "titel": "Do-tank, not think-tank",
+      "beschreibung": "Focus on implementation, not just theory"
+    },
+    {
+      "titel": "Projects",
+      "beschreibung": "Participation in SEN-1, AquaDuctus, AquaCampus"
+    },
+    {
+      "titel": "Working groups",
+      "beschreibung": "Active involvement in specialist groups"
+    },
+    {
+      "titel": "AquaNews",
+      "beschreibung": "Exclusive newsletter"
+    },
+    {
+      "titel": "Member portal",
+      "beschreibung": "Discussions, resources, access to decision-makers"
+    },
+    {
+      "titel": "Shape the future",
+      "beschreibung": "Contribute ideas, share expertise"
+    }
+  ],
+  "arbeitsgruppen": [
+    {
+      "name": "WG Technology",
+      "thema": "New technologies in the field of green hydrogen"
+    },
+    {
+      "name": "WG Regulation",
+      "thema": "Regulatory challenges and opportunities"
+    },
+    {
+      "name": "WG Communications",
+      "thema": "Communications and public relations"
+    },
+    {
+      "name": "WG International",
+      "thema": "International cooperation and projects"
+    }
+  ],
+  "aquaSummit": {
+    "beschreibung": "The offshore hydrogen highlight of the year — an exclusive members' gathering with leading figures from industry, politics, and science. Large enough to shape the sector, intimate enough for trust. At extraordinary locations — on the water and beyond."
+  }
+}

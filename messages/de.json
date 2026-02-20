@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "title": "AquaVentus — Grüner Wasserstoff aus Offshore-Windenergie",
+    "titleTemplate": "%s | AquaVentus",
+    "description": "AquaVentus bündelt über 100 Akteure aus Industrie, Forschung und Politik für die Erzeugung von grünem Wasserstoff aus Offshore-Windenergie."
+  },
+  "home": {
+    "heroTitel": "Grüner Wasserstoff von der Nordsee",
+    "heroUntertitel": "AquaVentus vereint über 100 Akteure aus Industrie, Forschung und Politik. Gemeinsam bauen wir die Offshore-Wasserstoffproduktion auf — für 10 GW Erzeugungskapazität bis 2035.",
+    "heroCta": "Unsere Projekte",
+    "leitmotiveTitel": "Unsere Leitmotive",
+    "leitmotiveText": "Fünf Ziele treiben uns an — von der Klimapolitik bis zur wirtschaftlichen Wertschöpfung.",
+    "projekteTitel": "Projekte",
+    "projekteText": "Von der Pipeline bis zur Fachkräfteausbildung — unsere Vorhaben im Überblick.",
+    "alleProjekte": "Alle Projekte",
+    "mitgliederTitel": "Über 100 Mitglieder",
+    "mitgliederText": "Von der Energiewirtschaft über Forschungsinstitute bis zu politischen Akteuren — AquaVentus verbindet die gesamte Wertschöpfungskette.",
+    "mitgliedWerden": "Mitglied werden",
+    "mehrErfahren": "Mehr erfahren"
+  },
+  "projekte": {
+    "title": "Projekte",
+    "description": "Die Projekte von AquaVentus — von der Pipeline-Infrastruktur bis zur Fachkräfteausbildung.",
+    "heroTitel": "Unsere Projekte",
+    "heroUntertitel": "Entlang der gesamten Wertschöpfungskette: Erzeugung, Transport, Logistik und Wissenstransfer für Offshore-Wasserstoff.",
+    "alleProjekte": "Alle Projekte",
+    "kerndaten": "Kerndaten"
+  },
+  "leitstudien": {
+    "title": "Leitstudien",
+    "description": "Wissenschaftliche Studien zur Offshore-Wasserstoffproduktion — von Systemkosten bis Transportkonzepte.",
+    "heroTitel": "Leitstudien",
+    "heroUntertitel": "Wissenschaftliche Grundlagen und Analysen zur Offshore-Wasserstoffproduktion — unabhängig erstellt, öffentlich zugänglich."
+  },
+  "politik": {
+    "title": "Politik",
+    "description": "Stellungnahmen und Policy Papers von AquaVentus zu regulatorischen und energiepolitischen Themen.",
+    "heroTitel": "Politik",
+    "heroUntertitel": "AquaVentus bringt die Perspektive der Offshore-Wasserstoffwirtschaft in politische Prozesse ein — mit Stellungnahmen, Policy Papers und Dialogformaten.",
+    "stellungnahmen": "Stellungnahmen",
+    "policyPapers": "Policy Papers"
+  },
+  "news": {
+    "title": "News & Presse",
+    "description": "Aktuelle Pressemeldungen und Neuigkeiten von AquaVentus.",
+    "heroTitel": "News & Presse",
+    "heroUntertitel": "Aktuelle Meldungen, Stellungnahmen und Neuigkeiten aus der Offshore-Wasserstoffwirtschaft."
+  },
+  "mitgliedschaft": {
+    "title": "Mitgliedschaft",
+    "description": "Warum Mitglied bei AquaVentus werden? Netzwerk, Projekte, Arbeitsgruppen und exklusive Formate.",
+    "heroTitel": "Mitgliedschaft",
+    "heroUntertitel": "AquaVentus ist ein Do-Tank: Wer Mitglied wird, gestaltet die Offshore-Wasserstoffwirtschaft aktiv mit — in Projekten, Arbeitsgruppen und auf exklusiven Formaten.",
+    "heroCta": "Mitglied werden",
+    "warumTitel": "Warum Mitglied werden?",
+    "warumText": "Sieben gute Gründe, Teil von AquaVentus zu werden.",
+    "arbeitsgruppenTitel": "Arbeitsgruppen",
+    "jetztMitglied": "Jetzt Mitglied werden"
+  },
+  "ueberUns": {
+    "title": "Über uns",
+    "description": "AquaVentus Förderverein e.V. — Vorstand, Geschäftsstelle, Mitglieder und Partner.",
+    "heroTitel": "Wer wir sind",
+    "heroUntertitel": "AquaVentus ist ein Zusammenschluss von über 100 Akteuren aus Industrie, Forschung und Politik — vereint durch die Vision einer klimaneutralen Energieversorgung durch Offshore-Wasserstoff.",
+    "missionTitel": "Unsere Mission",
+    "missionText1": "Der AquaVentus Förderverein e.V. wurde mit dem Ziel gegründet, die Erzeugung von grünem Wasserstoff aus Offshore-Windenergie voranzutreiben. Bis 2035 sollen Erzeugungskapazitäten von bis zu 10 GW in der Nordsee entstehen.",
+    "missionText2": "Unsere Mitglieder decken die gesamte Wertschöpfungskette ab: von der Elektrolyse-Technologie über die Pipeline-Infrastruktur bis zum Endverbraucher. Gemeinsam schaffen wir die technologischen, regulatorischen und wirtschaftlichen Voraussetzungen für eine skalierbare Offshore-Wasserstoffwirtschaft.",
+    "vorstandTitel": "Vorstand",
+    "vorstandText": "Die Leitung des Vereins liegt bei einem ehrenamtlichen Vorstand. Wahlperiode: 2 Jahre.",
+    "geschaeftsstelleTitel": "Geschäftsstelle",
+    "mitgliederTitel": "Unsere Mitglieder",
+    "mitgliederText": "Über 100 Unternehmen, Forschungseinrichtungen und Organisationen sind Teil von AquaVentus — von globalen Energiekonzernen bis zu spezialisierten Technologieanbietern.",
+    "mitgliederHinweis": "Dargestellt sind die öffentlich gelisteten Mitglieder. Die vollständige Liste umfasst über 100 Organisationen.",
+    "partnerTitel": "Partnerorganisationen",
+    "partnerText": "AquaVentus arbeitet eng mit führenden Branchenverbänden und Netzwerken zusammen."
+  },
+  "kontakt": {
+    "title": "Kontakt",
+    "description": "Nehmen Sie Kontakt mit AquaVentus auf — für Mitgliedschaft, Kooperationen oder Presseanfragen.",
+    "heroTitel": "Kontakt",
+    "heroUntertitel": "Interesse an einer Mitgliedschaft, Fragen zu unseren Projekten oder Presseanfragen? Wir freuen uns auf Ihre Nachricht.",
+    "formTitel": "Schreiben Sie uns",
+    "labelName": "Name",
+    "placeholderName": "Ihr Name",
+    "labelOrg": "Organisation",
+    "placeholderOrg": "Ihre Organisation",
+    "labelEmail": "E-Mail",
+    "placeholderEmail": "ihre@email.de",
+    "labelBetreff": "Betreff",
+    "betreffBitte": "Bitte wählen",
+    "betreffMitgliedschaft": "Mitgliedschaft",
+    "betreffKooperation": "Kooperation",
+    "betreffPresse": "Presseanfrage",
+    "betreffSonstiges": "Sonstiges",
+    "labelNachricht": "Nachricht",
+    "placeholderNachricht": "Ihre Nachricht...",
+    "senden": "Nachricht senden",
+    "kontaktdaten": "Kontaktdaten",
+    "adresse": "Adresse",
+    "web": "Web"
+  },
+  "footer": {
+    "tagline1": "Grüner Wasserstoff aus Offshore-Windenergie.",
+    "tagline2": "10 GW Erzeugungskapazität bis 2035.",
+    "navigation": "Navigation",
+    "kontakt": "Kontakt",
+    "copyright": "AquaVentus Förderverein e.V. Alle Rechte vorbehalten."
+  },
+  "nav": {
+    "menuLabel": "Menü"
+  },
+  "search": {
+    "label": "Suche",
+    "placeholder": "Suchen...",
+    "shortcut": "Ctrl+K",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "categories": {
+      "projekt": "Projekt",
+      "studie": "Studie",
+      "stellungnahme": "Stellungnahme",
+      "policyPaper": "Policy Paper",
+      "pressemeldung": "Presse",
+      "vorstand": "Vorstand",
+      "geschaeftsstelle": "Geschäftsstelle",
+      "mitgliedschaft": "Mitgliedschaft"
+    }
+  }
+}

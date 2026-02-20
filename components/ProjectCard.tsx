@@ -8,11 +8,12 @@ interface ProjectCardProps {
   kurz: string;
   status: string;
   kategorie: string;
+  locale: string;
 }
 
-export default function ProjectCard({ slug, name, kurz, status, kategorie }: ProjectCardProps) {
+export default function ProjectCard({ slug, name, kurz, status, kategorie, locale }: ProjectCardProps) {
   return (
-    <Link href={`/projekte/${slug}`}>
+    <Link href={`/${locale}/projekte/${slug}`}>
       <Card className="group h-full transition-all hover:shadow-lg hover:border-primary/30">
         <CardHeader>
           <div className="mb-2 flex items-center gap-2">

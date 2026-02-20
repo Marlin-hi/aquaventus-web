@@ -1,0 +1,29 @@
+{
+  "geschaeftsstelle": [
+    {
+      "name": "Robert Seehawer",
+      "rolle": "Managing Director",
+      "email": "seehawer@aquaventus.org",
+      "telefon": "+49 152 26349789"
+    },
+    {
+      "name": "Sebastian Himstedt",
+      "rolle": "Press and Public Relations",
+      "email": "press@aquaventus.org",
+      "telefon": null
+    },
+    {
+      "name": "Alara Dürür",
+      "rolle": "Marketing",
+      "email": null,
+      "telefon": null
+    },
+    {
+      "name": "Marlin Klag",
+      "rolle": "Organisation & Data Analysis",
+      "email": null,
+      "telefon": null
+    }
+  ],
+  "adresse": "c/o German Hydrogen Association, Robert-Koch-Platz 4, 10115 Berlin"
+}

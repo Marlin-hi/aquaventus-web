@@ -1,0 +1,40 @@
+{
+  "vorstand": [
+    {
+      "name": "Jörg Singer",
+      "rolle": "Chairman",
+      "organisation": "Unternehmer, ehem. Bürgermeister Helgoland",
+      "beschreibung": "Driving force behind the vision to make Helgoland the centre of offshore hydrogen production. Initiator of AquaVentus."
+    },
+    {
+      "name": "Dr. Christoph von dem Bussche",
+      "rolle": "Deputy Chairman",
+      "organisation": "GASCADE Gastransport GmbH",
+      "beschreibung": "CEO of GASCADE and responsible for the development of hydrogen transport infrastructure in Germany."
+    },
+    {
+      "name": "Dr. Kirsten Westphal",
+      "rolle": "Deputy Chairwoman",
+      "organisation": "BDEW / Nationaler Wasserstoffrat",
+      "beschreibung": "Member of the BDEW executive board and the National Hydrogen Council. Brings energy and geopolitical expertise."
+    },
+    {
+      "name": "Robert Eschenauer",
+      "rolle": "Deputy Chairman",
+      "organisation": "Robert Bosch GmbH",
+      "beschreibung": "Heads the product management for electrolysers at Bosch and represents the industrial technology perspective."
+    },
+    {
+      "name": "Martin Neubert",
+      "rolle": "Deputy Chairman",
+      "organisation": "Copenhagen Infrastructure Partners",
+      "beschreibung": "Brings an international investor perspective and experience in the development of large-scale infrastructure projects."
+    },
+    {
+      "name": "Kay Martens",
+      "rolle": "Treasurer",
+      "organisation": "Versorgungsbetriebe Helgoland",
+      "beschreibung": "Managing Director of Versorgungsbetriebe Helgoland. Responsible for the financial strategy of the association."
+    }
+  ]
+}

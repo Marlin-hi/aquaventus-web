@@ -1,0 +1,32 @@
+{
+  "leitstudien": [
+    {
+      "titel": "Reducing system costs through offshore sector coupling — up to EUR 1.7 bn/year",
+      "datum": "2025-11",
+      "datumLabel": "November 2025",
+      "quelle": "Frontier Economics Study",
+      "beschreibung": "The Frontier Economics study demonstrates that offshore sector coupling can reduce system costs by up to EUR 1.7 billion per year."
+    },
+    {
+      "titel": "Combined transport systems reduce expansion costs by EUR 31 bn",
+      "datum": "2024-09",
+      "datumLabel": "September 2024",
+      "quelle": "Brief study",
+      "beschreibung": "Combined transport and connection concepts for offshore hydrogen can reduce expansion costs by EUR 31 billion."
+    },
+    {
+      "titel": "Hydrogen production at sea — significant potential confirmed",
+      "datum": "2023-02",
+      "datumLabel": "February 2023",
+      "quelle": "DNV Study",
+      "beschreibung": "The DNV study confirms the significant potential of hydrogen production at sea and examines both technical and economic feasibility."
+    },
+    {
+      "titel": "Clear advantages of hydrogen production at sea",
+      "datum": "2022-03",
+      "datumLabel": "March 2022",
+      "quelle": "AquaDuctus Short Study",
+      "beschreibung": "The brief study demonstrates clear advantages of decentralised hydrogen production at sea compared to centralised onshore solutions."
+    }
+  ]
+}

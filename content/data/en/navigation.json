@@ -1,0 +1,14 @@
+{
+  "hauptmenu": [
+    { "label": "Projects", "href": "/projekte" },
+    { "label": "Key studies", "href": "/leitstudien" },
+    { "label": "Policy", "href": "/politik" },
+    { "label": "News", "href": "/news" },
+    { "label": "About us", "href": "/ueber-uns" },
+    { "label": "Contact", "href": "/kontakt" }
+  ],
+  "cta": {
+    "label": "Become a member",
+    "href": "/mitgliedschaft"
+  }
+}
