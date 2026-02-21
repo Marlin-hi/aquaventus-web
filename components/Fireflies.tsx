@@ -1,6 +1,5 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { useEffect, useState, useMemo } from "react";
 import { useColorTheme, type ColorTheme } from "./ColorThemeProvider";
 
@@ -30,10 +29,10 @@ const THEME_HUES: Record<ColorTheme, number[]> = {
 };
 
 const SWARMS = [
-  { drift: "drift-a", top: "10%", left: "5%", dur: "95s", depth: 0.15, count: 22 },
-  { drift: "drift-b", top: "50%", left: "60%", dur: "85s", depth: 0.30, count: 18 },
-  { drift: "drift-c", top: "25%", left: "35%", dur: "105s", depth: 0.45, count: 16 },
-  { drift: "drift-a", top: "70%", left: "15%", dur: "110s", depth: 0.20, count: 14 },
+  { drift: "drift-a", top: "10%", left: "5%", dur: "95s", depth: 0.15, count: 10 },
+  { drift: "drift-b", top: "50%", left: "60%", dur: "85s", depth: 0.30, count: 8 },
+  { drift: "drift-c", top: "25%", left: "35%", dur: "105s", depth: 0.45, count: 7 },
+  { drift: "drift-a", top: "70%", left: "15%", dur: "110s", depth: 0.20, count: 5 },
 ];
 
 function generateFlies(swarmIndex: number, count: number, hues: number[]) {
@@ -56,7 +55,6 @@ function generateFlies(swarmIndex: number, count: number, hues: number[]) {
 }
 
 export default function Fireflies() {
-  const { resolvedTheme } = useTheme();
   const { colorTheme } = useColorTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -71,11 +69,9 @@ export default function Fireflies() {
 
   if (!mounted) return null;
 
-  const isDark = resolvedTheme === "dark";
-
   return (
     <div className="fireflies" aria-hidden="true">
-      {isDark && swarmData.map((swarm, si) => (
+      {swarmData.map((swarm, si) => (
         <div
           key={si}
           className={`swarm ${swarm.drift}`}
