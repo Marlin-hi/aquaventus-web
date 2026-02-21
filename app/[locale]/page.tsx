@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
+import NewsSlider from "@/components/NewsSlider";
 import ProjectCard from "@/components/ProjectCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Zap, Shield, TrendingUp, BarChart3, ArrowRight } from "lucide-react";
@@ -40,9 +41,12 @@ export default async function HomePage({
 
   const leitmotiveData = loadContent<{ leitmotive: Leitmotiv[] }>("leitmotive", locale as "de" | "en");
   const projekteData = loadContent<{ projekte: Projekt[] }>("projekte", locale as "de" | "en");
+  const sliderData = loadContent<{ slides: { titel: string; text: string; tag: string; datum?: string; bild: string; link: string; linkText: string }[] }>("slider", locale as "de" | "en");
 
   return (
     <>
+      <NewsSlider slides={sliderData.slides} locale={locale} />
+
       <Hero
         titel={t("heroTitel")}
         untertitel={t("heroUntertitel")}
@@ -51,7 +55,7 @@ export default async function HomePage({
       />
 
       {/* Leitmotive */}
-      <section className="px-6 py-20 bg-card/40 backdrop-blur-sm border-y border-border/20">
+      <section className="px-6 py-20 bg-white/60 dark:bg-white/5 backdrop-blur-sm border-y border-border/20">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-4 text-center text-3xl font-bold">{t("leitmotiveTitel")}</h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
@@ -105,7 +109,7 @@ export default async function HomePage({
       </section>
 
       {/* Mitglieder CTA */}
-      <section className="px-6 py-20 bg-card/40 backdrop-blur-sm border-y border-border/20">
+      <section className="px-6 py-20 bg-white/60 dark:bg-white/5 backdrop-blur-sm border-y border-border/20">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold">{t("mitgliederTitel")}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">

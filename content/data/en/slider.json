@@ -1,0 +1,49 @@
+{
+  "slides": [
+    {
+      "titel": "North Sea Summit: Actions Must Follow Words",
+      "text": "AquaVentus calls for consistent implementation of political commitments on integrated use of North Sea energy potential. Offshore wind and offshore hydrogen must be planned together.",
+      "tag": "Latest",
+      "datum": "January 26, 2026",
+      "bild": "/images/projekte/offshore-plattform.jpg",
+      "link": "/news",
+      "linkText": "Read More"
+    },
+    {
+      "titel": "Grid Development Plan Needs Urgent Changes",
+      "text": "The current NEP draft by transmission system operators fails to meet the requirements of a modern energy system. AquaVentus demands substantial additions in the offshore sector.",
+      "tag": "Policy",
+      "datum": "January 15, 2026",
+      "bild": "/images/projekte/sen1-windpark.png",
+      "link": "/news",
+      "linkText": "Read More"
+    },
+    {
+      "titel": "Wind Energy Amendment: Anchor Combined Connection Concepts Now",
+      "text": "AquaVentus demands clear legislative measures for combined electricity and pipeline connections of offshore wind farms — already standard practice in all other North Sea countries.",
+      "tag": "Consultation",
+      "datum": "January 2, 2026",
+      "bild": "/images/projekte/aquaductus.png",
+      "link": "/news",
+      "linkText": "Read More"
+    },
+    {
+      "titel": "Reducing System Costs by up to €1.7 Billion per Year",
+      "text": "The Frontier Economics study proves: Sector-coupled integration of offshore electrolyzers with wind farms reduces not just H₂ costs, but overall renewable expansion costs.",
+      "tag": "Study",
+      "datum": "November 2025",
+      "bild": "/images/studien/frontier-economics-deckblatt.png",
+      "link": "/leitstudien/frontier-economics-2025",
+      "linkText": "Read Study"
+    },
+    {
+      "titel": "Strengthening Networks",
+      "text": "Between warm candlelight and lively conversations, connections emerged that go far beyond the business sphere. Behind the projects are people who share a common vision with passion.",
+      "tag": "AquaSummit 2025",
+      "datum": "October 2025",
+      "bild": "/images/aquasummit/7IV04122.jpg",
+      "link": "/aquasummit",
+      "linkText": "To AquaSummit"
+    }
+  ]
+}

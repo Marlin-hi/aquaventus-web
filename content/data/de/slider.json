@@ -1,0 +1,49 @@
+{
+  "slides": [
+    {
+      "titel": "North Sea Summit: Worten müssen jetzt Taten folgen",
+      "text": "AquaVentus fordert die konsequente Umsetzung der politischen Zusagen zur integrierten Nutzung der Energiepotenziale der Nordsee. Offshore-Wind und Offshore-Wasserstoff müssen zusammengedacht werden.",
+      "tag": "Aktuell",
+      "datum": "26. Januar 2026",
+      "bild": "/images/projekte/offshore-plattform.jpg",
+      "link": "/news",
+      "linkText": "Zur Pressemeldung"
+    },
+    {
+      "titel": "Netzentwicklungsplan muss dringend geändert werden",
+      "text": "Der aktuelle NEP-Entwurf der Übertragungsnetzbetreiber wird den Anforderungen eines modernen Energiesystems nicht gerecht. AquaVentus fordert substanzielle Ergänzungen im Offshore-Bereich.",
+      "tag": "Politik",
+      "datum": "15. Januar 2026",
+      "bild": "/images/projekte/sen1-windpark.png",
+      "link": "/news",
+      "linkText": "Zur Pressemeldung"
+    },
+    {
+      "titel": "Windenergie-Novelle: Kombinierte Anschlusskonzepte jetzt verankern",
+      "text": "AquaVentus fordert klare gesetzliche Weichenstellungen für kombinierte Strom- und Pipeline-Anbindung von Offshore-Windparks — in allen anderen Nordseeanrainerstaaten bereits gängige Praxis.",
+      "tag": "Konsultation",
+      "datum": "2. Januar 2026",
+      "bild": "/images/projekte/aquaductus.png",
+      "link": "/news",
+      "linkText": "Zur Pressemeldung"
+    },
+    {
+      "titel": "Systemkosten um bis zu 1,7 Mrd. € pro Jahr senken",
+      "text": "Die Frontier-Economics-Studie belegt: Sektorengekoppelte Vernetzung von Offshore-Elektrolyseuren mit Windparks senkt nicht nur H₂-Kosten, sondern die Gesamtkosten des Erneuerbaren-Ausbaus.",
+      "tag": "Studie",
+      "datum": "November 2025",
+      "bild": "/images/studien/frontier-economics-deckblatt.png",
+      "link": "/leitstudien/frontier-economics-2025",
+      "linkText": "Zur Studie"
+    },
+    {
+      "titel": "Netzwerk stärken",
+      "text": "Zwischen warmem Kerzenlicht und angeregten Gesprächen entstanden Verbindungen, die weit über den geschäftlichen Rahmen hinausgehen. Hinter den Projekten stehen Menschen mit gemeinsamer Vision.",
+      "tag": "AquaSummit 2025",
+      "datum": "Oktober 2025",
+      "bild": "/images/aquasummit/7IV04122.jpg",
+      "link": "/aquasummit",
+      "linkText": "Zum AquaSummit"
+    }
+  ]
+}

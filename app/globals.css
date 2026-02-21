@@ -1327,6 +1327,14 @@
 }
 
 /* Drift paths */
+/* ================================================================
+   NEWS SLIDER — Progress bar animation
+   ================================================================ */
+@keyframes progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
 .drift-a { animation: driftA var(--swarm-dur) ease-in-out infinite; }
 .drift-b { animation: driftB var(--swarm-dur) ease-in-out infinite; }
 .drift-c { animation: driftC var(--swarm-dur) ease-in-out infinite; }
