@@ -1,8 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { Map, ExternalLink } from "lucide-react";
 import ActivityTimeline from "@/components/ActivityTimeline";
 import LatestNewsSidebar from "@/components/LatestNewsSidebar";
 import MemberSubNav from "@/components/MemberSubNav";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export async function generateMetadata({
   params,
@@ -36,7 +38,27 @@ export default async function MitgliederPage({
             <ActivityTimeline />
           </div>
 
-          <aside>
+          <aside className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <Map className="h-4 w-4" />
+                  {t("hydroAtlasTitle")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-3 text-sm text-muted-foreground">{t("hydroAtlasText")}</p>
+                <a
+                  href="https://hydro-atlas.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                >
+                  {t("hydroAtlasLink")} <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </CardContent>
+            </Card>
+
             <LatestNewsSidebar
               locale={locale}
               title={t("latestNews")}

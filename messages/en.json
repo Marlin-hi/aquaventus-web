@@ -207,7 +207,10 @@
     "directoryDescription": "Overview of all registered members.",
     "memberSince": "Member since",
     "role_member": "Member",
-    "role_admin": "Administrator"
+    "role_admin": "Administrator",
+    "hydroAtlasTitle": "Hydro Atlas",
+    "hydroAtlasText": "Interactive map of offshore hydrogen projects and stakeholders in Germany.",
+    "hydroAtlasLink": "Open Hydro Atlas"
   },
   "admin": {
     "title": "Administration",

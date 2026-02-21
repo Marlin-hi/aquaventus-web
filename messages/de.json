@@ -207,7 +207,10 @@
     "directoryDescription": "Alle registrierten Mitglieder im Überblick.",
     "memberSince": "Mitglied seit",
     "role_member": "Mitglied",
-    "role_admin": "Administrator"
+    "role_admin": "Administrator",
+    "hydroAtlasTitle": "Hydro-Atlas",
+    "hydroAtlasText": "Interaktive Karte der Offshore-Wasserstoff-Projekte und Akteure in Deutschland.",
+    "hydroAtlasLink": "Hydro-Atlas öffnen"
   },
   "admin": {
     "title": "Administration",
