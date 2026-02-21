@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "titel": "Effiziente Integration von Offshore-Windenergie durch Offshore-Wasserstoffproduktion",
+    "untertitel": "Eine Studie für AquaVentus",
+    "datum": "24. November 2025",
+    "autoren": ["Dr. Matthias Janssen", "María Paula Torres", "Gregor Braendle", "Laura Coordt"],
+    "quelle": "Frontier Economics",
+    "seiten": 35
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Executive Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Erschließung des Offshore-Windpotenzials Deutschlands und der Einsatz heimischer Elektrolyse sind entscheidend für die Erreichung einer bezahlbaren, sicheren Energieversorgung und die Erfüllung des deutschen Klimaneutralitätsziels für 2045. Allerdings sind die Kostenprognosen für den Anschluss von Offshore-Windparks durch Unterwasserkabel in letzter Zeit explodiert: Der aktuelle Netzentwicklungsplan sieht bis 2045 Kosten in Höhe von **158 Milliarden Euro** für die Offshore-Übertragung vor, zusätzlich zu einer ähnlichen Größenordnung für das Onshore-Übertragungsnetz."
+    },
+    {
+      "type": "paragraph",
+      "text": "Um Netzanbindungskosten zu senken, schlägt das Bundesamt für Seeschifffahrt und Hydrographie (BSH) im aktuellen Flächenentwicklungsplan (FEP) das sogenannte «Overplanting» von Offshore-Stromkabeln in der deutschen Nordsee vor, insbesondere in den weit entfernten Offshore-Zonen 4 und 5 der Nordsee."
+    },
+    {
+      "type": "paragraph",
+      "text": "**In dieser Studie untersuchen wir, wie eine Kombination von Stromnetzanschlüssen mit Wasserstoffpipelineanschlüssen und Offshore-Wasserstoffproduktion — von uns als «Offshore-Sektorkopplung» bezeichnet — den Vorschlag des BSH zum Elektrizitäts-Overplanting ergänzen kann, um die Kosten für die Integration von Offshore-Windenergie zu minimieren.**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unsere Analyse umfasst zwei Szenarien für den Ausbau der Offshore-Windenergie bis 2045: 70 GW, was dem gesetzlichen Ziel Deutschlands entspricht, und 55 GW, was einem konservativeren Ausbau unter Berücksichtigung von Nachlaufeffekten entspricht. Für jedes Szenario vergleichen wir drei Konfigurationen:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Referenz:** Geplanter Ausbau mit gleicher Offshore-Turbinen- und Stromkabelkapazität (kein Overplanting), wobei die Elektrolyseure zur Wasserstofferzeugung an Land stehen.",
+        "**Elektrizitäts-Overplanting:** Überkapazitäten bei Windkraftanlagen im Verhältnis zu Kabeln und Elektrolyseuren an Land.",
+        "**Offshore-Sektorkopplung:** Überschüssige Turbinenkapazität im Verhältnis zum Netzanschluss; Offshore-Elektrolyse mit einer Wasserstoffpipeline als Ergänzung zu den Stromverbindungen."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Die wichtigsten Ergebnisse auf einen Blick"
+    },
+    {
+      "type": "keypoint",
+      "nummer": 1,
+      "titel": "Die Offshore-Sektorkopplung ermöglicht Kosteneinsparungen von bis zu 1,7 Milliarden Euro pro Jahr in den Zonen 4 und 5 der deutschen Nordsee",
+      "text": "Elektrizitäts-Overplanting reduziert die Netto-Infrastrukturkosten gegenüber dem geplanten Ausbau bereits um 778 Millionen Euro pro Jahr im 70-GW-Offshore-Windszenario und um 116 Millionen Euro im 55-GW-Szenario. Durch die Sektorkopplung im Offshore-Bereich lassen sich jedoch wesentlich höhere Einsparungen erzielen: 1.664 Millionen Euro pro Jahr im 70-GW-Szenario und 477 Millionen Euro pro Jahr im 55-GW-Szenario."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 2,
+      "titel": "Kostengünstige Transportinfrastruktur erklärt den wirtschaftlichen Vorteil",
+      "text": "Die Offshore-Sektorkopplung ist eine wertvolle Option für die Anbindung von weit von der Küste entfernten Windgebieten, da sie durch die Kombination von effizientem Energietransport und flexibler Nutzung der Offshore-Erzeugung die niedrigsten Kosten verursacht. Trotz der im Vergleich zur Onshore-Elektrolyse höheren Kosten für die Offshore-Elektrolyse werden die Kosten durch den Einsatz von Wasserstoffpipelines statt Stromkabeln erheblich reduziert. Die Flexibilität, entweder Strom oder Wasserstoff zu produzieren und zu exportieren, verbessert zudem die Auslastung der Erzeugungs- und Übertragungsinfrastruktur und minimiert die Abregelung der Offshore-Windenergie."
+    },
+    {
+      "type": "paragraph",
+      "text": "Insbesondere steigt die Auslastung des Stromnetzes von 52 % bei reinem Elektrizitäts-Overplanting auf 65 % bei einer Offshore-Sektorkopplung im 70-GW-Szenario, sowie von 55 % auf 64 % im 55-GW-Szenario. Abregelung sinkt im Vergleich zu Overplanting von 14 % auf 11 % bei 70 GW und von 5 % auf 3 % bei 55 GW. Dies führt zu mehr nutzbarer Energie im Jahr 2045 (2,5 TWh im 70-GW-Szenario und 1 TWh im 55-GW-Szenario), wobei Strom- und Wasserstoffproduktion kombiniert werden."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 3,
+      "titel": "Die Ergebnisse bleiben robust gegenüber Änderungen bei der Elektrolyseurkapazität, Strompreisen und Kosten für Offshore-Elektrolyse",
+      "text": "Die Offshore-Sektorkopplung liefert die niedrigsten Netto-Infrastrukturkosten über alle wichtigen Sensitivitäten hinweg. Der relative Vorteil von Sektorkopplung (a) steigt mit zunehmender Elektrolyseurkapazität, (b) bleibt gegenüber Strompreisschwankungen von ± 20 % weitgehend konstant und (c) bleibt auch dann bestehen, wenn Offshore-Elektrolyseure als doppelt so teuer wie Onshore-Elektrolyseure angenommen werden."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 4,
+      "titel": "Erforderliche Maßnahmen zur Ermöglichung der Offshore-Sektorkopplung",
+      "text": "Um die Offshore-Sektorkopplung in Deutschland zu ermöglichen und das Potenzial für einen kosteneffizienten Einsatz von Offshore-Windenergie auszuschöpfen, müssen wichtige regulatorische Elemente implementiert werden. Zu den regulatorischen Elementen gehören a) die Ausweitung der Standortausweisungen über die derzeit geplanten 1 GW für Offshore-Elektrolyse im Pilotgebiet SEN-1 hinaus und die Zulassung gemischter Offshore-Strom- und Wasserstoff-Anbindungskonzepte, b) das parallele Vorantreiben der Planung für die Strom- und Wasserstoffübertragung, c) die Gewährung des gleichen Status von öffentlichem Interesse für Offshore-Elektrolyseurprojekte wie für Onshore-Elektrolyseurprojekte und d) die Einführung von Mechanismen zur Minderung von Investitionsrisiken."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1 Einleitung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deutschland strebt bis 2045 Klimaneutralität an. Zentrale Elemente sind dabei Offshore-Windenergie und erneuerbarer Wasserstoff auf Basis von Elektrolyse mit erneuerbarem Strom. Die Zielwerte für die installierte Offshore-Windenergiekapazität liegen bei 30 GW bis 2030, 50 GW bis 2040 und 70 GW bis 2045."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-01.png",
+      "caption": "Abbildung 1: Gesetzliche Ziele für die Offshore-Windenergiekapazität in Deutschland",
+      "alt": "Balkendiagramm zeigt Ausbau von 9,2 GW (2025) auf 30 GW (2030), 50 GW (2035) und 70 GW (2050)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bis heute basieren die Planungsgrundsätze Deutschlands auf der Annahme, dass jeder Offshore-Windpark zu 100 % an das Stromnetz angeschlossen wird, mit Ausnahme eines 1-GW-Pilotgebiets (SEN-1), in dem alternative Anschlusskonzepte wie Offshore-Wasserstoff getestet werden sollen. Die Kostenprognosen für den Anschluss von Offshore-Windparks an Unterwasserstromkabel sind jedoch in letzter Zeit explodiert: Der aktuelle Netzentwicklungsplan sieht bis 2045 Offshore-Übertragungskosten in Höhe von **158 Milliarden Euro** vor, zusätzlich zu einem ähnlichen Betrag für das Onshore-Übertragungsnetz."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-02.png",
+      "caption": "Abbildung 2: Entwicklung der erwarteten Kosten für den Ausbau des Stromübertragungsnetzes zwischen 2022 und 2024",
+      "alt": "Infografik zeigt Kostenanstieg von 75-79 Mrd. Euro (2022) auf 314 Mrd. Euro (2024) für Offshore- und Onshore-Netz"
+    },
+    {
+      "type": "paragraph",
+      "text": "Im Einklang mit den jüngsten Monitoring-Ergebnissen sollte eine kosteneffiziente heimische Elektrolyse die groß angelegten Wasserstoffimporte ergänzen und systemdienlich entwickelt werden. Die Wahrung der Kosteneffizienz ist dabei notwendig, um die Wettbewerbsfähigkeit und Bezahlbarkeit der deutschen Energieversorgung zu sichern."
+    },
+    {
+      "type": "paragraph",
+      "text": "In diesem Zusammenhang hat der aktuelle Flächenentwicklungsplan Offshore (FEP) des Bundesamtes für Seeschifffahrt und Hydrographie (BSH) die Diskussion über ein Overplanting an Offshore-Windkraftkapazität im Verhältnis zu den Netzanschlüssen wiederbelebt, insbesondere in den Zonen 4 und 5 der Nordsee, das heißt den Zonen im sogenannten «Entenschnabel», die am weitesten von der deutschen Küste entfernt sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Vorschlag des BSH beinhaltet einen Zielkonflikt zwischen der Senkung der Kosten für den Anschluss der Offshore-Stromnetze und der Reduzierung der Strommengen, die von Offshore-Windparks zu den Verbraucher:innen transportiert werden: Einerseits reduziert die Dimensionierung der Kabel unterhalb der Offshore-Spitzenerzeugungskapazität die Kosten, da die Spitzenleistung selten erreicht wird. Andererseits begrenzt sie die maximal lieferbare Leistung und erfordert eine Abregelung der Energie, wodurch die Einnahmen eingeschränkt werden und der Bedarf an Subventionen für Offshore-Windenergie steigt."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-03.png",
+      "caption": "Abbildung 3: Ertragsverluste bei unterschiedlichen Overplanting-Graden in der deutschen Nordsee auf Gebietsebene",
+      "alt": "Streudiagramm zeigt Ertragsverluste von 0-10% bei Overplanting von 0-25% für Szenarien 24 und 25"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-04.png",
+      "caption": "Abbildung 4: Steigerungen in der IRR (Prozentpunkte) und NPV (Mrd. €) im Vergleich zu Baseline ohne Overplanting",
+      "alt": "Balkendiagramme zeigen IRR-Steigerungen von 1,7-3,8 Prozentpunkten und NPV-Steigerungen von 15,5-28,7 Mrd. Euro"
+    },
+    {
+      "type": "paragraph",
+      "text": "AquaVentus möchte das Verständnis dafür vertiefen, wie die Offshore-Sektorkopplung mit gemischten Strom- und Wasserstoffanbindungen das Prinzip des Overplanting nutzen kann, um die Wirtschaftlichkeit von Projekten zu stärken und die Gesamtsystemkosten zu senken. Die vorliegende Studie untersucht, wie Offshore-Elektrolyse, die zusammen mit der Windenergieerzeugung an einem Standort erfolgt und über Stromkabel und Wasserstoffpipelines an das Festland angebunden ist, die effiziente Nutzung des Offshore-Windpotenzials in Deutschland verbessern kann."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "2 Die Modellergebnisse zeigen, dass die Offshore-Sektorkopplung die kostengünstigste Nutzung des Offshore-Windpotenzials ermöglicht"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.1 Ansatz: Vergleich zwischen Offshore-Sektorkopplung und alternativen Konfigurationen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir untersuchen die Offshore-Sektorkopplung mit gemischten Strom- und Wasserstoff-Offshore-Anbindungen als Alternative zum Vorschlag des BSH, in den Zonen 4 und 5 der deutschen Nordsee ein reines Elektrizitäts-Overplanting zu implementieren. Im Vorschlag des BSH übersteigt die Offshore-Windkapazität die Kabelkapazität, und alle Anbindungen an Land sind ausschließlich für Strom vorgesehen. Wir vergleichen beide Optionen mit einer Baseline «Aktueller Ausbau», bei der die Kabelkapazität der Turbinenkapazität entspricht (das heißt keine Überkapazität) und alle Anbindungen ausschließlich für Strom vorgesehen sind."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-05.png",
+      "caption": "Abbildung 5: Übersicht über Infrastrukturkonfigurationen",
+      "alt": "Drei Diagramme vergleichen Baseline (gleiche Kapazität), Overplanting (nur Strom) und Offshore-Sektorkopplung (Strom + H2-Pipeline)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir führen unseren Vergleich der verschiedenen Konfigurationen für zwei unterschiedliche Offshore-Windkraftausbau-Szenarien bis 2045 durch:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Das erste Szenario umfasst **70 GW** installierte Offshore-Windkapazität und spiegelt das gesetzliche Ausbauziel Deutschlands wider, wobei der aktuelle FEP den Rahmen für dessen Umsetzung vorgibt. In diesem Szenario legen wir die Elektrolyseurkapazität für alle Konfigurationen auf **10 GW** fest.",
+        "Das zweite Szenario geht von **55 GW** aus, was einer Beschränkung der Offshore-Windkapazität aufgrund von Nachlaufeffekten entspricht. In diesem Szenario haben wir die Elektrolyseurkapazität für alle Konfigurationen auf **4 GW** festgelegt."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-06.png",
+      "caption": "Abbildung 6: Übersicht über zwei verschiedene Offshore-Ausbauszenarien",
+      "alt": "Karten zeigen Zone 4 und 5 der Nordsee mit unterschiedlichen Kapazitäten im 70-GW vs 55-GW-Szenario"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir gehen von derselben Elektrolysekapazität für alle Konfigurationen innerhalb jedes Offshore-Windkraft-Szenarios aus (10 GW im 70-GW-Szenario und 4 GW im 55-GW-Szenario), anstatt sie innerhalb jeder Konfiguration zu optimieren. Dies steht im Einklang mit dem Design unseres **eigenständigen Offshore-Systemmodells, das für jedes Offshore-Windkapazitätsszenario und jede Konfiguration die Offshore-Verbindungskonfiguration (d.h. die Kapazität des Stromkabels und der Wasserstoffpipeline) ermittelt, die die Nettoinfrastrukturkosten für die Integration von Offshore-Energie minimiert**."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.2 Zentrale Ergebnisse: Die Sektorkopplung im Offshore-Bereich ermöglicht die wirtschaftlichste Nutzung der Offshore-Windenergie"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-07.png",
+      "caption": "Abbildung 7: Kostenminimierende Infrastrukturkapazitäten in verschiedenen Konfigurationen und Offshore-Windausbau-Szenarien",
+      "alt": "Tabelle vergleicht OWP-Kapazität, Kabelkapazität, Overplanting und Elektrolyse-Kapazität für alle drei Konfigurationen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Beim Elektrizitäts-Overplanting und der Offshore-Sektorkopplung ergibt sich eine optimale Überkapazität der Offshore-Windkapazität von 36 % im Verhältnis zur gesamten Offshore-Transportkapazität. Im Fall der Offshore-Sektorkopplung, bei der eine Wasserstoffpipeline das Stromkabel ergänzt, ist es kostenoptimierend, eine geringere Kabelkapazität als beim reinen Overplanting (nur Strom) zu installieren, da die Pipeline eine zusätzliche, kosteneffiziente Transportroute bietet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir stellen außerdem fest, dass **die Offshore-Sektorkopplung das effektivste Mittel ist, um das Offshore-Windpotenzial in den Zonen 4 und 5 der deutschen Nordsee zu nutzen**. Sowohl Overplanting (nur Strom) als auch Offshore-Sektorkopplung reduzieren die Netto-Infrastrukturkosten für die Integration des Offshore-Energiepotenzials im Vergleich zur Baseline-Konfiguration ohne Overplanting. Die Offshore-Sektorkopplung liefert dabei in beiden Offshore-Ausbau-Szenarien das wirtschaftlichste Ergebnis."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-08.png",
+      "caption": "Abbildung 8: Jährliche Kosten für die Integration von Offshore-Energie in verschiedenen Konfigurationen im Jahr 2045 (70-GW-Szenario)",
+      "alt": "Gestapelte Balkendiagramme zeigen Kosten und Erlöse für alle drei Konfigurationen, Offshore-Sektorkopplung hat niedrigste Integrationskosten"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-09.png",
+      "caption": "Abbildung 9: Jährliche Kosten für die Integration von Offshore-Energie in verschiedenen Konfigurationen im Jahr 2045 (55-GW-Szenario)",
+      "alt": "Gestapelte Balkendiagramme für das 55-GW-Szenario, Offshore-Sektorkopplung erzielt sogar positive Renditen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die niedrigeren Netto-Infrastrukturkosten für die Integration von Offshore-Energie ergeben sich aus einer reduzierten Kapazität der Offshore-Stromkabel. Diese Reduzierung führt zwar zu einem leichten Rückgang der Einnahmen aus dem Verkauf von Strom zu Großhandelsmarktpreisen, und die Kosten für Elektrolyseure sind offshore höher als onshore. Jedoch sind die Einsparungen bei den Investitions- und Betriebskosten wesentlich größer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Konkret senkt die Offshore-Sektorkopplung die Netto-Infrastrukturkosten für die Integration von Offshore-Energie um etwa **1.664 Millionen Euro pro Jahr** im 70-GW-Szenario und um **477 Millionen Euro pro Jahr** im 55-GW-Szenario. Zum Vergleich: Ein reines Overplanting im Strombereich senkt diese Kosten nur um 678 Millionen Euro bzw. 116 Millionen Euro pro Jahr."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-10.png",
+      "caption": "Abbildung 10: Einsparungen in den jährlichen Nettoinfrastrukturkosten durch Overplanting und Sektorkopplung im Vergleich zum geplanten Ausbau",
+      "alt": "Balkendiagramm zeigt Einsparungen: 70-GW-Szenario 1.664 Mio. Euro bei Sektorkopplung vs 678 Mio. bei Overplanting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der Vorteil der Sektorkopplung ergibt sich aus drei Faktoren:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Erstens sind die **Gesamtkosten für die Offshore-Sektorkopplung am niedrigsten**. Zwar sind die Investitions- und Betriebskosten für die Offshore-Elektrolyse höher als für die Onshore-Elektrolyse und es muss eine Wasserstoffpipeline gebaut werden. Doch diese Nachteile werden durch eingesparte Kabelinvestitionen und Effizienzgewinne beim Energietransport mehr als ausgeglichen. Wasserstoffpipelines bieten eine deutlich kostengünstigere Möglichkeit, große Energiemengen über große Entfernungen zu transportieren als Stromkabel.",
+        "Zweitens verbessert die Flexibilität, entweder Strom oder Wasserstoff zu transportieren, die **Auslastung der Offshore-Stromübertragungsinfrastruktur**. Die Offshore-Kabel werden im Rahmen der Sektorkopplung zu 65 % ausgelastet, verglichen mit 52 % bei reinem Strom-Overplanting im 70-GW-Szenario und 64 % gegenüber 55 % im 55-GW-Szenario.",
+        "Drittens **reduziert die Offshore-Sektorkopplung auch die Abregelung** im Vergleich zum Overplanting, da die Offshore-Windenergie flexibel entweder für die Elektrolyse oder für die Stromerzeugung genutzt werden kann."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-11.png",
+      "caption": "Abbildung 11: Installierte Kapazitäten und Infrastrukturnutzung",
+      "alt": "Balkendiagramme zeigen OWP, Netzanschluss und Pipeline-Kapazitäten sowie Auslastung und Abregelung für alle Szenarien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aufgrund der parallelen Infrastruktur für Strom- und Wasserstoffanschlüsse ermöglicht die Offshore-Sektorkopplung eine systemvorteilhafte Nutzung der Offshore-Windenergie. In Zeiten hoher Strompreise wird der Strom vorrangig an Land transportiert, wodurch der Wert der Stromerzeugung maximiert wird. Bei niedrigen oder negativen Strompreisen wird der Offshore-Strom stattdessen direkt für die Elektrolyse genutzt und als Wasserstoff an Land transportiert."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-12.png",
+      "caption": "Abbildung 12: Stündliche Nutzung der Offshore-Stromerzeugung (70-GW-Szenario)",
+      "alt": "Flächendiagramme vergleichen die stündliche Stromerzeugung bei Overplanting vs Sektorkopplung über alle 8760 Stunden"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.3 Sensitivitätsanalyse: Der Vorteil der Sektorkopplung ist robust"
+    },
+    {
+      "type": "paragraph",
+      "text": "Wir testen die Sensitivitäten der Variablen, die den Vorteil der Offshore-Sektorkopplung am ehesten beeinflussen. Ziel ist es, die Robustheit unserer Ergebnisse gegenüber den wichtigsten Treibern der Offshore-Energieökonomie zu bewerten, insbesondere der installierten Elektrolyseurkapazität, der Höhe der Strompreise und der Kostendifferenz zwischen Offshore- und Onshore-Elektrolyseuren."
+    },
+    {
+      "type": "paragraph",
+      "text": "Angesichts der geringeren Kosten für den Energietransport steigen die Vorteile der Offshore-Wasserstoffproduktion mit der installierten Elektrolyseurkapazität. Wir testen verschiedene Sensitivitäten, indem wir die Elektrolyseurkapazität um ± 50 % variieren. Die Ergebnisse zeigen, dass die Offshore-Sektorkopplung in allen Sensitivitäten die wirtschaftlichste Konfiguration bleibt. Darüber hinaus steigt ihr wirtschaftlicher Vorteil gegenüber alternativen Konfigurationen mit höherer Elektrolyseurkapazität."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-13.png",
+      "caption": "Abbildung 13: Sensitivität — Einsparungen in den Nettointegrationskosten in Abhängigkeit der installierten Elektrolyseurkapazität",
+      "alt": "Liniendiagramme zeigen: Sektorkopplung bleibt bei allen Elektrolyseur-Kapazitäten die kostengünstigste Option"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bei den Strompreisen testen wir Sensitivitäten in einem Bereich von -20 % bis +20 % um das Standard-Großhandelspreisniveau. Niedrigere Strompreise verringern die Einnahmen aus dem Stromverkauf und erhöhen die Nettoinfrastrukturkosten für die Integration von Offshore-Energie im Fall von Elektrizitäts-Overplanting im Vergleich zur Offshore-Sektorkopplung, wodurch die Vorteile der letzteren verstärkt werden."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-14.png",
+      "caption": "Abbildung 14: Sensitivität — Einsparungen in den Nettointegrationskosten in Abhängigkeit der Strompreise",
+      "alt": "Liniendiagramme zeigen: Offshore-Sektorkopplung bleibt über gesamten Strompreisbereich von ±20% die bessere Option"
+    },
+    {
+      "type": "paragraph",
+      "text": "Abschließend testen wir die Sensitivität der Ergebnisse gegenüber den zusätzlichen Kosten der Offshore-Elektrolyse im Vergleich zur Onshore-Elektrolyse. Eine schnellere Kostenkonvergenz mit geringeren Kostenunterschieden erhöht den Vorteil der Offshore-Sektorkopplung. Über den gesamten Bereich hinweg bleibt der Vorteil der Minimierung der Nettoinfrastrukturkosten für die Integration von Offshore-Energie jedoch weitgehend unverändert, was die Robustheit der Ergebnisse bestätigt. Selbst unter der Annahme deutlich höherer Kosten für Offshore-Elektrolyseure halten folgende Erkenntnisse:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Die Offshore-Wasserstoffproduktion ist die wirtschaftlichste Option für die heimische Wasserstofferzeugung aus Offshore-Windenergie und",
+        "folglich ist Offshore-Sektorkopplung die wirtschaftlichste Option zur Integration des Offshore-Windpotenzials."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-15.png",
+      "caption": "Abbildung 15: Sensitivität — Einsparungen in den Nettointegrationskosten in Abhängigkeit der zusätzlichen Kosten der Offshore-Elektrolyse",
+      "alt": "Liniendiagramme zeigen: Auch bei ±20% Kostendelta bleibt die Offshore-Sektorkopplung wirtschaftlicher"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3 Gemischte Anschlusskonzepte ermöglichen effiziente Nutzung des Offshore-Windpotenzials in Deutschland"
+    },
+    {
+      "type": "paragraph",
+      "text": "Verschiedene Herausforderungen behindern weiterhin den Einsatz der Sektorkopplung im Offshore-Bereich in Deutschland. Bestehende Standortausweisungen, Vergabeverfahren und Genehmigungsrahmen schränken die Entwicklung von Offshore-Elektrolyse und integrierten Strom- und Wasserstoff-Anbindungskonzepten ein."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.1 Ausweitung der Gebiete für Offshore-Elektrolyse und Zulassung gemischter Offshore-Wasserstoff- und Stromanschlüsse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Derzeit hat das BSH eine Zone (SEN-1) für andere Energieerzeugungszwecke ausgewiesen, in der allgemein mit der Ansiedlung von Elektrolyseanlagen gerechnet wird. Dieses Pilotgebiet mit einer geplanten Kapazität von maximal 1 GW ist derzeit das einzige Offshore-Wasserstoffgebiet, das in der deutschen AWZ vorgesehen ist. Alle anderen Gebiete sind für reine Stromprojekte reserviert, was den Spielraum für die Skalierung von Offshore-Wasserstoff einschränkt."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.2 Vorantreiben der gemeinsamen Planung von Strom- und Wasserstoffnetzen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die gemeinsame Planung der Strom- und Wasserstoffübertragungsinfrastruktur ist sowohl aus systemischer Sicht als auch aus Investorensicht wichtig. Aus systemischer Sicht ermöglicht sie eine koordinierte Entwicklung von Netzen, die mit der Ausweitung der Wasserstofferzeugung, -speicherung und -nutzung sowie der Elektrifizierung zunehmend miteinander interagieren werden. Eine gemeinsame Raumplanung und eine einheitliche Modellierung können Doppelarbeit reduzieren, die Gesamtsystemkosten senken und die Widerstandsfähigkeit verbessern."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.3 Ausweitung der rechtlichen Priorisierung auf Offshore-Elektrolyseprojekte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eine weitere mögliche Stellschraube hinsichtlich der Genehmigung und des rechtlichen Status betrifft den Entwurf des Wasserstoffbeschleunigungsgesetzes. Das Gesetz kategorisiert Elektrolyseure an Land und in Küstengewässern als Projekte übergeordneten öffentlichen Interesses und schließt Offshore-Projekte in der AWZ von dieser Bestimmung aus. In der Praxis bedeutet dies, dass die Offshore-Elektrolyse nicht die gleiche rechtliche Priorität erhält."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.4 Minderung des Investitionsrisikos"
+    },
+    {
+      "type": "paragraph",
+      "text": "Investitionsrisiken bleiben eine zentrale Herausforderung im aufstrebenden Wasserstoffsektor, auch für Offshore-Projekte. Es wird erwartet, dass die Kosten für die Elektrolyse, einschließlich der Offshore-Elektrolyse, durch Skaleneffekte und Lerneffekte sinken werden. Frühzeitige Investitionen tragen zu diesem Prozess bei und schaffen Vorteile für den gesamten Sektor, auch wenn einzelne Investoren diesen Wert möglicherweise nicht realisieren können."
+    },
+    {
+      "type": "paragraph",
+      "text": "Zusammen führen diese Faktoren zu erheblicher Unsicherheit für Investoren sowohl im Onshore- als auch im Offshore-Wasserstoffbereich und unterstreichen die Notwendigkeit gezielter Maßnahmen zur Minderung des Investitionsrisikos und zur Stärkung des Marktvertrauens, auch für den Ausbau des Wasserstoffnetzes."
+    }
+  ]
+}

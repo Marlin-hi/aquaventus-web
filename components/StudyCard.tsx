@@ -1,18 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, BookOpen } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface StudyCardProps {
   titel: string;
   datumLabel: string;
   quelle: string;
   beschreibung: string;
+  slug?: string;
+  locale?: string;
   pdf?: string;
   pdfEn?: string;
   pdfDe?: string;
   bild?: string;
   pdfLabel?: string;
   pdfAltLabel?: string;
+  lesenLabel?: string;
 }
 
 export default function StudyCard({
@@ -20,12 +24,15 @@ export default function StudyCard({
   datumLabel,
   quelle,
   beschreibung,
+  slug,
+  locale,
   pdf,
   pdfEn,
   pdfDe,
   bild,
   pdfLabel = "PDF",
   pdfAltLabel,
+  lesenLabel = "Lesen",
 }: StudyCardProps) {
   const altPdf = pdfEn || pdfDe;
 
@@ -58,8 +65,17 @@ export default function StudyCard({
       </CardHeader>
       <CardContent>
         <p className="text-sm text-muted-foreground">{beschreibung}</p>
-        {pdf && (
-          <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2">
+          {slug && locale && (
+            <Link
+              href={`/${locale}/leitstudien/${slug}`}
+              className="inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <BookOpen className="h-3.5 w-3.5" />
+              {lesenLabel}
+            </Link>
+          )}
+          {pdf && (
             <a
               href={pdf}
               target="_blank"
@@ -69,19 +85,19 @@ export default function StudyCard({
               <Download className="h-3.5 w-3.5" />
               {pdfLabel}
             </a>
-            {altPdf && (
-              <a
-                href={altPdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-md bg-muted px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted/80"
-              >
-                <Download className="h-3.5 w-3.5" />
-                {pdfAltLabel || (pdfEn ? "English" : "Deutsch")}
-              </a>
-            )}
-          </div>
-        )}
+          )}
+          {altPdf && (
+            <a
+              href={altPdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-md bg-muted px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted/80"
+            >
+              <Download className="h-3.5 w-3.5" />
+              {pdfAltLabel || (pdfEn ? "English" : "Deutsch")}
+            </a>
+          )}
+        </div>
       </CardContent>
     </Card>
   );

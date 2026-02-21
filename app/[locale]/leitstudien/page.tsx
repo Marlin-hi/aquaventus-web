@@ -5,6 +5,7 @@ import StudyCard from "@/components/StudyCard";
 import { loadContent } from "@/lib/content";
 
 interface Studie {
+  slug?: string;
   titel: string;
   datum: string;
   datumLabel: string;
@@ -44,7 +45,12 @@ export default async function LeitstudienPage({
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 md:grid-cols-2">
             {data.leitstudien.map((studie) => (
-              <StudyCard key={studie.datum + studie.quelle} {...studie} />
+              <StudyCard
+                key={studie.datum + studie.quelle}
+                {...studie}
+                locale={locale}
+                lesenLabel={t("lesen")}
+              />
             ))}
           </div>
         </div>

@@ -30,7 +30,12 @@
     "title": "Leitstudien",
     "description": "Wissenschaftliche Studien zur Offshore-Wasserstoffproduktion — von Systemkosten bis Transportkonzepte.",
     "heroTitel": "Leitstudien",
-    "heroUntertitel": "Wissenschaftliche Grundlagen und Analysen zur Offshore-Wasserstoffproduktion — unabhängig erstellt, öffentlich zugänglich."
+    "heroUntertitel": "Wissenschaftliche Grundlagen und Analysen zur Offshore-Wasserstoffproduktion — unabhängig erstellt, öffentlich zugänglich.",
+    "lesen": "Studie lesen",
+    "alleLeitstudien": "Alle Leitstudien",
+    "seiten": "Seiten",
+    "vollePDFLesen": "Die vollständige Studie als PDF herunterladen",
+    "pdfHerunterladen": "PDF herunterladen"
   },
   "politik": {
     "title": "Politik",
@@ -129,7 +134,14 @@
     "gletscher": "Gletscher",
     "kristall": "Kristall",
     "jade": "Jade",
-    "moos": "Moos"
+    "moos": "Moos",
+    "ozeanflamme": "Ozean+Flamme",
+    "amethyst": "Amethyst",
+    "korallriff": "Korallriff",
+    "rosegold": "Roségold",
+    "neon": "Neon",
+    "synthwave": "Synthwave",
+    "phosphor": "Phosphor"
   },
   "aquasummit": {
     "title": "AquaSummit",

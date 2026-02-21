@@ -30,7 +30,12 @@
     "title": "Key Studies",
     "description": "Scientific studies on offshore hydrogen production — from system costs to transport concepts.",
     "heroTitel": "Key Studies",
-    "heroUntertitel": "Scientific foundations and analyses for offshore hydrogen production — independently commissioned, publicly available."
+    "heroUntertitel": "Scientific foundations and analyses for offshore hydrogen production — independently commissioned, publicly available.",
+    "lesen": "Read Study",
+    "alleLeitstudien": "All Key Studies",
+    "seiten": "pages",
+    "vollePDFLesen": "Download the full study as PDF",
+    "pdfHerunterladen": "Download PDF"
   },
   "politik": {
     "title": "Policy",
@@ -129,7 +134,14 @@
     "gletscher": "Glacier",
     "kristall": "Crystal",
     "jade": "Jade",
-    "moos": "Moss"
+    "moos": "Moss",
+    "ozeanflamme": "Ocean+Flame",
+    "amethyst": "Amethyst",
+    "korallriff": "Coral Reef",
+    "rosegold": "Rose Gold",
+    "neon": "Neon",
+    "synthwave": "Synthwave",
+    "phosphor": "Phosphor"
   },
   "aquasummit": {
     "title": "AquaSummit",
