@@ -9,16 +9,22 @@ export default function MembranBackground() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let ticking = false;
+    let idleTimer: ReturnType<typeof setTimeout>;
     const el = ref.current;
     if (!el) return;
+    const panels = el.querySelectorAll<HTMLElement>("[data-speed]");
 
     function update() {
-      const panels = el!.querySelectorAll<HTMLElement>("[data-speed]");
       const offset = window.scrollY;
       panels.forEach((panel) => {
+        panel.style.willChange = "transform";
         const speed = parseFloat(panel.dataset.speed || "0");
         panel.style.transform = `translateY(${-offset * speed}px)`;
       });
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        panels.forEach((p) => { p.style.willChange = "auto"; });
+      }, 150);
       ticking = false;
     }
 
@@ -31,7 +37,10 @@ export default function MembranBackground() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     update();
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(idleTimer);
+    };
   }, []);
 
   return (
