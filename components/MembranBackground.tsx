@@ -70,11 +70,24 @@ export default function MembranBackground() {
       <div className="mp mp-near mp-n2" data-speed="0.60" />
       <div className="mp mp-near mp-n3" data-speed="0.60" />
       <div className="mp mp-near mp-n4" data-speed="0.60" />
+      <div className="mp mp-near mp-n5" data-speed="0.60" />
+      <div className="mp mp-near mp-n6" data-speed="0.60" />
+      <div className="mp mp-near mp-n7" data-speed="0.60" />
+      <div className="mp mp-near mp-n8" data-speed="0.60" />
+      <div className="mp mp-near mp-n9" data-speed="0.60" />
+      <div className="mp mp-near mp-n10" data-speed="0.60" />
+      <div className="mp mp-near mp-n11" data-speed="0.60" />
+      <div className="mp mp-near mp-n12" data-speed="0.60" />
 
       {/* Glow kern-lines */}
       <div className="mp-glow mp-g1" data-speed="0.60" />
       <div className="mp-glow mp-g2" data-speed="0.60" />
       <div className="mp-glow mp-g3" data-speed="0.60" />
+      <div className="mp-glow mp-g4" data-speed="0.60" />
+      <div className="mp-glow mp-g5" data-speed="0.60" />
+      <div className="mp-glow mp-g6" data-speed="0.60" />
+      <div className="mp-glow mp-g7" data-speed="0.60" />
+      <div className="mp-glow mp-g8" data-speed="0.60" />
     </div>
   );
 }

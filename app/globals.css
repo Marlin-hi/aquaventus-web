@@ -681,6 +681,54 @@
   box-shadow: inset 0 0 18px 6px oklch(0.55 0.14 var(--theme-hue) / 0.08);
   border: 0.5px solid oklch(0.55 0.14 var(--theme-hue) / 0.07);
 }
+.mp-n5 {
+  left: 16%; width: 26px; top: 44%; bottom: 0;
+  background: oklch(1 0 0 / 0.32);
+  box-shadow: inset 0 0 20px 8px oklch(0.82 0.12 var(--theme-accent-hue) / 0.09);
+  border: 0.5px solid oklch(0.82 0.12 var(--theme-accent-hue) / 0.09);
+}
+.mp-n6 {
+  left: 55%; width: 30px; top: 38%; bottom: 0;
+  background: oklch(1 0 0 / 0.31);
+  box-shadow: inset 0 0 18px 6px oklch(0.55 0.14 var(--theme-hue) / 0.08);
+  border: 0.5px solid oklch(0.55 0.14 var(--theme-hue) / 0.08);
+}
+.mp-n7 {
+  right: 15%; width: 28px; top: 48%; bottom: 0;
+  background: oklch(1 0 0 / 0.33);
+  box-shadow: inset 0 0 20px 8px oklch(0.82 0.12 var(--theme-accent-hue) / 0.10);
+  border: 0.5px solid oklch(0.82 0.12 var(--theme-accent-hue) / 0.09);
+}
+.mp-n8 {
+  right: 35%; width: 24px; top: 55%; bottom: 0;
+  background: oklch(1 0 0 / 0.30);
+  box-shadow: inset 0 0 18px 6px oklch(0.55 0.14 var(--theme-hue) / 0.08);
+  border: 0.5px solid oklch(0.55 0.14 var(--theme-hue) / 0.07);
+}
+.mp-n9 {
+  left: 33%; width: 26px; top: 62%; bottom: 0;
+  background: oklch(1 0 0 / 0.31);
+  box-shadow: inset 0 0 18px 6px oklch(0.82 0.12 var(--theme-accent-hue) / 0.09);
+  border: 0.5px solid oklch(0.82 0.12 var(--theme-accent-hue) / 0.08);
+}
+.mp-n10 {
+  left: 75%; width: 30px; top: 58%; bottom: 0;
+  background: oklch(1 0 0 / 0.32);
+  box-shadow: inset 0 0 20px 8px oklch(0.55 0.14 var(--theme-hue) / 0.09);
+  border: 0.5px solid oklch(0.55 0.14 var(--theme-hue) / 0.08);
+}
+.mp-n11 {
+  left: 8%; width: 22px; top: 72%; bottom: 0;
+  background: oklch(1 0 0 / 0.30);
+  box-shadow: inset 0 0 18px 6px oklch(0.82 0.12 var(--theme-accent-hue) / 0.08);
+  border: 0.5px solid oklch(0.82 0.12 var(--theme-accent-hue) / 0.07);
+}
+.mp-n12 {
+  right: 8%; width: 28px; top: 70%; bottom: 0;
+  background: oklch(1 0 0 / 0.31);
+  box-shadow: inset 0 0 20px 8px oklch(0.55 0.14 var(--theme-hue) / 0.08);
+  border: 0.5px solid oklch(0.55 0.14 var(--theme-hue) / 0.07);
+}
 
 /* Glow kern-lines */
 .mp-g1 {
@@ -714,6 +762,58 @@
   box-shadow: 0 0 12px 5px oklch(0.82 0.12 var(--theme-accent-hue) / 0.14);
 }
 
+.mp-g4 {
+  left: calc(16% + 12px); width: 1.5px; top: 48%; bottom: 4%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.38) 15%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.50) 50%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.38) 85%,
+    transparent 100%);
+  box-shadow: 0 0 10px 4px oklch(0.82 0.12 var(--theme-accent-hue) / 0.14);
+}
+.mp-g5 {
+  left: calc(55% + 14px); width: 2px; top: 42%; bottom: 4%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.35) 20%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.48) 50%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.35) 80%,
+    transparent 100%);
+  box-shadow: 0 0 10px 4px oklch(0.55 0.14 var(--theme-hue) / 0.12);
+}
+.mp-g6 {
+  right: calc(15% + 13px); width: 1.5px; top: 52%; bottom: 4%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.36) 15%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.48) 50%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.36) 85%,
+    transparent 100%);
+  box-shadow: 0 0 10px 4px oklch(0.82 0.12 var(--theme-accent-hue) / 0.13);
+}
+
+.mp-g7 {
+  left: calc(33% + 12px); width: 1.5px; top: 66%; bottom: 4%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.36) 15%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.48) 50%,
+    oklch(0.82 0.12 var(--theme-accent-hue) / 0.36) 85%,
+    transparent 100%);
+  box-shadow: 0 0 10px 4px oklch(0.82 0.12 var(--theme-accent-hue) / 0.13);
+}
+.mp-g8 {
+  left: calc(75% + 14px); width: 2px; top: 62%; bottom: 4%;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.35) 20%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.48) 50%,
+    oklch(0.55 0.14 var(--theme-hue) / 0.35) 80%,
+    transparent 100%);
+  box-shadow: 0 0 10px 4px oklch(0.55 0.14 var(--theme-hue) / 0.12);
+}
+
 /* === Dark Mode — dark wall panels with glow === */
 .dark .mp-ultra-far {
   background: oklch(0.15 0.04 var(--theme-hue) / 0.16);
@@ -742,7 +842,7 @@
 /* Mobile — reduced panel count */
 @media (max-width: 768px) {
   .mp-ultra-far { display: none; }
-  .mp-f5, .mp-f6, .mp-m4, .mp-m5, .mp-n4 { display: none; }
+  .mp-f5, .mp-f6, .mp-m4, .mp-m5, .mp-n4, .mp-n5, .mp-n6, .mp-n7, .mp-n8, .mp-n9, .mp-n10, .mp-n11, .mp-n12 { display: none; }
   .mp-near { opacity: 0.6; }
   .mp-glow { opacity: 0.7; }
 }
