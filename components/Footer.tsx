@@ -74,7 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-3 text-sm font-semibold">{t("kontakt")}</h3>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <span>AquaVentus Förderverein e.V.</span>
+              <span><span className="text-primary">Aqua</span><span className="text-brand-ventus">Ventus</span> Förderverein e.V.</span>
               <span>Helgoland, Deutschland</span>
               <a href="mailto:info@aquaventus.org" className="hover:text-primary">
                 info@aquaventus.org

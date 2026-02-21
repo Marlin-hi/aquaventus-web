@@ -38,6 +38,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand-ventus: var(--brand-ventus);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -90,6 +91,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand-ventus: oklch(0.50 0.15 var(--theme-accent-hue));
 }
 
 .dark {
@@ -126,6 +128,7 @@
   --sidebar-accent-foreground: oklch(0.90 0.02 var(--theme-hue));
   --sidebar-border: oklch(0.50 0.06 var(--theme-hue) / 12%);
   --sidebar-ring: oklch(0.72 0.15 var(--theme-hue));
+  --brand-ventus: oklch(0.68 0.13 var(--theme-accent-hue));
 }
 
 /* ===== Brandung — Lighter, airier variant ===== */

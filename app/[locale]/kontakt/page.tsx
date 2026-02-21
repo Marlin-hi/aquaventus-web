@@ -114,7 +114,7 @@ export default async function KontaktPage({
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                AquaVentus Förderverein e.V.<br />
+                <span className="text-primary">Aqua</span><span className="text-brand-ventus">Ventus</span> Förderverein e.V.<br />
                 Lung Wai 28<br />
                 27498 Helgoland<br />
                 Deutschland

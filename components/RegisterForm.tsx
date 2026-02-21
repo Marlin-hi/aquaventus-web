@@ -79,7 +79,7 @@ export default function RegisterForm() {
           height={96}
           className="mb-4 h-24 w-24"
         />
-        <h1 className="text-2xl font-bold text-primary">AquaVentus</h1>
+        <h1 className="text-2xl font-bold text-primary">Aqua<span className="text-brand-ventus">Ventus</span></h1>
         <p className="mt-2 text-sm text-muted-foreground">{t("subtitle")}</p>
       </div>
 
