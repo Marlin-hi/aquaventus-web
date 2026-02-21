@@ -1169,6 +1169,7 @@
 [data-theme="lagune"] {
   --theme-hue: 210;
   --theme-accent-hue: 150;
+  --brand-ventus: oklch(0.50 0.15 var(--theme-accent-hue));
   --background: oklch(0.97 0.008 var(--theme-hue));
   --foreground: oklch(0.18 0.020 var(--theme-hue));
   --card: oklch(0.98 0.006 var(--theme-hue) / 72%);
@@ -1196,6 +1197,7 @@
 [data-theme="lagune"].dark {
   --theme-hue: 210;
   --theme-accent-hue: 150;
+  --brand-ventus: oklch(0.68 0.13 var(--theme-hue));
   --background: oklch(0.10 0.020 var(--theme-hue));
   --foreground: oklch(0.94 0.012 var(--theme-hue));
   --card: oklch(0.14 0.028 var(--theme-hue) / 65%);
