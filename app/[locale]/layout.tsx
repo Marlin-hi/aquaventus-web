@@ -76,9 +76,11 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
             <Navigation />
-            <MembranBackground />
-            <Fireflies />
-            <main className="relative min-h-[calc(100vh-4rem)]">{children}</main>
+            <main className="relative z-0 min-h-[calc(100vh-4rem)]">
+              <MembranBackground />
+              <Fireflies />
+              {children}
+            </main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
