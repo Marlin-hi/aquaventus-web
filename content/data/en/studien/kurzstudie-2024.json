@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "titel": "Assessment of Connection Concepts for Remote Offshore Wind Areas in the German North Sea",
+    "untertitel": "Short Study Commissioned by AquaVentus Förderverein e.V.",
+    "datum": "August 29, 2024",
+    "autoren": ["Dr. Henrik Schwaeppe", "Gerald Blumberg", "Philipp Breer", "Bastian Helms", "Felix Hembach", "Johanna Knetsch", "Konstantin Krebs", "Simon Oswald", "Clemens Rostock", "Lukas Verhees"],
+    "quelle": "E-Bridge Consulting GmbH",
+    "seiten": 88
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Management Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "The E-Bridge short study examines various connection concepts for offshore wind farms (OWF) in the remote zones 4 and 5 of the German North Sea. The central question is whether combined connection concepts — i.e. the simultaneous connection via power cable and hydrogen pipeline — are economically more advantageous than purely electrical or purely hydrogen-based concepts."
+    },
+    {
+      "type": "paragraph",
+      "text": "The study analyzes four different connection concepts across three energy scenarios on 88 pages, evaluating them from technical-economic, environmental and legal perspectives. The key findings show: **Combined connection concepts can reduce expansion costs by up to EUR 31 billion.**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key findings at a glance"
+    },
+    {
+      "type": "keypoint",
+      "nummer": 1,
+      "titel": "Combined connection concepts are cost-efficient",
+      "text": "Implementing combined connection concepts is more cost-effective than a purely electrical connection and only marginally more expensive than a purely hydrogen-based connection. The electrical connection concept has the highest investment costs at around EUR 70 billion, while a purely hydrogen-based connection is around EUR 55 billion. Combined concepts fall in between at EUR 59-63 billion."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 2,
+      "titel": "Higher revenue potential through flexibility",
+      "text": "The revenue potential of a hydrogen-focused combined connection concept is more than double that of a fully electrical concept. The flexibility to produce hydrogen during low electricity prices and feed in power during high prices maximizes revenues. The hydrogen-focused MC 2 achieves the highest revenues across all scenarios."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 3,
+      "titel": "Bidirectional cable use increases utilization",
+      "text": "Bidirectional use of offshore cables in combined connection concepts increases the utilization of cables and electrolysers by potentially several tens of percent. The actual utilization in combined concepts can reach a capacity factor of up to 60% for cables and electrolysers."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 4,
+      "titel": "Hydrogen-focused concepts achieve the highest net present value",
+      "text": "The connection concept MC 2 (4 GW cable, 10 GW electrolysis) has the highest internal rate of return and net present value almost consistently. Offshore electrolysis avoids grid expansion while maintaining the flexibility of onshore configurations, resulting in comparable revenue streams."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1 Introduction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The energy transition requires a massive expansion of renewable energies and the development of a green hydrogen economy. To achieve climate neutrality by 2045, Germany is relying on offshore wind energy with expansion targets of 30 GW by 2030 and 70 GW by 2045. At the same time, a significant share of future hydrogen demand is to be met through offshore electrolysis."
+    },
+    {
+      "type": "paragraph",
+      "text": "Until now, Germany's planning principles have been based on the assumption that each offshore wind farm is connected 100% to the electricity grid. Only a 1 GW pilot area (SEN-1) is designated for alternative connection concepts. This study is the first to comprehensively examine how **combined connection concepts** — i.e. parallel connection via power cable and hydrogen pipeline — can reduce costs and increase profitability."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3 Energy Scenarios"
+    },
+    {
+      "type": "paragraph",
+      "text": "The study models three energy scenarios in a fundamental European electricity market model to cover a broad spectrum of possible developments:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Climate Neutrality (CN):** Germany achieves climate neutrality by 2040 through high electrification and rapid renewable energy expansion. Coal phase-out by 2030, maximum solar capacity 400 GW, offshore wind 70 GW by 2045.",
+        "**Molecule-based Energy Transition (MET):** Complete decarbonization by 2045 through greater use of green gases. Higher hydrogen demand (472 TWh by 2045), 50 GW electrolysers.",
+        "**Delayed Energy Transition (DET):** Slower transformation due to acceptance issues and bureaucracy. Transformation completed only by 2055, fossil fuels remain in the system longer."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-05.png",
+      "caption": "Figure 5: Overview of the three energy scenarios CN, MET and DET",
+      "alt": "Three infographics show the Climate Neutrality, Molecule-based Energy Transition and Delayed Energy Transition scenarios"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-07.png",
+      "caption": "Figure 7: Installed renewable energy capacity in Germany by scenario and year (photovoltaics, onshore wind, offshore wind)",
+      "alt": "Bar charts show expansion of PV (up to 400 GW), onshore wind (up to 160 GW) and offshore wind (up to 70 GW) across three scenarios"
+    },
+    {
+      "type": "paragraph",
+      "text": "The average electricity price in 2045 ranges between **EUR 90 and 111 per MWh**. Hydrogen prices are expected to settle at around **EUR 3.5/kg** in the long term, just above EUR 100/MWh. The most low-price hours are expected in the CN scenario, the fewest in the MET scenario."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "4 Connection Concepts for Offshore Wind Farms"
+    },
+    {
+      "type": "paragraph",
+      "text": "The study considers three fundamental connection types: (1) Purely electrical grid connection system via HVDC, (2) offshore electrolysis with hydrogen pipeline, and (3) a combination of both concepts. The redundancy of the combined systems offers the possibility of deciding on an hourly basis whether to sell produced electricity directly or use it for hydrogen production."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-23.png",
+      "caption": "Figure 23: Schematic diagram of a combined connection concept with wind turbines, converter, electrolysis and hydrogen pipeline",
+      "alt": "Schematic shows offshore wind farm with two connection pathways: electrical via converter and cable, and via electrolysis and pipeline"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.2 The four analyzed connection concepts"
+    },
+    {
+      "type": "paragraph",
+      "text": "A total of 14 GW of offshore wind capacity in zone 4 and zone 5 needs to be connected. The study compares four variants:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**All E** (electricity only): 14 GW electrical grid connection, no electrolysis. All OWFs are connected fully electrically to the coast.",
+        "**MC 1** (electricity-focused): 10 GW electrical connection + 4 GW electrolysis. Combined concept with emphasis on power transmission.",
+        "**MC 2** (hydrogen-focused): 4 GW electrical connection + 10 GW electrolysis. Combined concept with emphasis on hydrogen production.",
+        "**All H2** (hydrogen only): 14 GW electrolysis, no cable connection. All energy is transported as hydrogen via the AquaDuctus pipeline."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-24.png",
+      "caption": "Figure 24: Analyzed connection concepts — Electricity only (All E), Hydrogen only (All H2), Combined Connection 1 (MC 1) and 2 (MC 2)",
+      "alt": "Four schematic maps show the spatial distribution of concepts All E, All H2, MC 1 and MC 2 in EEZ zones 4 and 5"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-26.png",
+      "caption": "Figure 26: Overview of the examined hydrogen production and connection variants with temporal and spatial distribution",
+      "alt": "Overview table shows for all four concepts: offshore wind capacity (14 GW), electrolyser capacity, pipeline share and cable connection"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "5 Cost Estimates"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the cost estimation, a uniform WACC of 9% is assumed across all technologies. Costs were determined through literature research and in consultation with the consortium."
+    },
+    {
+      "type": "paragraph",
+      "text": "Investment costs for **offshore electrolysis** currently stand at EUR 3,000/kW and are expected to decrease by 72% to around EUR 850/kW by 2050. The total costs per 500 MW electrolysis platform amount to approximately **EUR 1.15 billion** with investment beginning in 2035. The **AquaDuctus pipeline** has specific investment costs of EUR 7.48 million per km with a total length of over 400 km."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-27.png",
+      "caption": "Figure 27: Cost development of offshore electrolysis systems — expected cost reduction of ~72% by 2050",
+      "alt": "Bar chart shows decrease in specific investment costs from EUR 3,000/kW (2024) to approx. EUR 850/kW (2050)"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-30.png",
+      "caption": "Figure 30: Expected investment costs broken down by DC cable, AquaDuctus pipeline, electrolysers and offshore wind farms",
+      "alt": "Stacked bar charts show investment costs: All E EUR 70 bn, MC 1 EUR 64 bn, MC 2 EUR 57 bn, All H2 EUR 53 bn"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-31.png",
+      "caption": "Figure 31: Overview of the cost range under different cost parameters and investment start years",
+      "alt": "Bar charts show the range of total investments: EUR 50-80 billion depending on concept and assumptions"
+    },
+    {
+      "type": "paragraph",
+      "text": "At EUR 25 billion, the investment costs for wind farms are the same across all concepts. The costs for a purely electrical grid connection concept are estimated at around **EUR 44 billion**. The electrolyser platforms cost EUR 20 to 30 billion. The usage-proportional cost share of the AquaDuctus pipeline amounts to around EUR 1 billion."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "6 Technical-Economic Assessment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical-economic analysis examines various aspects: the delivered energy, revenues, component utilization as well as the **internal rate of return (IRR)** and the **net present value (NPV)**. The connection concepts are assessed as a whole — OWFs, electrolysers, converter platforms, cables and pipeline are all included."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.1 Electricity and hydrogen generation"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the All E connection concept, only electricity is delivered, and in All H2 only hydrogen. Wind farms in combined connection concepts can provide both electricity and hydrogen — even simultaneously. On average across all scenarios, hydrogen production is increased by **13%**, and in the long term (2045) even by **9%** beyond the electrolyser capacity."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-32.png",
+      "caption": "Figure 32: Comparison of annually delivered energy across different scenarios (electricity, offshore H2, surplus H2 from onshore power)",
+      "alt": "Bar charts show 30-55 TWh energy delivery per year, split into electricity, offshore H2 and surplus H2 for all concepts in 2035, 2040 and 2045"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.3 Utilization of cables and electrolysers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bidirectional cable use significantly increases utilization. For combined connection concepts with bidirectional cable use, an average increase in the capacity factor for cables of **11 percentage points** is expected in 2045. The capacity factor of electrolysers increases by an average of approximately **6 percentage points**."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-34.png",
+      "caption": "Figure 34: Capacity factors of cables and electrolysers — bidirectional cable use maximizes overall utilization",
+      "alt": "Bar charts show capacity factors: cables up to 60%, electrolysers up to 60% for combined concepts with bidirectional use"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.4 Economic suitability of configurations"
+    },
+    {
+      "type": "paragraph",
+      "text": "In nearly every scenario and year, a purely electrical connection results in a negative internal rate of return of **-4%** and an NPV of around **EUR -55 billion**. All compared connection concepts have a higher internal rate of return and NPV than All E across all assumptions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The **connection concept MC 2** has the highest internal rate of return and NPV almost consistently. For the combined connection concepts, IRR and NPV are higher for the hydrogen-focused MC 2 than for the electricity-focused MC 1, confirming the results from the revenue potential analysis."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-35.png",
+      "caption": "Figure 35: Difference in NPV (up to +EUR 35 billion) and IRR (up to +9 percentage points) of connection concepts compared to All E",
+      "alt": "Bar charts show NPV advantage: MC 2 up to +EUR 35 billion and IRR advantage up to +9 percentage points versus purely electrical connection"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "9 Recommendations for Action"
+    },
+    {
+      "type": "paragraph",
+      "text": "Combined connection concepts can make a significant contribution to a socioeconomically advantageous development of the German EEZ zones 4 and 5. They not only reduce the costs of integrating OWF in the North Sea but also make investments in remote OWF economically more attractive through their operational flexibility."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Combined connection concepts are the most cost-effective connection concept under certain conditions, but are legally excluded.** To fully exploit the offshore potential, a three-step approach is proposed as a starting point for further discussion:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Step 1 — Demonstration:** Enabling demonstration projects for offshore electrolysers to gain initial practical experience with planning, construction, operation and the applied environmental concept. Rapid small-scale demonstration projects, accompanied by the development of a large-scale electrolysis system.",
+        "**Step 2 — Pre-commercial scale:** Identification of cost reductions through scaling effects and preparation of supply chains. Development of an integrated system plan for the North Sea. Legislative anchoring of expansion targets for offshore electrolysis and relaxation of penalties under the SoEnergieV.",
+        "**Step 3 — Commercial deployment:** Exploiting the full potential of offshore wind energy with combined connection concepts. Leveraging experience from earlier phases for full-scale expansion."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-42.png",
+      "caption": "Figure 42: Three-step approach for implementing offshore hydrogen production — from demonstration through pre-commercial scale to commercial deployment",
+      "alt": "Timeline shows three overlapping stages: S1 Demonstrator (5 years), S2 SEN-1 pre-commercial (10 years), S3 multi-GW commercial (25+ years of operation)"
+    },
+    {
+      "type": "paragraph",
+      "text": "These steps can only be carried out to a limited extent simultaneously, as each phase requires several years of planning, construction and testing. Therefore, the first step should be initiated without delay to fully exploit the socioeconomic benefits of step three as quickly as possible."
+    }
+  ]
+}

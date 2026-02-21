@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "titel": "Efficient Integration of Offshore Wind Energy through Offshore Hydrogen Production",
+    "untertitel": "A Study for AquaVentus",
+    "datum": "November 24, 2025",
+    "autoren": ["Dr. Matthias Janssen", "María Paula Torres", "Gregor Braendle", "Laura Coordt"],
+    "quelle": "Frontier Economics",
+    "seiten": 35
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Executive Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tapping into Germany's offshore wind potential and deploying domestic electrolysis are critical for achieving an affordable, secure energy supply and meeting Germany's climate neutrality target for 2045. However, cost projections for connecting offshore wind farms via subsea cables have recently exploded: the current Grid Development Plan envisages costs of **EUR 158 billion** for offshore transmission by 2045, in addition to a similar amount for the onshore transmission grid."
+    },
+    {
+      "type": "paragraph",
+      "text": "To reduce grid connection costs, the Federal Maritime and Hydrographic Agency (BSH) proposes so-called «overplanting» of offshore power cables in the current Area Development Plan (FEP), particularly in the remote offshore zones 4 and 5 of the North Sea."
+    },
+    {
+      "type": "paragraph",
+      "text": "**In this study, we examine how a combination of power grid connections with hydrogen pipeline connections and offshore hydrogen production — referred to as «offshore sector coupling» — can complement the BSH's electricity overplanting proposal to minimize the costs of integrating offshore wind energy.**"
+    },
+    {
+      "type": "paragraph",
+      "text": "Our analysis covers two scenarios for the expansion of offshore wind energy to 2045: 70 GW, corresponding to Germany's statutory target, and 55 GW, representing a more conservative expansion taking wake effects into account. For each scenario, we compare three configurations:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Reference:** Planned expansion with equal offshore turbine and power cable capacity (no overplanting), with electrolysers for hydrogen production located onshore.",
+        "**Electricity overplanting:** Excess wind turbine capacity relative to cables, with electrolysers onshore.",
+        "**Offshore sector coupling:** Excess turbine capacity relative to grid connection; offshore electrolysis with a hydrogen pipeline complementing the power connections."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key findings at a glance"
+    },
+    {
+      "type": "keypoint",
+      "nummer": 1,
+      "titel": "Offshore sector coupling enables cost savings of up to EUR 1.7 billion per year in zones 4 and 5 of the German North Sea",
+      "text": "Electricity overplanting already reduces net infrastructure costs by EUR 778 million per year compared to the planned expansion in the 70 GW offshore wind scenario and by EUR 116 million in the 55 GW scenario. However, significantly higher savings can be achieved through offshore sector coupling: EUR 1,664 million per year in the 70 GW scenario and EUR 477 million per year in the 55 GW scenario."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 2,
+      "titel": "Cost-effective transport infrastructure explains the economic advantage",
+      "text": "Offshore sector coupling is a valuable option for connecting wind areas far from the coast, as it achieves the lowest costs by combining efficient energy transport with flexible use of offshore generation. Despite the higher costs of offshore electrolysis compared to onshore electrolysis, costs are significantly reduced by using hydrogen pipelines instead of power cables. The flexibility to produce and export either electricity or hydrogen also improves the utilization of generation and transmission infrastructure and minimizes curtailment of offshore wind energy."
+    },
+    {
+      "type": "paragraph",
+      "text": "In particular, the utilization of the power grid increases from 52% with pure electricity overplanting to 65% with offshore sector coupling in the 70 GW scenario, and from 55% to 64% in the 55 GW scenario. Curtailment decreases compared to overplanting from 14% to 11% at 70 GW and from 5% to 3% at 55 GW. This leads to more usable energy in 2045 (2.5 TWh in the 70 GW scenario and 1 TWh in the 55 GW scenario), combining electricity and hydrogen production."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 3,
+      "titel": "The results remain robust to changes in electrolyser capacity, electricity prices and offshore electrolysis costs",
+      "text": "Offshore sector coupling delivers the lowest net infrastructure costs across all key sensitivities. The relative advantage of sector coupling (a) increases with higher electrolyser capacity, (b) remains largely constant against electricity price fluctuations of ± 20%, and (c) persists even when offshore electrolysers are assumed to be twice as expensive as onshore electrolysers."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 4,
+      "titel": "Measures required to enable offshore sector coupling",
+      "text": "To enable offshore sector coupling in Germany and unlock the potential for cost-efficient deployment of offshore wind energy, key regulatory elements must be implemented. These include a) expanding site designations beyond the currently planned 1 GW for offshore electrolysis in the SEN-1 pilot area and permitting mixed offshore power and hydrogen connection concepts, b) advancing planning for power and hydrogen transmission in parallel, c) granting offshore electrolyser projects the same status of overriding public interest as onshore electrolyser projects, and d) introducing mechanisms to mitigate investment risks."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1 Introduction"
+    },
+    {
+      "type": "paragraph",
+      "text": "Germany aims to achieve climate neutrality by 2045. Central elements are offshore wind energy and renewable hydrogen based on electrolysis powered by renewable electricity. The targets for installed offshore wind energy capacity are 30 GW by 2030, 50 GW by 2040 and 70 GW by 2045."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-01.png",
+      "caption": "Figure 1: Statutory targets for offshore wind energy capacity in Germany",
+      "alt": "Bar chart shows expansion from 9.2 GW (2025) to 30 GW (2030), 50 GW (2035) and 70 GW (2050)"
+    },
+    {
+      "type": "paragraph",
+      "text": "To date, Germany's planning principles have been based on the assumption that each offshore wind farm is 100% connected to the electricity grid, with the exception of a 1 GW pilot area (SEN-1) where alternative connection concepts such as offshore hydrogen are to be tested. However, cost projections for connecting offshore wind farms to subsea power cables have recently exploded: the current Grid Development Plan envisages offshore transmission costs of **EUR 158 billion** by 2045, in addition to a similar amount for the onshore transmission grid."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-02.png",
+      "caption": "Figure 2: Development of expected costs for expanding the power transmission grid between 2022 and 2024",
+      "alt": "Infographic shows cost increase from EUR 75-79 billion (2022) to EUR 314 billion (2024) for offshore and onshore grid"
+    },
+    {
+      "type": "paragraph",
+      "text": "In line with recent monitoring findings, cost-efficient domestic electrolysis should complement large-scale hydrogen imports and be developed in a system-friendly manner. Maintaining cost efficiency is necessary to ensure the competitiveness and affordability of Germany's energy supply."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this context, the current Offshore Area Development Plan (FEP) by the Federal Maritime and Hydrographic Agency (BSH) has revived the discussion about overplanting offshore wind capacity relative to grid connections, particularly in zones 4 and 5 of the North Sea — the zones in the so-called «duck's bill» area that are farthest from the German coast."
+    },
+    {
+      "type": "paragraph",
+      "text": "The BSH's proposal involves a trade-off between reducing the costs of offshore power grid connections and reducing the volumes of electricity transported from offshore wind farms to consumers: on the one hand, sizing cables below peak offshore generation capacity reduces costs, as peak output is rarely achieved. On the other hand, it limits the maximum deliverable power and requires curtailment of energy, thereby constraining revenues and increasing the need for subsidies for offshore wind energy."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-03.png",
+      "caption": "Figure 3: Yield losses at different overplanting levels in the German North Sea at area level",
+      "alt": "Scatter plot shows yield losses of 0-10% at overplanting levels of 0-25% for scenarios 24 and 25"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-04.png",
+      "caption": "Figure 4: Increases in IRR (percentage points) and NPV (EUR billion) compared to baseline without overplanting",
+      "alt": "Bar charts show IRR increases of 1.7-3.8 percentage points and NPV increases of EUR 15.5-28.7 billion"
+    },
+    {
+      "type": "paragraph",
+      "text": "AquaVentus seeks to deepen the understanding of how offshore sector coupling with mixed power and hydrogen connections can leverage the principle of overplanting to strengthen the economics of projects and reduce overall system costs. This study examines how offshore electrolysis, co-located with wind energy generation and connected to the mainland via power cables and hydrogen pipelines, can improve the efficient use of Germany's offshore wind potential."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "2 Modelling results show that offshore sector coupling enables the most cost-effective use of offshore wind potential"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.1 Approach: Comparing offshore sector coupling with alternative configurations"
+    },
+    {
+      "type": "paragraph",
+      "text": "We examine offshore sector coupling with mixed power and hydrogen offshore connections as an alternative to the BSH's proposal to implement pure electricity overplanting in zones 4 and 5 of the German North Sea. In the BSH's proposal, offshore wind capacity exceeds cable capacity, and all onshore connections are exclusively for electricity. We compare both options with a «current expansion» baseline, where cable capacity equals turbine capacity (i.e. no overcapacity) and all connections are exclusively for electricity."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-05.png",
+      "caption": "Figure 5: Overview of infrastructure configurations",
+      "alt": "Three diagrams compare baseline (equal capacity), overplanting (electricity only) and offshore sector coupling (electricity + H2 pipeline)"
+    },
+    {
+      "type": "paragraph",
+      "text": "We conduct our comparison of the different configurations for two different offshore wind expansion scenarios to 2045:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The first scenario comprises **70 GW** of installed offshore wind capacity and reflects Germany's statutory expansion target, with the current FEP providing the framework for its implementation. In this scenario, we set the electrolyser capacity for all configurations at **10 GW**.",
+        "The second scenario assumes **55 GW**, corresponding to a limitation of offshore wind capacity due to wake effects. In this scenario, we set the electrolyser capacity for all configurations at **4 GW**."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-06.png",
+      "caption": "Figure 6: Overview of two different offshore expansion scenarios",
+      "alt": "Maps show zones 4 and 5 of the North Sea with different capacities in the 70 GW vs 55 GW scenario"
+    },
+    {
+      "type": "paragraph",
+      "text": "We assume the same electrolysis capacity for all configurations within each offshore wind scenario (10 GW in the 70 GW scenario and 4 GW in the 55 GW scenario), rather than optimizing it within each configuration. This is consistent with the design of our **standalone offshore system model, which for each offshore wind capacity scenario and configuration determines the offshore connection configuration (i.e. the capacity of the power cable and hydrogen pipeline) that minimizes net infrastructure costs for integrating offshore energy**."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.2 Key results: Offshore sector coupling enables the most cost-effective use of offshore wind energy"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-07.png",
+      "caption": "Figure 7: Cost-minimizing infrastructure capacities across different configurations and offshore wind expansion scenarios",
+      "alt": "Table compares OWF capacity, cable capacity, overplanting and electrolysis capacity for all three configurations"
+    },
+    {
+      "type": "paragraph",
+      "text": "For electricity overplanting and offshore sector coupling, the optimal overcapacity of offshore wind capacity is 36% relative to total offshore transport capacity. In the case of offshore sector coupling, where a hydrogen pipeline complements the power cable, it is cost-optimal to install less cable capacity than in pure overplanting (electricity only), as the pipeline provides an additional, cost-efficient transport route."
+    },
+    {
+      "type": "paragraph",
+      "text": "We also find that **offshore sector coupling is the most effective means of exploiting the offshore wind potential in zones 4 and 5 of the German North Sea**. Both overplanting (electricity only) and offshore sector coupling reduce the net infrastructure costs for integrating offshore energy potential compared to the baseline configuration without overplanting. Offshore sector coupling delivers the most cost-effective outcome in both offshore expansion scenarios."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-08.png",
+      "caption": "Figure 8: Annual costs of integrating offshore energy across different configurations in 2045 (70 GW scenario)",
+      "alt": "Stacked bar charts show costs and revenues for all three configurations, offshore sector coupling has lowest integration costs"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-09.png",
+      "caption": "Figure 9: Annual costs of integrating offshore energy across different configurations in 2045 (55 GW scenario)",
+      "alt": "Stacked bar charts for the 55 GW scenario, offshore sector coupling even achieves positive returns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The lower net infrastructure costs for integrating offshore energy result from a reduced offshore power cable capacity. While this reduction leads to a slight decline in revenue from selling electricity at wholesale market prices, and electrolyser costs are higher offshore than onshore, the savings in capital and operating expenditure are significantly greater."
+    },
+    {
+      "type": "paragraph",
+      "text": "Specifically, offshore sector coupling reduces the net infrastructure costs for integrating offshore energy by approximately **EUR 1,664 million per year** in the 70 GW scenario and by **EUR 477 million per year** in the 55 GW scenario. By comparison, pure electricity overplanting reduces these costs by only EUR 678 million and EUR 116 million per year, respectively."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-10.png",
+      "caption": "Figure 10: Savings in annual net infrastructure costs from overplanting and sector coupling compared to planned expansion",
+      "alt": "Bar chart shows savings: 70 GW scenario EUR 1,664 million for sector coupling vs EUR 678 million for overplanting"
+    },
+    {
+      "type": "paragraph",
+      "text": "The advantage of sector coupling arises from three factors:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "First, the **total costs for offshore sector coupling are the lowest**. While the capital and operating costs for offshore electrolysis are higher than for onshore electrolysis and a hydrogen pipeline must be built, these disadvantages are more than offset by saved cable investments and efficiency gains in energy transport. Hydrogen pipelines offer a significantly more cost-effective way of transporting large volumes of energy over long distances than power cables.",
+        "Second, the flexibility to transport either electricity or hydrogen improves the **utilization of the offshore power transmission infrastructure**. Offshore cables are utilized at 65% under sector coupling, compared to 52% with pure electricity overplanting in the 70 GW scenario, and 64% compared to 55% in the 55 GW scenario.",
+        "Third, **offshore sector coupling also reduces curtailment** compared to overplanting, as offshore wind energy can be flexibly used for either electrolysis or electricity generation."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-11.png",
+      "caption": "Figure 11: Installed capacities and infrastructure utilization",
+      "alt": "Bar charts show OWF, grid connection and pipeline capacities as well as utilization and curtailment for all scenarios"
+    },
+    {
+      "type": "paragraph",
+      "text": "Thanks to the parallel infrastructure for electricity and hydrogen connections, offshore sector coupling enables system-beneficial use of offshore wind energy. During periods of high electricity prices, power is preferentially transported onshore, thereby maximizing the value of electricity generation. When electricity prices are low or negative, offshore power is instead used directly for electrolysis and transported onshore as hydrogen."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-12.png",
+      "caption": "Figure 12: Hourly utilization of offshore electricity generation (70 GW scenario)",
+      "alt": "Area charts compare hourly electricity generation for overplanting vs sector coupling across all 8,760 hours"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.3 Sensitivity analysis: The advantage of sector coupling is robust"
+    },
+    {
+      "type": "paragraph",
+      "text": "We test the sensitivities of the variables that are most likely to influence the advantage of offshore sector coupling. The aim is to assess the robustness of our results with respect to the key drivers of offshore energy economics, particularly the installed electrolyser capacity, electricity price levels and the cost differential between offshore and onshore electrolysers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given the lower costs of energy transport, the advantages of offshore hydrogen production increase with installed electrolyser capacity. We test various sensitivities by varying electrolyser capacity by ± 50%. The results show that offshore sector coupling remains the most cost-effective configuration across all sensitivities. Furthermore, its economic advantage over alternative configurations increases with higher electrolyser capacity."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-13.png",
+      "caption": "Figure 13: Sensitivity — Savings in net integration costs depending on installed electrolyser capacity",
+      "alt": "Line charts show: sector coupling remains the most cost-effective option across all electrolyser capacities"
+    },
+    {
+      "type": "paragraph",
+      "text": "For electricity prices, we test sensitivities in a range of -20% to +20% around the standard wholesale price level. Lower electricity prices reduce revenues from electricity sales and increase net infrastructure costs for integrating offshore energy in the case of electricity overplanting compared to offshore sector coupling, thereby amplifying the advantages of the latter."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-14.png",
+      "caption": "Figure 14: Sensitivity — Savings in net integration costs depending on electricity prices",
+      "alt": "Line charts show: offshore sector coupling remains the better option across the entire ±20% electricity price range"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, we test the sensitivity of the results to the additional costs of offshore electrolysis compared to onshore electrolysis. Faster cost convergence with smaller cost differentials increases the advantage of offshore sector coupling. Across the entire range, however, the advantage in minimizing net infrastructure costs for integrating offshore energy remains largely unchanged, confirming the robustness of the results. Even assuming significantly higher costs for offshore electrolysers, the following findings hold:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Offshore hydrogen production is the most cost-effective option for domestic hydrogen generation from offshore wind energy, and",
+        "consequently, offshore sector coupling is the most cost-effective option for integrating offshore wind potential."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/frontier-economics/abb-15.png",
+      "caption": "Figure 15: Sensitivity — Savings in net integration costs depending on the additional costs of offshore electrolysis",
+      "alt": "Line charts show: even at ±20% cost delta, offshore sector coupling remains more cost-effective"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3 Mixed connection concepts enable efficient use of Germany's offshore wind potential"
+    },
+    {
+      "type": "paragraph",
+      "text": "Various challenges continue to hinder the deployment of offshore sector coupling in Germany. Existing site designations, award procedures and approval frameworks restrict the development of offshore electrolysis and integrated power and hydrogen connection concepts."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.1 Expanding areas for offshore electrolysis and permitting mixed offshore hydrogen and power connections"
+    },
+    {
+      "type": "paragraph",
+      "text": "Currently, the BSH has designated one zone (SEN-1) for other energy generation purposes, where electrolysis installations are generally expected to be located. This pilot area with a planned capacity of a maximum of 1 GW is currently the only offshore hydrogen area envisaged in the German EEZ. All other areas are reserved for pure electricity projects, which limits the scope for scaling up offshore hydrogen."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.2 Advancing joint planning of electricity and hydrogen grids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Joint planning of electricity and hydrogen transmission infrastructure is important from both a system perspective and an investor perspective. From a system perspective, it enables coordinated development of networks that will increasingly interact with the expansion of hydrogen generation, storage and use as well as electrification. Joint spatial planning and unified modelling can reduce duplication, lower overall system costs and improve resilience."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.3 Extending legal prioritization to offshore electrolysis projects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another potential lever regarding approval and legal status concerns the draft Hydrogen Acceleration Act. The law categorizes electrolysers on land and in coastal waters as projects of overriding public interest and excludes offshore projects in the EEZ from this provision. In practice, this means that offshore electrolysis does not receive the same legal priority."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.4 Mitigating investment risk"
+    },
+    {
+      "type": "paragraph",
+      "text": "Investment risks remain a key challenge in the emerging hydrogen sector, including for offshore projects. It is expected that the costs of electrolysis, including offshore electrolysis, will decrease through economies of scale and learning effects. Early investments contribute to this process and create benefits for the entire sector, even if individual investors may not be able to realize this value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Together, these factors lead to considerable uncertainty for investors in both the onshore and offshore hydrogen sectors, underscoring the need for targeted measures to mitigate investment risk and strengthen market confidence, including for the expansion of the hydrogen grid."
+    }
+  ]
+}
