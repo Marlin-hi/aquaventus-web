@@ -1162,6 +1162,61 @@
   --chart-5: oklch(0.55 0.13 85);
 }
 
+/* ---------- DuoTone: Lagune (Blue + Green) ---------- */
+[data-theme="lagune"] {
+  --theme-hue: 210;
+  --theme-accent-hue: 150;
+  --background: oklch(0.97 0.008 var(--theme-hue));
+  --foreground: oklch(0.18 0.020 var(--theme-hue));
+  --card: oklch(0.98 0.006 var(--theme-hue) / 25%);
+  --card-foreground: oklch(0.18 0.020 var(--theme-hue));
+  --popover: oklch(0.98 0.006 var(--theme-hue) / 90%);
+  --popover-foreground: oklch(0.18 0.020 var(--theme-hue));
+  --primary: oklch(0.50 0.14 var(--theme-hue));
+  --primary-foreground: oklch(0.98 0.004 var(--theme-hue));
+  --secondary: oklch(0.94 0.014 var(--theme-accent-hue));
+  --secondary-foreground: oklch(0.30 0.030 var(--theme-accent-hue));
+  --muted: oklch(0.94 0.012 var(--theme-hue));
+  --muted-foreground: oklch(0.48 0.030 var(--theme-hue));
+  --accent: oklch(0.92 0.025 var(--theme-accent-hue));
+  --accent-foreground: oklch(0.25 0.040 var(--theme-accent-hue));
+  --border: oklch(0.50 0.06 var(--theme-hue) / 18%);
+  --input: oklch(0.50 0.06 var(--theme-hue) / 22%);
+  --ring: oklch(0.50 0.14 var(--theme-hue));
+  --chart-1: oklch(0.55 0.14 210);
+  --chart-2: oklch(0.55 0.14 150);
+  --chart-3: oklch(0.60 0.12 195);
+  --chart-4: oklch(0.50 0.12 165);
+  --chart-5: oklch(0.48 0.13 225);
+}
+
+[data-theme="lagune"].dark {
+  --theme-hue: 210;
+  --theme-accent-hue: 150;
+  --background: oklch(0.10 0.020 var(--theme-hue));
+  --foreground: oklch(0.94 0.012 var(--theme-hue));
+  --card: oklch(0.14 0.028 var(--theme-hue) / 38%);
+  --card-foreground: oklch(0.94 0.012 var(--theme-hue));
+  --popover: oklch(0.15 0.024 var(--theme-hue) / 82%);
+  --popover-foreground: oklch(0.94 0.012 var(--theme-hue));
+  --primary: oklch(0.72 0.14 var(--theme-accent-hue));
+  --primary-foreground: oklch(0.94 0.012 var(--theme-accent-hue));
+  --secondary: oklch(0.17 0.024 var(--theme-hue));
+  --secondary-foreground: oklch(0.90 0.016 var(--theme-hue));
+  --muted: oklch(0.15 0.022 var(--theme-hue));
+  --muted-foreground: oklch(0.65 0.025 var(--theme-hue));
+  --accent: oklch(0.26 0.05 var(--theme-accent-hue));
+  --accent-foreground: oklch(0.92 0.016 var(--theme-accent-hue));
+  --border: oklch(0.50 0.08 var(--theme-accent-hue) / 16%);
+  --input: oklch(0.50 0.08 var(--theme-hue) / 20%);
+  --ring: oklch(0.72 0.14 var(--theme-accent-hue));
+  --chart-1: oklch(0.72 0.14 210);
+  --chart-2: oklch(0.62 0.14 150);
+  --chart-3: oklch(0.65 0.12 195);
+  --chart-4: oklch(0.58 0.12 165);
+  --chart-5: oklch(0.55 0.13 225);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

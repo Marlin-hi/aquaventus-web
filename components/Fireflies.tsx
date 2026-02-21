@@ -26,6 +26,7 @@ const THEME_HUES: Record<ColorTheme, number[]> = {
   neon:         [310, 315, 320, 185, 190, 195, 325],
   synthwave:    [325, 330, 335, 235, 240, 245, 340],
   phosphor:     [90, 95, 100, 270, 275, 280, 105],
+  lagune:       [195, 200, 210, 145, 150, 155, 215],
 };
 
 const SWARMS = [

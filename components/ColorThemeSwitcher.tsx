@@ -27,6 +27,7 @@ const THEME_COLORS: Record<ColorTheme, { light: string; dark: string }> = {
   neon:         { light: "oklch(0.52 0.20 320)", dark: "oklch(0.70 0.16 190)" },
   synthwave:    { light: "oklch(0.50 0.20 335)", dark: "oklch(0.65 0.18 240)" },
   phosphor:     { light: "oklch(0.55 0.16 100)", dark: "oklch(0.60 0.18 280)" },
+  lagune:       { light: "oklch(0.48 0.15 210)", dark: "oklch(0.65 0.16 150)" },
 };
 
 export default function ColorThemeSwitcher() {
