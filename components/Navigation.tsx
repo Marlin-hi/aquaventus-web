@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Menu, X, Moon, Sun, LogIn, User, LogOut, Shield } from "lucide-react";
+import { Menu, X, Moon, Sun, LogIn, User, UserCircle, Users, LogOut, Shield } from "lucide-react";
 import Image from "next/image";
 import { useSession, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
@@ -54,7 +54,7 @@ export default function Navigation() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-primary">
           <Image src="/images/logo/aquaventus-logo-rund.png" alt="AquaVentus" width={32} height={32} className="h-8 w-8" />
-          <span>AquaVentus</span>
+          <span>Aqua<span className="text-brand-ventus">Ventus</span></span>
         </Link>
 
         {/* Desktop */}
@@ -128,6 +128,22 @@ export default function Navigation() {
                   >
                     <User className="h-4 w-4" />
                     {tMember("dashboard")}
+                  </Link>
+                  <Link
+                    href="/mitglieder/profil"
+                    onClick={() => setUserMenuOpen(false)}
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent"
+                  >
+                    <UserCircle className="h-4 w-4" />
+                    {tMember("profile")}
+                  </Link>
+                  <Link
+                    href="/mitglieder/verzeichnis"
+                    onClick={() => setUserMenuOpen(false)}
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent"
+                  >
+                    <Users className="h-4 w-4" />
+                    {tMember("directory")}
                   </Link>
                   {(session.user as { role?: string }).role === "ADMIN" && (
                     <Link
@@ -231,6 +247,22 @@ export default function Navigation() {
                 >
                   <User className="h-4 w-4" />
                   {tMember("dashboard")}
+                </Link>
+                <Link
+                  href="/mitglieder/profil"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <UserCircle className="h-4 w-4" />
+                  {tMember("profile")}
+                </Link>
+                <Link
+                  href="/mitglieder/verzeichnis"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Users className="h-4 w-4" />
+                  {tMember("directory")}
                 </Link>
                 <button
                   onClick={() => { signOut(); setMobileOpen(false); }}

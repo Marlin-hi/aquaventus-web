@@ -193,7 +193,21 @@
     "profile": "Profil",
     "directory": "Mitglieder-Verzeichnis",
     "logout": "Abmelden",
-    "loadMore": "Mehr laden"
+    "loadMore": "Mehr laden",
+    "latestNews": "Neueste Meldungen",
+    "allNews": "Alle Meldungen",
+    "profileDescription": "Ihre Profilinformationen verwalten.",
+    "profileName": "Name",
+    "profileOrganization": "Organisation",
+    "profileOrgPlaceholder": "Ihre Organisation",
+    "profileBio": "Kurzvorstellung",
+    "profileBioPlaceholder": "Erzählen Sie etwas über sich...",
+    "profileSave": "Speichern",
+    "profileSaved": "Profil gespeichert!",
+    "directoryDescription": "Alle registrierten Mitglieder im Überblick.",
+    "memberSince": "Mitglied seit",
+    "role_member": "Mitglied",
+    "role_admin": "Administrator"
   },
   "admin": {
     "title": "Administration",

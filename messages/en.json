@@ -193,7 +193,21 @@
     "profile": "Profile",
     "directory": "Member Directory",
     "logout": "Sign Out",
-    "loadMore": "Load More"
+    "loadMore": "Load More",
+    "latestNews": "Latest News",
+    "allNews": "All News",
+    "profileDescription": "Manage your profile information.",
+    "profileName": "Name",
+    "profileOrganization": "Organization",
+    "profileOrgPlaceholder": "Your organization",
+    "profileBio": "Bio",
+    "profileBioPlaceholder": "Tell us about yourself...",
+    "profileSave": "Save",
+    "profileSaved": "Profile saved!",
+    "directoryDescription": "Overview of all registered members.",
+    "memberSince": "Member since",
+    "role_member": "Member",
+    "role_admin": "Administrator"
   },
   "admin": {
     "title": "Administration",

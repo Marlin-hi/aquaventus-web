@@ -1,8 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import ActivityTimeline from "@/components/ActivityTimeline";
-import LatestNewsSidebar from "@/components/LatestNewsSidebar";
 import MemberSubNav from "@/components/MemberSubNav";
+import MemberDirectory from "@/components/MemberDirectory";
 
 export async function generateMetadata({
   params,
@@ -11,10 +10,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "member" });
-  return { title: t("title") };
+  return { title: t("directory") };
 }
 
-export default async function MitgliederPage({
+export default async function VerzeichnisPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -26,23 +25,13 @@ export default async function MitgliederPage({
   return (
     <section className="px-6 py-12">
       <div className="mx-auto max-w-6xl">
-        <h1 className="mb-2 text-3xl font-bold">{t("dashboard")}</h1>
-        <p className="mb-6 text-muted-foreground">{t("description")}</p>
+        <h1 className="mb-2 text-3xl font-bold">{t("directory")}</h1>
+        <p className="mb-6 text-muted-foreground">{t("directoryDescription")}</p>
 
         <MemberSubNav />
 
-        <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[3fr_2fr]">
-          <div>
-            <ActivityTimeline />
-          </div>
-
-          <aside>
-            <LatestNewsSidebar
-              locale={locale}
-              title={t("latestNews")}
-              allNewsLabel={t("allNews")}
-            />
-          </aside>
+        <div className="mt-8">
+          <MemberDirectory />
         </div>
       </div>
     </section>
