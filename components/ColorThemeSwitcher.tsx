@@ -48,25 +48,28 @@ export default function ColorThemeSwitcher() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-3 rounded-xl border border-border/50 bg-popover/95 backdrop-blur-md p-4 shadow-lg">
+        <div
+          className="absolute right-0 top-full mt-2 flex flex-wrap rounded-xl border border-border/50 bg-popover/95 backdrop-blur-md p-3 shadow-lg"
+          style={{ width: 296, gap: 10 }}
+        >
           {COLOR_THEMES.map((theme) => (
             <button
               key={theme}
               onClick={() => { setColorTheme(theme); setOpen(false); }}
-              className="group relative flex items-center justify-center p-0.5"
               title={t(theme)}
-            >
-              <span
-                className={`block h-8 w-8 rounded-full border-2 transition-all ${
-                  colorTheme === theme
-                    ? "border-foreground scale-115 shadow-md"
-                    : "border-transparent hover:scale-110 hover:shadow-sm"
-                }`}
-                style={{
-                  background: `linear-gradient(135deg, ${THEME_COLORS[theme].light} 50%, ${THEME_COLORS[theme].dark} 50%)`,
-                }}
-              />
-            </button>
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: "50%",
+                border: colorTheme === theme ? "2.5px solid var(--foreground)" : "2.5px solid transparent",
+                background: `linear-gradient(135deg, ${THEME_COLORS[theme].light} 50%, ${THEME_COLORS[theme].dark} 50%)`,
+                transform: colorTheme === theme ? "scale(1.12)" : undefined,
+                transition: "transform 150ms, border-color 150ms",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => { if (colorTheme !== theme) e.currentTarget.style.transform = "scale(1.08)"; }}
+              onMouseLeave={(e) => { if (colorTheme !== theme) e.currentTarget.style.transform = ""; }}
+            />
           ))}
         </div>
       )}
