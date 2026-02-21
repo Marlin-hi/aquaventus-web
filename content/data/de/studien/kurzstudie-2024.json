@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "titel": "Bewertung von Anschlusskonzepten für weit entfernte Offshore-Windgebiete in der deutschen Nordsee",
+    "untertitel": "Kurzstudie im Auftrag von AquaVentus Förderverein e.V.",
+    "datum": "29. August 2024",
+    "autoren": ["Dr. Henrik Schwaeppe", "Gerald Blumberg", "Philipp Breer", "Bastian Helms", "Felix Hembach", "Johanna Knetsch", "Konstantin Krebs", "Simon Oswald", "Clemens Rostock", "Lukas Verhees"],
+    "quelle": "E-Bridge Consulting GmbH",
+    "seiten": 88
+  },
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Management Summary"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die E-Bridge-Kurzstudie untersucht verschiedene Anschlusskonzepte für Offshore-Windparks (OWP) in den weit entfernten Zonen 4 und 5 der deutschen Nordsee. Im Zentrum steht die Frage, ob kombinierte Anschlusskonzepte -- also die gleichzeitige Anbindung via Stromkabel und Wasserstoffpipeline -- gegenüber rein elektrischen oder rein wasserstoffbasierten Konzepten wirtschaftlich vorteilhafter sind."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Studie analysiert auf 88 Seiten vier verschiedene Anschlusskonzepte in drei Energieszenarien und bewertet sie technisch-wirtschaftlich, umweltfachlich und rechtlich. Die zentralen Ergebnisse zeigen: **Kombinierte Anschlusskonzepte können die Ausbaukosten um bis zu 31 Milliarden Euro reduzieren.**"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Die wichtigsten Ergebnisse auf einen Blick"
+    },
+    {
+      "type": "keypoint",
+      "nummer": 1,
+      "titel": "Kombinierte Anschlusskonzepte sind kosteneffizient",
+      "text": "Die Umsetzung kombinierter Anschlusskonzepte ist kostengünstiger als eine rein elektrische Verbindung und nur geringfügig teurer als eine reine Wasserstoffverbindung. Das elektrische Anschlusskonzept hat mit rund 70 Mrd. EUR die höchsten Investitionskosten, eine reine Wasserstoffanbindung liegt bei rund 55 Mrd. EUR. Kombinierte Konzepte liegen dazwischen bei 59-63 Mrd. EUR."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 2,
+      "titel": "Höhere Erlöspotenziale durch Flexibilität",
+      "text": "Das Erlöspotenzial eines wasserstofffokussierten kombinierten Anschlusskonzepts ist mehr als doppelt so hoch wie das eines vollelektrischen Konzepts. Die Flexibilität, bei niedrigen Strompreisen Wasserstoff zu produzieren und bei hohen Preisen Strom einzuspeisen, maximiert die Erlöse. Das wasserstofffokussierte MC 2 hat über alle Szenarien hinweg die höchsten Erlöse."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 3,
+      "titel": "Bidirektionale Kabelnutzung steigert die Auslastung",
+      "text": "Die bidirektionale Nutzung von Offshore-Kabeln in kombinierten Anschlusskonzepten erhöht die Auslastung von Kabeln und Elektrolyseuren um potenziell mehrere 10 %. Die tatsächliche Auslastung kann bei kombinierten Konzepten einen Kapazitätsfaktor von bis zu 60 % für Kabel und Elektrolyseure erreichen."
+    },
+    {
+      "type": "keypoint",
+      "nummer": 4,
+      "titel": "Wasserstofffokussierte Konzepte erzielen den höchsten Kapitalwert",
+      "text": "Das Anschlusskonzept MC 2 (4 GW Kabel, 10 GW Elektrolyse) hat fast durchgängig den höchsten internen Zinsfuss und Nettobarwert. Die Offshore-Elektrolyse vermeidet Netzausbau und erhält gleichzeitig die Flexibilität von Onshore-Konfigurationen, was zu vergleichbaren Erlösströmen führt."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1 Einführung"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Energiewende erfordert den massiven Ausbau erneuerbarer Energien und die Entwicklung einer grünen Wasserstoffwirtschaft. Um die Klimaneutralität bis 2045 zu erreichen, setzt Deutschland auf Offshore-Windenergie mit Ausbauzielen von 30 GW bis 2030 und 70 GW bis 2045. Gleichzeitig soll ein erheblicher Teil des künftigen Wasserstoffbedarfs durch Offshore-Elektrolyse gedeckt werden."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bislang basieren die Planungsgrundsätze Deutschlands auf der Annahme, dass jeder Offshore-Windpark zu 100 % an das Stromnetz angeschlossen wird. Lediglich ein 1-GW-Pilotgebiet (SEN-1) ist für alternative Anschlusskonzepte vorgesehen. Die vorliegende Studie untersucht erstmals umfassend, wie **kombinierte Anschlusskonzepte** -- also die parallele Anbindung über Stromkabel und Wasserstoffpipeline -- die Kosten senken und die Wirtschaftlichkeit steigern können."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3 Energieszenarien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Studie modelliert drei Energieszenarien in einem fundamentalen europäischen Strommarktmodell, um ein breites Spektrum möglicher Entwicklungen abzubilden:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Climate Neutrality (CN):** Deutschland erreicht 2040 Klimaneutralität durch hohe Elektrifizierung und raschen EE-Ausbau. Kohleausstieg bis 2030, maximale Solarkapazität 400 GW, Offshore-Wind 70 GW bis 2045.",
+        "**Molecule-based Energy Transition (MET):** Vollständige Dekarbonisierung bis 2045 durch stärkere Nutzung grüner Gase. Höherer Wasserstoffbedarf (472 TWh bis 2045), 50 GW Elektrolyseure.",
+        "**Delayed Energy Transition (DET):** Langsamere Transformation durch Akzeptanzprobleme und Bürokratie. Ende der Transformation erst 2055, fossile Energieträger verbleiben länger im System."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-05.png",
+      "caption": "Abbildung 5: Überblick über die drei Energieszenarien CN, MET und DET",
+      "alt": "Drei Infografiken zeigen die Szenarien Climate Neutrality, Molecule-based Energy Transition und Delayed Energy Transition"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-07.png",
+      "caption": "Abbildung 7: Installierte EE-Kapazität in Deutschland je Szenario und Jahr (Photovoltaik, Onshore-Wind, Offshore-Wind)",
+      "alt": "Balkendiagramme zeigen den Ausbau von PV (bis 400 GW), Onshore-Wind (bis 160 GW) und Offshore-Wind (bis 70 GW) in drei Szenarien"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der durchschnittliche Strompreis im Jahr 2045 liegt zwischen **90 und 111 EUR/MWh**. Die Wasserstoffpreise werden langfristig bei rund **3,5 EUR/kg** liegen, knapp über 100 EUR/MWh. Die meisten preisgünstigen Stunden sind im CN-Szenario zu erwarten, die wenigsten im MET-Szenario."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "4 Anschlusskonzepte für Offshore-Windparks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Studie betrachtet drei grundlegende Anschlussarten: (1) Rein elektrisches Netzanschlusssystem mittels HGÜ, (2) Offshore-Elektrolyse mit Wasserstoffpipeline, und (3) die Kombination beider Konzepte. Die Redundanz der kombinierten Systeme bietet die Möglichkeit, stündlich zu entscheiden, ob produzierter Strom direkt verkauft oder zur Wasserstoffproduktion genutzt wird."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-23.png",
+      "caption": "Abbildung 23: Schematische Darstellung eines kombinierten Anschlusskonzepts mit Windturbinen, Konverter, Elektrolyse und Wasserstoffpipeline",
+      "alt": "Schematische Darstellung zeigt Offshore-Windpark mit zwei Anbindungswegen: elektrisch via Konverter und Kabel, sowie via Elektrolyse und Pipeline"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.2 Die vier analysierten Anschlusskonzepte"
+    },
+    {
+      "type": "paragraph",
+      "text": "Insgesamt sind 14 GW Offshore-Windkapazität in Zone 4 und Zone 5 anzuschliessen. Die Studie vergleicht vier Varianten:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**All E** (nur Strom): 14 GW elektrischer Netzanschluss, keine Elektrolyse. Alle OWPs werden vollelektrisch an die Küste angebunden.",
+        "**MC 1** (stromfokussiert): 10 GW elektrischer Anschluss + 4 GW Elektrolyse. Kombiniertes Konzept mit Schwerpunkt auf Stromtransport.",
+        "**MC 2** (wasserstofffokussiert): 4 GW elektrischer Anschluss + 10 GW Elektrolyse. Kombiniertes Konzept mit Schwerpunkt auf Wasserstoffproduktion.",
+        "**All H2** (nur Wasserstoff): 14 GW Elektrolyse, kein Kabelanschluss. Gesamte Energie wird als Wasserstoff via AquaDuctus-Pipeline transportiert."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-24.png",
+      "caption": "Abbildung 24: Betrachtete Anschlusskonzepte -- Nur Strom (All E), Nur Wasserstoff (All H2), Kombinierter Anschluss 1 (MC 1) und 2 (MC 2)",
+      "alt": "Vier schematische Karten zeigen die räumliche Verteilung der Konzepte All E, All H2, MC 1 und MC 2 in den AWZ-Zonen 4 und 5"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-26.png",
+      "caption": "Abbildung 26: Übersicht über die untersuchten Wasserstofferzeugungs- und -anschlussvarianten mit zeitlicher und räumlicher Verteilung",
+      "alt": "Übersichtstabelle zeigt für alle vier Konzepte: Offshore-Windkapazität (14 GW), Elektrolyseur-Kapazität, Pipeline-Anteil und Kabelanschluss"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "5 Kostenschätzungen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Für die Kostenschätzung wird ein einheitlicher WACC von 9 % über alle Technologien angenommen. Die Kosten wurden mittels Literaturrecherche und im Austausch mit dem Konsortium ermittelt."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Investitionskosten für die **Offshore-Elektrolyse** liegen derzeit bei 3.000 EUR/kW und werden bis 2050 voraussichtlich um 72 % auf rund 850 EUR/kW sinken. Pro 500-MW-Elektrolyseplattform betragen die Gesamtkosten rund **1,15 Mrd. EUR** bei Investitionsbeginn 2035. Die **AquaDuctus-Pipeline** hat spezifische Investitionskosten von 7,48 Mio. EUR pro km bei einer Gesamtlänge von über 400 km."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-27.png",
+      "caption": "Abbildung 27: Kostenentwicklung von Offshore-Elektrolyse-Systemen -- erwartete Kostensenkung um ~72 % bis 2050",
+      "alt": "Balkendiagramm zeigt Rückgang der spezifischen Investitionskosten von 3.000 EUR/kW (2024) auf ca. 850 EUR/kW (2050)"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-30.png",
+      "caption": "Abbildung 30: Erwartete Investitionskosten aufgeschlüsselt nach DC-Kabel, AquaDuctus-Pipeline, Elektrolyseuren und Offshore-Windparks",
+      "alt": "Gestapelte Balkendiagramme zeigen Investitionskosten: All E 70 Mrd., MC 1 64 Mrd., MC 2 57 Mrd., All H2 53 Mrd. EUR"
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-31.png",
+      "caption": "Abbildung 31: Überblick über die Kostenspanne bei verschiedenen Kostenparametern und Startjahren der Investition",
+      "alt": "Balkendiagramme zeigen die Bandbreite der Gesamtinvestitionen: 50-80 Mrd. EUR je nach Konzept und Annahmen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mit 25 Mrd. EUR sind die Investitionskosten für Windparks in allen Konzepten gleich hoch. Die Kosten für ein rein elektrisches Netzanschlusskonzept werden auf rund **44 Mrd. EUR** geschätzt. Die Elektrolyseurplattformen kosten 20 bis 30 Mrd. EUR. Der nutzungsanteilige Kostenanteil der AquaDuctus-Pipeline beträgt rund 1 Mrd. EUR."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "6 Technisch-wirtschaftliche Bewertung"
+    },
+    {
+      "type": "paragraph",
+      "text": "In der technisch-ökonomischen Analyse werden verschiedene Aspekte untersucht: die gelieferte Energie, die Erlöse, die Auslastung der Komponenten sowie der **interne Zinsfuss (IRR)** und der **Nettobarwert (NPV)**. Die Anschlusskonzepte werden als Ganzes bewertet -- OWPs, Elektrolyseure, Konverterplattformen, Kabel und Pipeline werden einbezogen."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.1 Erzeugung von Strom und Wasserstoff"
+    },
+    {
+      "type": "paragraph",
+      "text": "Im Anschlusskonzept All E wird nur Strom und in All H2 nur Wasserstoff geliefert. Windparks in kombinierten Anschlusskonzepten können sowohl Strom als auch Wasserstoff bereitstellen -- sogar gleichzeitig. Im Durchschnitt aller Szenarien wird die Wasserstoffproduktion um **13 %** gesteigert, langfristig (2045) sogar um **9 %** über die Elektrolyseur-Kapazität hinaus."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-32.png",
+      "caption": "Abbildung 32: Vergleich der jährlich gelieferten Energie in verschiedenen Szenarien (Strom, Offshore-H2, Überschuss-H2 aus Onshore-Strom)",
+      "alt": "Balkendiagramme zeigen 30-55 TWh Energielieferung pro Jahr, aufgeteilt in Strom, Offshore-H2 und Überschuss-H2 für alle Konzepte in 2035, 2040 und 2045"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.3 Auslastung von Kabeln und Elektrolyseuren"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die bidirektionale Kabelnutzung erhöht die Auslastung erheblich. Bei kombinierten Anschlusskonzepten mit bidirektionaler Kabelnutzung ist im Jahr 2045 eine durchschnittliche Erhöhung des Kapazitätsfaktors für Kabel um **11 Prozentpunkte** zu erwarten. Der Kapazitätsfaktor der Elektrolyseure steigt im Mittel um etwa **6 Prozentpunkte**."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-34.png",
+      "caption": "Abbildung 34: Kapazitätsfaktoren von Kabeln und Elektrolyseuren -- bidirektionale Kabelverwendung maximiert die Gesamtauslastung",
+      "alt": "Balkendiagramme zeigen Kapazitätsfaktoren: Kabel bis 60 %, Elektrolyseure bis 60 % bei kombinierten Konzepten mit bidirektionaler Nutzung"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6.4 Wirtschaftliche Eignung der Konfigurationen"
+    },
+    {
+      "type": "paragraph",
+      "text": "In nahezu jedem Szenario und Jahr führt eine rein elektrische Anbindung zu einem negativen internen Zinsfuss von **-4 %** und einem NPV von rund **-55 Mrd. EUR**. Alle verglichenen Anschlusskonzepte haben über alle Annahmen hinweg einen höheren internen Zinsfuss und NBW als All E."
+    },
+    {
+      "type": "paragraph",
+      "text": "Das **Anschlusskonzept MC 2** hat fast durchgängig den höchsten internen Zinsfuss und NBW. Bei den kombinierten Anschlusskonzepten sind IRR und NPV für das wasserstofffokussierte MC 2 höher als für das stromfokussierte MC 1, was die Ergebnisse aus dem Erlöspotenzial bestätigt."
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-35.png",
+      "caption": "Abbildung 35: Unterschied in NPV (bis +35 Mrd. EUR) und IRR (bis +9 Prozentpunkte) der Verbindungskonzepte im Vergleich zu All E",
+      "alt": "Balkendiagramme zeigen NPV-Vorteil: MC 2 bis +35 Mrd. EUR und IRR-Vorteil bis +9 Prozentpunkte gegenüber rein elektrischem Anschluss"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "9 Handlungsempfehlungen"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kombinierte Anschlusskonzepte können wesentlich zu einer sozioökonomisch vorteilhaften Entwicklung der deutschen AWZ-Zonen 4 und 5 beitragen. Sie senken nicht nur die Kosten für die Integration von OWP in der Nordsee, sondern machen durch ihre betriebliche Flexibilität Investitionen in weit entfernte OWP wirtschaftlich attraktiver."
+    },
+    {
+      "type": "paragraph",
+      "text": "**Kombinierte Anschlusskonzepte sind unter bestimmten Voraussetzungen das günstigste Anschlusskonzept, aber rechtlich ausgeschlossen.** Um das Offshore-Potenzial voll auszuschöpfen, wird ein dreistufiger Ansatz als Ausgangspunkt für weitere Diskussionen vorgeschlagen:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Schritt 1 -- Demonstration:** Ermöglichung von Demonstrationsprojekten für Offshore-Elektrolyseure, um erste praktische Erfahrungen mit Planung, Bau, Betrieb und dem angewandten Umweltkonzept zu sammeln. Schnelle Demonstrationsprojekte in kleinem Massstab, begleitet von der Entwicklung eines grosskalierten Elektrolysesystems.",
+        "**Schritt 2 -- Vorkommerzieller Massstab:** Identifizierung von Kostensenkungen durch Skalierungseffekte und Vorbereitung der Lieferketten. Entwicklung eines integrierten Systemplans für die Nordsee. Gesetzliche Verankerung der Ausbauziele für Offshore-Elektrolyse und Entschärfung der Pönalen der SoEnergieV.",
+        "**Schritt 3 -- Kommerzielle Nutzung:** Ausschöpfung des vollen Potenzials der Offshore-Windenergie mit kombinierten Anschlusskonzepten. Nutzung der Erfahrungen aus früheren Phasen für den vollskalierten Ausbau."
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/images/studien/e-bridge-2024/abb-42.png",
+      "caption": "Abbildung 42: Dreistufiger Ansatz zur Umsetzung von Wasserstoffproduktion auf See -- von Demonstration über vorkommerziellen Massstab bis zur kommerziellen Nutzung",
+      "alt": "Zeitstrahl zeigt drei überlappende Stufen: S1 Demonstrator (5 Jahre), S2 SEN-1 vorkommerziell (10 Jahre), S3 mehrere GW kommerziell (25+ Jahre Betrieb)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Diese Schritte können nur in begrenztem Umfang gleichzeitig durchgeführt werden, da jede Phase mehrere Jahre der Planung, des Baus und der Erprobung voraussetzt. Daher sollte der erste Schritt ohne Verzögerung eingeleitet werden, um die sozioökonomischen Vorteile von Schritt drei so schnell wie möglich voll auszuschöpfen."
+    }
+  ]
+}
