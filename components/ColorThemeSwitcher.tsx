@@ -11,6 +11,7 @@ const THEME_COLORS: Record<ColorTheme, { light: string; dark: string }> = {
   tiefsee:      { light: "oklch(0.35 0.19 250)", dark: "oklch(0.60 0.17 205)" },
   kuestennebel: { light: "oklch(0.50 0.08 225)", dark: "oklch(0.68 0.07 195)" },
   polarlicht:   { light: "oklch(0.43 0.20 255)", dark: "oklch(0.72 0.18 215)" },
+  maschine:     { light: "oklch(0.38 0.08 230)", dark: "oklch(0.68 0.10 220)" },
 };
 
 export default function ColorThemeSwitcher() {

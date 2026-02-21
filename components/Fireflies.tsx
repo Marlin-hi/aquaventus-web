@@ -10,6 +10,7 @@ const THEME_HUES: Record<ColorTheme, number[]> = {
   tiefsee:      [195, 205, 215, 230, 245, 255, 265],
   kuestennebel: [185, 190, 195, 200, 210, 220, 230],
   polarlicht:   [195, 210, 220, 235, 250, 265, 275],
+  maschine:     [185, 195, 205, 215, 220, 230, 240],
 };
 
 const SWARMS = [
