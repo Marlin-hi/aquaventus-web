@@ -111,7 +111,8 @@
   "nav": {
     "menuLabel": "Menü",
     "themeToggle": "Dunkelmodus umschalten",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "memberArea": "Zum Mitglieder-Bereich"
   },
   "themes": {
     "label": "Farbschema wählen",

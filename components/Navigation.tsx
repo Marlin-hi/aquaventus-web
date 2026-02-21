@@ -152,11 +152,16 @@ export default function Navigation() {
           ) : (
             <Button asChild size="sm" variant="outline">
               <Link href="/login">
-                <LogIn className="mr-1.5 h-3.5 w-3.5" />
-                {t("login") || "Login"}
+                {t("memberArea")}
               </Link>
             </Button>
           )}
+
+          <Button asChild size="sm">
+            <Link href={navigationData.cta.href}>
+              {navigationData.cta.label}
+            </Link>
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -238,11 +243,15 @@ export default function Navigation() {
             ) : (
               <Button asChild size="sm" className="w-fit" variant="outline">
                 <Link href="/login" onClick={() => setMobileOpen(false)}>
-                  <LogIn className="mr-1.5 h-3.5 w-3.5" />
-                  {t("login") || "Login"}
+                  {t("memberArea")}
                 </Link>
               </Button>
             )}
+            <Button asChild size="sm" className="w-fit">
+              <Link href={navigationData.cta.href} onClick={() => setMobileOpen(false)}>
+                {navigationData.cta.label}
+              </Link>
+            </Button>
           </div>
         </div>
       )}

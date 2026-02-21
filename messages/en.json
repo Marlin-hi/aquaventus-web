@@ -111,7 +111,8 @@
   "nav": {
     "menuLabel": "Menu",
     "themeToggle": "Toggle dark mode",
-    "login": "Sign In"
+    "login": "Sign In",
+    "memberArea": "Member Area"
   },
   "themes": {
     "label": "Choose color scheme",
