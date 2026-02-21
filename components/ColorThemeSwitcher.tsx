@@ -48,18 +48,18 @@ export default function ColorThemeSwitcher() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-2 rounded-lg border border-border/50 bg-popover/95 backdrop-blur-md p-3 shadow-lg">
+        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-3 rounded-xl border border-border/50 bg-popover/95 backdrop-blur-md p-4 shadow-lg">
           {COLOR_THEMES.map((theme) => (
             <button
               key={theme}
               onClick={() => { setColorTheme(theme); setOpen(false); }}
-              className="group relative flex items-center justify-center"
+              className="group relative flex items-center justify-center p-0.5"
               title={t(theme)}
             >
               <span
-                className={`block h-7 w-7 rounded-full border-2 transition-all ${
+                className={`block h-8 w-8 rounded-full border-2 transition-all ${
                   colorTheme === theme
-                    ? "border-foreground scale-110 shadow-md"
+                    ? "border-foreground scale-115 shadow-md"
                     : "border-transparent hover:scale-110 hover:shadow-sm"
                 }`}
                 style={{
