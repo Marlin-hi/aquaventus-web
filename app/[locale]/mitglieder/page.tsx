@@ -39,7 +39,7 @@ export default async function MitgliederPage({
           </div>
 
           <aside className="space-y-6">
-            <Card className="backdrop-blur-xl backdrop-saturate-150">
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-base">
                   <Map className="h-4 w-4" />
