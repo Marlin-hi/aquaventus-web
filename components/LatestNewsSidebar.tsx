@@ -24,7 +24,7 @@ export default function LatestNewsSidebar({ locale, title, allNewsLabel }: Lates
   const dateLocale = locale === "de" ? "de-DE" : "en-GB";
 
   return (
-    <Card>
+    <Card className="backdrop-blur-xl backdrop-saturate-150">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-base">
           <Newspaper className="h-4 w-4" />

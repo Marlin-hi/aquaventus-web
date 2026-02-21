@@ -74,7 +74,7 @@ export default function ActivityTimeline() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-lg border border-border/50 bg-card p-4">
+      <div className="rounded-lg border border-border/50 bg-card backdrop-blur-xl backdrop-saturate-150 p-4">
         <PostForm onPost={handleNewPost} />
       </div>
 

@@ -45,7 +45,7 @@ export default function PostCard({ post, onDelete }: PostCardProps) {
   const isAdmin = session?.user && (session.user as { role?: string }).role === "ADMIN";
 
   return (
-    <div className="rounded-lg border border-border/50 bg-card p-4">
+    <div className="rounded-lg border border-border/50 bg-card backdrop-blur-xl backdrop-saturate-150 p-4">
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
