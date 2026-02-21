@@ -43,3 +43,5 @@ next-env.d.ts
 
 # worktrees
 aquaventus-web-tabs/
+
+/lib/generated/prisma

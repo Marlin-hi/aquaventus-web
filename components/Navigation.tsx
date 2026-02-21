@@ -5,8 +5,9 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun, LogIn, User, LogOut, Shield } from "lucide-react";
 import Image from "next/image";
+import { useSession, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { loadContent } from "@/lib/content";
 import SearchDialog from "@/components/SearchDialog";
@@ -27,7 +28,10 @@ export default function Navigation() {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("nav");
+  const tMember = useTranslations("member");
+  const { data: session } = useSession();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
@@ -106,11 +110,53 @@ export default function Navigation() {
             </button>
           </div>
 
-          <Button asChild size="sm">
-            <Link href={navigationData.cta.href}>
-              {navigationData.cta.label}
-            </Link>
-          </Button>
+          {session?.user ? (
+            <div className="relative">
+              <button
+                onClick={() => setUserMenuOpen(!userMenuOpen)}
+                className="flex items-center gap-2 rounded-full border border-border/50 px-3 py-1.5 text-sm font-medium transition-colors hover:bg-accent"
+              >
+                <User className="h-4 w-4" />
+                <span className="max-w-[100px] truncate">{session.user.name}</span>
+              </button>
+              {userMenuOpen && (
+                <div className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-border bg-background p-1 shadow-lg">
+                  <Link
+                    href="/mitglieder"
+                    onClick={() => setUserMenuOpen(false)}
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent"
+                  >
+                    <User className="h-4 w-4" />
+                    {tMember("dashboard")}
+                  </Link>
+                  {(session.user as { role?: string }).role === "ADMIN" && (
+                    <Link
+                      href="/admin/einladungen"
+                      onClick={() => setUserMenuOpen(false)}
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent"
+                    >
+                      <Shield className="h-4 w-4" />
+                      {tMember("title")}
+                    </Link>
+                  )}
+                  <button
+                    onClick={() => { signOut(); setUserMenuOpen(false); }}
+                    className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm text-destructive transition-colors hover:bg-destructive/10"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    {tMember("logout")}
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <Button asChild size="sm" variant="outline">
+              <Link href="/login">
+                <LogIn className="mr-1.5 h-3.5 w-3.5" />
+                {t("login") || "Login"}
+              </Link>
+            </Button>
+          )}
         </div>
 
         {/* Mobile Toggle */}
@@ -171,11 +217,32 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Button asChild size="sm" className="w-fit">
-              <Link href={navigationData.cta.href} onClick={() => setMobileOpen(false)}>
-                {navigationData.cta.label}
-              </Link>
-            </Button>
+            {session?.user ? (
+              <>
+                <Link
+                  href="/mitglieder"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <User className="h-4 w-4" />
+                  {tMember("dashboard")}
+                </Link>
+                <button
+                  onClick={() => { signOut(); setMobileOpen(false); }}
+                  className="flex items-center gap-2 text-sm font-medium text-destructive"
+                >
+                  <LogOut className="h-4 w-4" />
+                  {tMember("logout")}
+                </button>
+              </>
+            ) : (
+              <Button asChild size="sm" className="w-fit" variant="outline">
+                <Link href="/login" onClick={() => setMobileOpen(false)}>
+                  <LogIn className="mr-1.5 h-3.5 w-3.5" />
+                  {t("login") || "Login"}
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       )}

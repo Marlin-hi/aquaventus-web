@@ -110,7 +110,8 @@
   },
   "nav": {
     "menuLabel": "Menu",
-    "themeToggle": "Toggle dark mode"
+    "themeToggle": "Toggle dark mode",
+    "login": "Sign In"
   },
   "themes": {
     "label": "Choose color scheme",
@@ -127,6 +128,61 @@
     "heroUntertitel": "The exclusive annual gathering of the offshore hydrogen economy — where decision-makers from industry, politics and science come together.",
     "galerieTitel": "Impressions",
     "mitgliedCta": "Become a Member"
+  },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Member Area",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "submit": "Sign In",
+    "error": "Invalid email or password."
+  },
+  "register": {
+    "title": "Register",
+    "subtitle": "Welcome to AquaVentus",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "organization": "Organization",
+    "organizationPlaceholder": "Your organization",
+    "email": "Email Address",
+    "password": "Password",
+    "passwordPlaceholder": "At least 8 characters",
+    "passwordConfirm": "Confirm Password",
+    "passwordConfirmPlaceholder": "Repeat password",
+    "submit": "Register",
+    "invalidToken": "This invitation link is invalid or expired.",
+    "passwordMismatch": "Passwords do not match.",
+    "success": "Account created successfully. You can now sign in."
+  },
+  "member": {
+    "title": "Member Area",
+    "description": "Welcome to the AquaVentus member area.",
+    "dashboard": "Dashboard",
+    "timeline": "News",
+    "whatsOnYourMind": "What's on your mind?",
+    "postPlaceholder": "Share an update with the community...",
+    "post": "Share",
+    "postedBy": "by",
+    "deletePost": "Delete",
+    "noPostsYet": "No posts yet. Be the first!",
+    "profile": "Profile",
+    "directory": "Member Directory",
+    "logout": "Sign Out",
+    "loadMore": "Load More"
+  },
+  "admin": {
+    "title": "Administration",
+    "invitations": "Invitations",
+    "newInvitation": "New Invitation",
+    "email": "Email Address",
+    "role": "Role",
+    "send": "Send Invitation",
+    "sent": "Invitation sent!",
+    "pending": "Pending",
+    "used": "Used",
+    "expired": "Expired"
   },
   "search": {
     "label": "Search",

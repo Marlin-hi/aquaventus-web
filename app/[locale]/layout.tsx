@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
+import SessionProvider from "@/components/SessionProvider";
 import Fireflies from "@/components/Fireflies";
 import GlassWaves from "@/components/GlassWaves";
 
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SessionProvider>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
             <Navigation />
@@ -80,6 +82,7 @@ export default async function LocaleLayout({
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
+        </SessionProvider>
       </body>
     </html>
   );

@@ -110,7 +110,8 @@
   },
   "nav": {
     "menuLabel": "Menü",
-    "themeToggle": "Dunkelmodus umschalten"
+    "themeToggle": "Dunkelmodus umschalten",
+    "login": "Anmelden"
   },
   "themes": {
     "label": "Farbschema wählen",
@@ -127,6 +128,61 @@
     "heroUntertitel": "Das exklusive Jahrestreffen der Offshore-Wasserstoffwirtschaft — wo Entscheider aus Industrie, Politik und Wissenschaft zusammenkommen.",
     "galerieTitel": "Impressionen",
     "mitgliedCta": "Jetzt Mitglied werden"
+  },
+  "login": {
+    "title": "Anmelden",
+    "subtitle": "Mitglieder-Bereich",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "ihre@email.de",
+    "password": "Passwort",
+    "passwordPlaceholder": "Ihr Passwort",
+    "submit": "Anmelden",
+    "error": "E-Mail oder Passwort ist falsch."
+  },
+  "register": {
+    "title": "Registrieren",
+    "subtitle": "Willkommen bei AquaVentus",
+    "name": "Name",
+    "namePlaceholder": "Ihr vollständiger Name",
+    "organization": "Organisation",
+    "organizationPlaceholder": "Ihre Organisation",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "passwordPlaceholder": "Mindestens 8 Zeichen",
+    "passwordConfirm": "Passwort bestätigen",
+    "passwordConfirmPlaceholder": "Passwort wiederholen",
+    "submit": "Registrieren",
+    "invalidToken": "Dieser Einladungslink ist ungültig oder abgelaufen.",
+    "passwordMismatch": "Die Passwörter stimmen nicht überein.",
+    "success": "Konto erfolgreich erstellt. Sie können sich jetzt anmelden."
+  },
+  "member": {
+    "title": "Mitglieder-Bereich",
+    "description": "Willkommen im geschützten Mitglieder-Bereich von AquaVentus.",
+    "dashboard": "Dashboard",
+    "timeline": "Neuigkeiten",
+    "whatsOnYourMind": "Was gibt es Neues?",
+    "postPlaceholder": "Teilen Sie ein Update mit der Community...",
+    "post": "Teilen",
+    "postedBy": "von",
+    "deletePost": "Löschen",
+    "noPostsYet": "Noch keine Beiträge. Seien Sie der Erste!",
+    "profile": "Profil",
+    "directory": "Mitglieder-Verzeichnis",
+    "logout": "Abmelden",
+    "loadMore": "Mehr laden"
+  },
+  "admin": {
+    "title": "Administration",
+    "invitations": "Einladungen",
+    "newInvitation": "Neue Einladung",
+    "email": "E-Mail-Adresse",
+    "role": "Rolle",
+    "send": "Einladung senden",
+    "sent": "Einladung gesendet!",
+    "pending": "Ausstehend",
+    "used": "Verwendet",
+    "expired": "Abgelaufen"
   },
   "search": {
     "label": "Suche",
