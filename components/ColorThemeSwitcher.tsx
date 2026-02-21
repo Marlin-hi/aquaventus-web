@@ -48,27 +48,24 @@ export default function ColorThemeSwitcher() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-1.5 rounded-lg border border-border/50 bg-popover/95 backdrop-blur-md p-2.5 shadow-lg">
+        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-2 rounded-lg border border-border/50 bg-popover/95 backdrop-blur-md p-3 shadow-lg">
           {COLOR_THEMES.map((theme) => (
             <button
               key={theme}
               onClick={() => { setColorTheme(theme); setOpen(false); }}
-              className="group relative flex flex-col items-center gap-1"
+              className="group relative flex items-center justify-center"
               title={t(theme)}
             >
               <span
-                className={`block h-6 w-6 rounded-full border-2 transition-all ${
+                className={`block h-7 w-7 rounded-full border-2 transition-all ${
                   colorTheme === theme
-                    ? "border-foreground scale-110"
-                    : "border-transparent hover:scale-110"
+                    ? "border-foreground scale-110 shadow-md"
+                    : "border-transparent hover:scale-110 hover:shadow-sm"
                 }`}
                 style={{
                   background: `linear-gradient(135deg, ${THEME_COLORS[theme].light} 50%, ${THEME_COLORS[theme].dark} 50%)`,
                 }}
               />
-              <span className="text-[10px] text-muted-foreground leading-none">
-                {t(theme)}
-              </span>
             </button>
           ))}
         </div>
