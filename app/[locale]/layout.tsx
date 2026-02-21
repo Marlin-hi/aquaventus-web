@@ -78,7 +78,7 @@ export default async function LocaleLayout({
             <Navigation />
             <MembranBackground />
             <Fireflies />
-            <main className="relative z-10 min-h-[calc(100vh-4rem)]">{children}</main>
+            <main className="relative min-h-[calc(100vh-4rem)]">{children}</main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
