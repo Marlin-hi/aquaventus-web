@@ -20,6 +20,13 @@ const THEME_COLORS: Record<ColorTheme, { light: string; dark: string }> = {
   kristall:     { light: "oklch(0.48 0.04 230)", dark: "oklch(0.70 0.04 225)" },
   jade:         { light: "oklch(0.48 0.14 160)", dark: "oklch(0.70 0.14 155)" },
   moos:         { light: "oklch(0.45 0.11 130)", dark: "oklch(0.68 0.12 125)" },
+  ozeanflamme:  { light: "oklch(0.45 0.16 210)", dark: "oklch(0.65 0.16 30)" },
+  amethyst:     { light: "oklch(0.42 0.18 280)", dark: "oklch(0.72 0.14 55)" },
+  korallriff:   { light: "oklch(0.55 0.17 15)",  dark: "oklch(0.65 0.14 185)" },
+  rosegold:     { light: "oklch(0.55 0.15 340)", dark: "oklch(0.68 0.13 165)" },
+  neon:         { light: "oklch(0.52 0.20 320)", dark: "oklch(0.70 0.16 190)" },
+  synthwave:    { light: "oklch(0.50 0.20 335)", dark: "oklch(0.65 0.18 240)" },
+  phosphor:     { light: "oklch(0.55 0.16 100)", dark: "oklch(0.60 0.18 280)" },
 };
 
 export default function ColorThemeSwitcher() {
@@ -50,7 +57,7 @@ export default function ColorThemeSwitcher() {
       {open && (
         <div
           className="absolute right-0 top-full mt-2 flex flex-wrap rounded-xl border border-border/50 bg-popover/95 backdrop-blur-md p-3 shadow-lg"
-          style={{ width: 296, gap: 10 }}
+          style={{ width: 308, gap: 10 }}
         >
           {COLOR_THEMES.map((theme) => (
             <button

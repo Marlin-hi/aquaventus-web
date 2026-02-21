@@ -5,6 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 export const COLOR_THEMES = [
   "nordsee", "brandung", "tiefsee", "kuestennebel", "polarlicht", "maschine",
   "koralle", "bernstein", "morgenroete", "mondlicht", "gletscher", "kristall", "jade", "moos",
+  "ozeanflamme", "amethyst", "korallriff", "rosegold", "neon", "synthwave", "phosphor",
 ] as const;
 export type ColorTheme = (typeof COLOR_THEMES)[number];
 
