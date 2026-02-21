@@ -58,7 +58,7 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           {navigationData.hauptmenu.map((item) => (
             <Link
               key={item.href}
@@ -165,7 +165,7 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Toggle */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           {/* Theme Toggle Mobile */}
           <button
             onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
@@ -197,7 +197,7 @@ export default function Navigation() {
             </button>
           </div>
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t("menuLabel")}
           >
@@ -208,7 +208,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-border/50 bg-background px-6 py-4 md:hidden">
+        <div className="border-t border-border/50 bg-background px-6 py-4 lg:hidden">
           <div className="flex flex-col gap-4">
             {navigationData.hauptmenu.map((item) => (
               <Link
