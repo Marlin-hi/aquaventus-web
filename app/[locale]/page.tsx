@@ -51,7 +51,7 @@ export default async function HomePage({
       />
 
       {/* Leitmotive */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-card/40 backdrop-blur-sm border-y border-border/20">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-4 text-center text-3xl font-bold">{t("leitmotiveTitel")}</h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
@@ -105,7 +105,7 @@ export default async function HomePage({
       </section>
 
       {/* Mitglieder CTA */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-card/40 backdrop-blur-sm border-y border-border/20">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold">{t("mitgliederTitel")}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
