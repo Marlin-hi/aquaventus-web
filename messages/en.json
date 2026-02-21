@@ -121,7 +121,15 @@
     "tiefsee": "Deep Sea",
     "kuestennebel": "Fog",
     "polarlicht": "Aurora",
-    "maschine": "Machine"
+    "maschine": "Machine",
+    "koralle": "Coral",
+    "bernstein": "Amber",
+    "morgenroete": "Dawn",
+    "mondlicht": "Moonlight",
+    "gletscher": "Glacier",
+    "kristall": "Crystal",
+    "jade": "Jade",
+    "moos": "Moss"
   },
   "aquasummit": {
     "title": "AquaSummit",

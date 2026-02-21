@@ -12,6 +12,14 @@ const THEME_COLORS: Record<ColorTheme, { light: string; dark: string }> = {
   kuestennebel: { light: "oklch(0.50 0.08 225)", dark: "oklch(0.68 0.07 195)" },
   polarlicht:   { light: "oklch(0.43 0.20 255)", dark: "oklch(0.72 0.18 215)" },
   maschine:     { light: "oklch(0.38 0.08 230)", dark: "oklch(0.68 0.10 220)" },
+  koralle:      { light: "oklch(0.55 0.18 20)",  dark: "oklch(0.72 0.16 15)" },
+  bernstein:    { light: "oklch(0.55 0.15 55)",  dark: "oklch(0.74 0.14 45)" },
+  morgenroete:  { light: "oklch(0.52 0.17 30)",  dark: "oklch(0.72 0.15 25)" },
+  mondlicht:    { light: "oklch(0.50 0.06 250)", dark: "oklch(0.72 0.06 245)" },
+  gletscher:    { light: "oklch(0.52 0.14 205)", dark: "oklch(0.74 0.13 200)" },
+  kristall:     { light: "oklch(0.48 0.04 230)", dark: "oklch(0.70 0.04 225)" },
+  jade:         { light: "oklch(0.48 0.14 160)", dark: "oklch(0.70 0.14 155)" },
+  moos:         { light: "oklch(0.45 0.11 130)", dark: "oklch(0.68 0.12 125)" },
 };
 
 export default function ColorThemeSwitcher() {
@@ -40,7 +48,7 @@ export default function ColorThemeSwitcher() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 flex gap-2 rounded-lg border border-border/50 bg-popover/95 backdrop-blur-md p-2.5 shadow-lg">
+        <div className="absolute right-0 top-full mt-2 grid grid-cols-7 gap-1.5 rounded-lg border border-border/50 bg-popover/95 backdrop-blur-md p-2.5 shadow-lg">
           {COLOR_THEMES.map((theme) => (
             <button
               key={theme}
