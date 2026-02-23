@@ -2,24 +2,17 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import NewsSlider from "@/components/NewsSlider";
 import ProjectCard from "@/components/ProjectCard";
-import { Card, CardContent } from "@/components/ui/card";
-import { Leaf, Zap, Shield, TrendingUp, BarChart3, ArrowRight } from "lucide-react";
+import LeitmotiveSection from "@/components/LeitmotiveSection";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { loadContent } from "@/lib/content";
-
-const iconMap: Record<string, React.ReactNode> = {
-  Leaf: <Leaf className="h-8 w-8" />,
-  Zap: <Zap className="h-8 w-8" />,
-  Shield: <Shield className="h-8 w-8" />,
-  TrendingUp: <TrendingUp className="h-8 w-8" />,
-  BarChart3: <BarChart3 className="h-8 w-8" />,
-};
 
 interface Leitmotiv {
   titel: string;
   beschreibung: string;
   icon: string;
+  bild: string;
 }
 
 interface Projekt {
@@ -55,27 +48,11 @@ export default async function HomePage({
       />
 
       {/* Leitmotive */}
-      <section className="px-6 py-20 bg-white/60 dark:bg-white/5 backdrop-blur-sm border-y border-border/20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="mb-4 text-center text-3xl font-bold">{t("leitmotiveTitel")}</h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-            {t("leitmotiveText")}
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {leitmotiveData.leitmotive.map((motiv) => (
-              <Card key={motiv.titel} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    {iconMap[motiv.icon]}
-                  </div>
-                  <h3 className="mb-2 font-semibold">{motiv.titel}</h3>
-                  <p className="text-sm text-muted-foreground">{motiv.beschreibung}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <LeitmotiveSection
+        titel={t("leitmotiveTitel")}
+        untertitel={t("leitmotiveText")}
+        leitmotive={leitmotiveData.leitmotive}
+      />
 
       {/* Projekte Preview */}
       <section className="bg-muted/30 px-6 py-20">
