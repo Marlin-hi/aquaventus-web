@@ -40,7 +40,14 @@ export default function MembranBackground() {
 
   return (
     <div ref={ref} className="membran-bg" aria-hidden="true">
-      {/* Far: translucent wall panels */}
+      {/* Mesh gradient orbs — light mode */}
+      <div className="mesh-orb mesh-orb-1" />
+      <div className="mesh-orb mesh-orb-2" />
+      <div className="mesh-orb mesh-orb-3" />
+      <div className="mesh-orb mesh-orb-4" />
+      <div className="mesh-orb mesh-orb-5" />
+
+      {/* Far: translucent wall panels — dark mode */}
       <div className="mp mp-far mp-f1" data-speed="0.12" />
       <div className="mp mp-far mp-f3" data-speed="0.12" />
       <div className="mp mp-far mp-f4" data-speed="0.12" />
