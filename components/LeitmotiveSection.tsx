@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 interface Leitmotiv {
   titel: string;
@@ -35,13 +34,12 @@ export default function LeitmotiveSection({
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
               className="group flex flex-col items-center text-center cursor-pointer"
             >
-              <div className="relative mb-3 h-28 w-full sm:h-32">
-                <Image
+              <div className="mb-3 h-28 w-full sm:h-32">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src={motiv.bild}
                   alt={motiv.titel}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 18vw"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <h3 className="text-sm font-semibold leading-tight group-hover:text-primary transition-colors">
