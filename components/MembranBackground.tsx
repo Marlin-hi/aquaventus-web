@@ -47,6 +47,17 @@ export default function MembranBackground() {
       <div className="mesh-orb mesh-orb-4" />
       <div className="mesh-orb mesh-orb-5" />
 
+      {/* Glass-visible shapes — light mode (sharp, so backdrop-blur shows) */}
+      <div className="gs gs-circle gs-1" />
+      <div className="gs gs-ring gs-2" />
+      <div className="gs gs-circle gs-3" />
+      <div className="gs gs-ring gs-4" />
+      <div className="gs gs-circle gs-5" />
+      <div className="gs gs-ring gs-6" />
+      <div className="gs gs-circle gs-7" />
+      <div className="gs gs-arc gs-8" />
+      <div className="gs gs-arc gs-9" />
+
       {/* Far: translucent wall panels — dark mode */}
       <div className="mp mp-far mp-f1" data-speed="0.12" />
       <div className="mp mp-far mp-f3" data-speed="0.12" />

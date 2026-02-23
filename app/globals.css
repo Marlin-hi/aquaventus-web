@@ -1842,13 +1842,118 @@
   70%  { transform: translate(6vw, 8vh) scale(0.97); }
 }
 
-/* Mobile — hide dark-mode panels, keep mesh gradient */
+/* === Glass Shapes — crisp structures for glassmorphism visibility === */
+/* NOT blurred — the card's backdrop-blur reveals the glass effect */
+.gs {
+  position: absolute;
+  pointer-events: none;
+}
+.dark .gs { display: none; }
+
+/* Filled circles — semi-transparent, theme-colored */
+.gs-circle {
+  border-radius: 50%;
+}
+.gs-1 {
+  width: 320px; height: 320px;
+  top: 8%; left: 5%;
+  background: oklch(0.78 0.12 var(--theme-hue) / 12%);
+  animation: gs-float-1 22s ease-in-out infinite;
+}
+.gs-3 {
+  width: 180px; height: 180px;
+  top: 45%; left: 55%;
+  background: oklch(0.72 0.14 var(--theme-accent-hue) / 14%);
+  animation: gs-float-2 18s ease-in-out infinite;
+}
+.gs-5 {
+  width: 240px; height: 240px;
+  top: 70%; left: 15%;
+  background: oklch(0.80 0.10 calc(var(--theme-hue) + 15) / 10%);
+  animation: gs-float-3 25s ease-in-out infinite;
+}
+.gs-7 {
+  width: 160px; height: 160px;
+  top: 20%; right: 8%;
+  background: oklch(0.76 0.11 var(--theme-accent-hue) / 11%);
+  animation: gs-float-1 20s ease-in-out infinite reverse;
+}
+
+/* Rings — border only, crisp edge for blur contrast */
+.gs-ring {
+  border-radius: 50%;
+  background: transparent;
+}
+.gs-2 {
+  width: 260px; height: 260px;
+  top: 25%; right: 18%;
+  border: 2px solid oklch(0.70 0.10 var(--theme-hue) / 18%);
+  animation: gs-float-2 26s ease-in-out infinite;
+}
+.gs-4 {
+  width: 200px; height: 200px;
+  top: 55%; left: 30%;
+  border: 1.5px solid oklch(0.74 0.12 var(--theme-accent-hue) / 15%);
+  animation: gs-float-3 20s ease-in-out infinite;
+}
+.gs-6 {
+  width: 340px; height: 340px;
+  top: 5%; left: 40%;
+  border: 2.5px solid oklch(0.68 0.08 var(--theme-hue) / 12%);
+  animation: gs-float-1 30s ease-in-out infinite;
+}
+
+/* Arcs — partial rings (semicircles) */
+.gs-arc {
+  border-radius: 50%;
+  background: transparent;
+}
+.gs-8 {
+  width: 280px; height: 280px;
+  top: 35%; right: 5%;
+  border: 2px solid oklch(0.72 0.10 calc(var(--theme-hue) + 25) / 14%);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: gs-spin 40s linear infinite;
+}
+.gs-9 {
+  width: 220px; height: 220px;
+  bottom: 10%; left: 50%;
+  border: 1.5px solid oklch(0.70 0.12 var(--theme-accent-hue) / 16%);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  animation: gs-spin 35s linear infinite reverse;
+}
+
+@keyframes gs-float-1 {
+  0%, 100% { transform: translate(0, 0); }
+  33%  { transform: translate(3vw, 4vh); }
+  66%  { transform: translate(-2vw, 2vh); }
+}
+@keyframes gs-float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  33%  { transform: translate(-4vw, 3vh); }
+  66%  { transform: translate(2vw, -3vh); }
+}
+@keyframes gs-float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  25%  { transform: translate(2vw, -3vh); }
+  50%  { transform: translate(-3vw, 4vh); }
+  75%  { transform: translate(-1vw, -2vh); }
+}
+@keyframes gs-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Mobile — hide dark-mode panels, keep mesh gradient + shapes */
 @media (max-width: 768px) {
   .mp, .mp-glow { display: none; }
   .mesh-orb { filter: blur(70px); }
+  .gs { display: none; }
 }
 
-/* Reduced motion — disable mesh drift */
+/* Reduced motion — disable animations */
 @media (prefers-reduced-motion: reduce) {
-  .mesh-orb { animation: none; }
+  .mesh-orb, .gs { animation: none; }
 }
