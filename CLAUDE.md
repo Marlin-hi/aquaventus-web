@@ -152,19 +152,22 @@ Wechsel über das **Palette-Icon** in der Navigation (neben dem Moon/Sun Toggle)
 | **Reverse Proxy** | nginx (Port 80 → 3001) |
 | **Deploy-Script** | `deploy.sh` (git pull, npm ci, build, pm2 restart) |
 
-### Manuelles Deployment
+### Deployment
 
 ```bash
-ssh root@187.77.65.131 "cd /home/aquaventus-web && git pull && npm ci && npx next build && pm2 restart aquaventus-web"
+ssh root@187.77.65.131 "/home/aquaventus-web/deploy.sh"
 ```
+
+Das Deploy-Script (`deploy.sh`) ist **parallel-sicher** via `flock`:
+- Mehrere Tabs können gleichzeitig deployen — das Script serialisiert automatisch
+- Überspringt `npm ci` wenn `package-lock.json` unverändert
+- Bei korruptem `node_modules` wird automatisch clean installiert
 
 ### Wichtig
 
 - Code muss auf `master` gepusht sein, bevor Deploy funktioniert (Server macht `git pull`)
-- `npm ci` (nicht `npm install`) — reproduzierbare Builds
-- Build braucht TypeScript (kein `--production` bei npm ci)
 - PM2 ist global installiert (`pm2`, nicht `npx pm2`)
-- Kein HTTPS/SSL konfiguriert — nur HTTP auf Port 80
+- HTTPS via Let's Encrypt (certbot, auto-renew), Domain: moosi-moss.de
 
 ## Konventionen
 
@@ -228,9 +231,9 @@ Mehrere Claude-Code-Tabs können gleichzeitig am Repo arbeiten. Koordination üb
 
 ### Deploy
 
-- Nur ein Tab deployt gleichzeitig
+- Mehrere Tabs können gleichzeitig deployen — `deploy.sh` serialisiert via `flock`
 - Erst nach erfolgreichem Build + Push
-- Deploy-Befehl: siehe Abschnitt "Server & Deployment" oben
+- Deploy-Befehl: `ssh root@187.77.65.131 "/home/aquaventus-web/deploy.sh"`
 
 ### Wichtig
 
