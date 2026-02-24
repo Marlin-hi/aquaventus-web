@@ -1855,22 +1855,6 @@
 }
 .dark .noise-overlay { display: none; }
 
-/* === Topografie Contour Lines — maritime map structure === */
-.topo-lines {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-  color: oklch(0.55 0.16 var(--theme-hue) / 22%);
-}
-.topo-lines path {
-  stroke: currentColor;
-  stroke-width: 1.2px;
-  fill: none;
-}
-.dark .topo-lines { display: none; }
 
 /* === Glass Shapes — disabled, kept for reference === */
 .gs {
