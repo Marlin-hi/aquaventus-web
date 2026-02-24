@@ -1855,6 +1855,27 @@
 }
 .dark .noise-overlay { display: none; }
 
+/* === Micro Grid — engineering paper texture === */
+.micro-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      oklch(0.55 0.10 var(--theme-hue) / 6%) 0 0.5px,
+      transparent 0.5px 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      oklch(0.55 0.10 var(--theme-hue) / 6%) 0 0.5px,
+      transparent 0.5px 32px
+    );
+}
+.dark .micro-grid { display: none; }
 
 /* === Glass Shapes — disabled, kept for reference === */
 .gs {

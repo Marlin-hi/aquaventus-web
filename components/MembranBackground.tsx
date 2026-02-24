@@ -56,6 +56,9 @@ export default function MembranBackground() {
         <rect width="100%" height="100%" filter="url(#noise-filter)" />
       </svg>
 
+      {/* Micro grid overlay — light mode */}
+      <div className="micro-grid" aria-hidden="true" />
+
       {/* Far: translucent wall panels — dark mode */}
       <div className="mp mp-far mp-f1" data-speed="0.12" />
       <div className="mp mp-far mp-f3" data-speed="0.12" />
