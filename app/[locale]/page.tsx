@@ -1,11 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import NewsSlider from "@/components/NewsSlider";
-
+import StatsSection from "@/components/StatsSection";
 import LeitmotiveSection from "@/components/LeitmotiveSection";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import ProjektePreview from "@/components/ProjektePreview";
+import MembershipSection from "@/components/MembershipSection";
 import { loadContent } from "@/lib/content";
 
 interface Leitmotiv {
@@ -15,7 +14,23 @@ interface Leitmotiv {
   bild: string;
 }
 
+interface Projekt {
+  slug: string;
+  name: string;
+  kurz: string;
+  bild: string;
+  kategorie: string;
+}
 
+interface Stat {
+  zahl: string;
+  label: string;
+}
+
+interface Vorteil {
+  titel: string;
+  beschreibung: string;
+}
 
 export default async function HomePage({
   params,
@@ -27,47 +42,39 @@ export default async function HomePage({
   const t = await getTranslations("home");
 
   const leitmotiveData = loadContent<{ leitmotive: Leitmotiv[] }>("leitmotive", locale as "de" | "en");
-
   const sliderData = loadContent<{ slides: { titel: string; text: string; tag: string; datum?: string; bild: string; link: string; linkText: string }[] }>("slider", locale as "de" | "en");
+  const statsData = loadContent<{ stats: Stat[] }>("stats", locale as "de" | "en");
+  const projekteData = loadContent<{ projekte: Projekt[] }>("projekte", locale as "de" | "en");
+  const mitgliedschaftData = loadContent<{ vorteile: Vorteil[] }>("mitgliedschaft", locale as "de" | "en");
 
   return (
     <>
       <NewsSlider slides={sliderData.slides} locale={locale} />
 
-      <Hero
-        titel={t("heroTitel")}
-        untertitel={t("heroUntertitel")}
-        ctaText={t("heroCta")}
-        ctaHref={`/${locale}/projekte`}
-      />
+      <StatsSection stats={statsData.stats} />
 
-      {/* Leitmotive */}
       <LeitmotiveSection
         titel={t("leitmotiveTitel")}
         untertitel={t("leitmotiveText")}
         leitmotive={leitmotiveData.leitmotive}
       />
 
-      {/* Mitglieder CTA */}
-      <section className="px-6 py-20 bg-white/60 dark:bg-white/5 backdrop-blur-sm border-y border-border/20">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold">{t("mitgliederTitel")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("mitgliederText")}
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg" className="gap-2">
-              <Link href={`/${locale}/kontakt`}>
-                {t("mitgliedWerden")}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href={`/${locale}/ueber-uns`}>{t("mehrErfahren")}</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <ProjektePreview
+        titel={t("projekteTitel")}
+        untertitel={t("projekteText")}
+        projekte={projekteData.projekte}
+        ctaText={t("alleProjekte")}
+        ctaHref={`/${locale}/projekte`}
+        locale={locale}
+      />
+
+      <MembershipSection
+        titel={t("mitgliederTitel")}
+        text={t("mitgliederText")}
+        vorteile={mitgliedschaftData.vorteile}
+        ctaText={t("mitgliedWerden")}
+        ctaHref={`/${locale}/kontakt`}
+      />
     </>
   );
 }

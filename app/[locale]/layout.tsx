@@ -9,8 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import SessionProvider from "@/components/SessionProvider";
-import Fireflies from "@/components/Fireflies";
-import MembranBackground from "@/components/MembranBackground";
+import WaveTexture from "@/components/WaveTexture";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,11 +57,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `try{var t=localStorage.getItem("color-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}`,
-          }}
-        />
         <Script
           src="/umami/script.js"
           data-website-id="564ad722-d0b2-430d-a77b-42fcbd994781"
@@ -77,8 +71,7 @@ export default async function LocaleLayout({
           <ThemeProvider>
             <Navigation />
             <main className="relative z-0 min-h-[calc(100vh-4rem)]">
-              <MembranBackground />
-              <Fireflies />
+              <WaveTexture />
               {children}
             </main>
             <Footer />

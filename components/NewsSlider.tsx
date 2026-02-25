@@ -71,14 +71,14 @@ export default function NewsSlider({ slides, locale }: NewsSliderProps) {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-black"
+      className="relative w-full overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-roledescription="carousel"
       aria-label="Aktuelle Themen"
     >
       {/* Slide */}
-      <div className="relative h-[420px] sm:h-[480px] md:h-[540px]">
+      <div className="relative h-[70vh] sm:h-[75vh] md:h-[85vh]">
         {/* Background image */}
         <div
           className={`absolute inset-0 transition-opacity duration-500 ${
@@ -93,9 +93,9 @@ export default function NewsSlider({ slides, locale }: NewsSliderProps) {
             priority={current === 0}
             sizes="100vw"
           />
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          {/* Overlay — theme-matched gradients */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1628]/75 via-[#0A1628]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/80 via-[#0A1628]/20 to-transparent" />
         </div>
 
         {/* Content */}
