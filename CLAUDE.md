@@ -12,14 +12,15 @@ Prototyp-Webseite für den AquaVentus Förderverein e.V. — grüner Wasserstoff
 - **UI-Komponenten:** shadcn/ui (Radix-basiert, `data-slot` Attribute)
 - **i18n:** next-intl (DE default, EN), Middleware-basiertes Routing (`/de/...`, `/en/...`)
 - **Suche:** Fuse.js (client-side Fuzzy Search)
-- **Theming:** next-themes (Light/Dark) + eigenes ColorTheme-System (5 Farbwelten)
+- **Theming:** next-themes (Light/Dark), feste Farbpalette (keine Themes mehr)
+- **Hintergrund:** Mesh-Gradient (layered radial-gradients, fixed) + animierte SVG-Wellentextur
 - **Icons:** lucide-react
 
 ## Seiten
 
 | Route | Inhalt |
 |-------|--------|
-| `/` | Startseite: Hero, Leitmotive, Projekte-Vorschau, Mitglieder |
+| `/` | Startseite: NewsSlider, Stats, Leitmotive, Projekte-Vorschau, Membership |
 | `/projekte` | Projektübersicht (Cards) |
 | `/projekte/[slug]` | Projektdetail (dynamisch aus JSON) |
 | `/leitstudien` | Wissenschaftliche Studien |
@@ -35,7 +36,7 @@ Alle Routen sind locale-prefixed: `/de/projekte`, `/en/projekte` etc.
 
 ```
 app/
-  globals.css              — Alle Farben, Themes, Glassmorphism, Firefly-CSS
+  globals.css              — Farben, Mesh-Gradient, Wellentextur, Glassmorphism
   layout.tsx               — Root-Layout (Metadata-Viewport)
   [locale]/
     layout.tsx             — Locale-Layout (Fonts, ThemeProvider, Navigation, Footer)
@@ -45,17 +46,20 @@ app/
     ...                    — Weitere Seiten
 
 components/
-  Navigation.tsx           — Sticky Header, Desktop/Mobile, Search, Theme-Toggle, Color-Switcher, Language-Switcher
+  Navigation.tsx           — Sticky Header, Desktop/Mobile, Search, Theme-Toggle, Language-Switcher
   Footer.tsx               — Footer mit Links + Kontakt
-  Hero.tsx                 — Hero-Banner (Props: titel, untertitel, ctaText, ctaHref)
+  Hero.tsx                 — Hero-Banner (optional: Hintergrundbild, Badge)
+  NewsSlider.tsx           — Fullscreen-Slider mit Auto-Advance (Startseite)
+  StatsSection.tsx         — 4-Spalten Zahlen-Grid
+  ProjektePreview.tsx      — 3 Projekt-Cards als Vorschau
+  MembershipSection.tsx    — 2x2 Benefits-Grid + CTA
+  LeitmotiveSection.tsx    — 5 Leitmotive mit Accordion-Detail
+  WaveTexture.tsx          — Animierte SVG-Wellen (Background-Overlay)
   ProjectCard.tsx          — Projekt-Card
   StudyCard.tsx            — Studien-Card
   TeamCard.tsx             — Vorstand/Geschäftsstelle-Card
   SearchDialog.tsx         — Ctrl+K Suchfenster (Fuse.js)
-  ThemeProvider.tsx         — Wrapper: next-themes + ColorThemeProvider
-  ColorThemeProvider.tsx   — Context für Farbthema (localStorage, data-theme Attribut)
-  ColorThemeSwitcher.tsx   — UI: 5 farbige Kreise in Popover
-  Fireflies.tsx            — CSS-Partikel-Animation (nur Dark Mode, theme-aware Hues)
+  ThemeProvider.tsx         — Wrapper: next-themes (nur Light/Dark)
   ui/                      — shadcn/ui Basis-Komponenten (button, card, dialog, navigation-menu)
 
 content/
@@ -95,7 +99,7 @@ Inhalt lebt in **JSON-Dateien** unter `content/data/`, nicht in Markdown oder CM
 - **`content/data/`**: Strukturierte Inhalte (Projekte, Vorstand, Studien, etc.)
   - Zugriff: `loadContent<Type>("filename", locale)`
 
-## Theming-System
+## Design-System
 
 ### Light / Dark Mode
 
@@ -103,42 +107,32 @@ Inhalt lebt in **JSON-Dateien** unter `content/data/`, nicht in Markdown oder CM
 - `defaultTheme="system"`, `enableSystem`
 - Toggle: Moon/Sun Icon in Navigation
 - CSS: `:root` (Light) und `.dark` (Dark) in `globals.css`
+- Feste Farbpalette, keine wechselbaren Themes
 
-### 5 Farbwelten (Color Themes)
+### Farbpalette
 
-Wechsel über das **Palette-Icon** in der Navigation (neben dem Moon/Sun Toggle). Öffnet ein Panel mit 5 farbigen Kreisen.
+| | Light | Dark |
+|---|---|---|
+| Background | `#F0F4F8` (kühles Grau-Weiß) | `#0A1628` (tiefes Navy) |
+| Primary | `#0EA5E9` (Sky-500, Blau) | `#48CAE4` (Cyan) |
+| Accent/CTA | `#1D4ED8` (Blue-700) | `#22C55E` (Grün) |
+| Brand-Ventus | Teal-Grün (Hue 160) | Teal-Grün (Hue 160) |
 
-| Theme | CSS-Selector | Charakter | Hues |
-|-------|-------------|-----------|------|
-| Nordsee | _(default, kein Attribut)_ | Blau/Türkis | 245/200 |
-| Wasserstoff | `data-theme="wasserstoff"` | Smaragdgrün | 155/185 |
-| Tiefstrom | `data-theme="tiefstrom"` | Indigo/Violett | 270/310 |
-| Windkraft | `data-theme="windkraft"` | Amber/Gold | 65/35 |
-| Arktis | `data-theme="arktis"` | Stahlblau/Frost | 220/195 |
+Logo: "Aqua" in `--primary`, "Ventus" in `--brand-ventus` (Teal-Grün).
 
-**Architektur:**
-- `data-theme` Attribut auf `<html>`, gespeichert in `localStorage("color-theme")`
-- Anti-Flash-Script im `<head>` setzt Attribut vor Paint
-- Alle Farben leiten sich von `--theme-hue` und `--theme-accent-hue` ab
-- Glassmorphism, Ambient-Gradients und Hero-Gradient sind parametrisiert — passen sich automatisch an
-- Fireflies nutzen per-Theme Hue-Paletten (`THEME_HUES` in `Fireflies.tsx`)
-- Neues Theme hinzufügen: CSS-Block in `globals.css` + Eintrag in `ColorThemeProvider.tsx` + Hues in `Fireflies.tsx` + Labels in `messages/*.json`
+### Hintergrund
+
+- **Mesh-Gradient:** 6 geschichtete `radial-gradient`s auf body, `background-attachment: fixed`
+- **Wellentextur:** 2 animierte SVG-Pattern-Layers (15s + 25s, gegenläufig), `WaveTexture.tsx`
+- `prefers-reduced-motion: reduce` → Animation aus
 
 ### Glassmorphism
 
-- Beide Modi: semi-transparente Cards (`--card: oklch(... / 70%)`), `backdrop-filter: blur()`, subtile Borders
-- Dark Mode: stärkerer Blur, türkis/theme-farbener Glow auf Borders + Shadows
-- Targets: `[data-slot="card"]`, `[data-slot="dialog-content"]`
-- Background-Elemente für den Glass-Effekt: Ambient-Gradient-Blobs via `.fireflies::before`
-
-### Fireflies (Dark Mode)
-
-- CSS-only Partikel-Animation, nur in Dark Mode sichtbar
-- 4 Schwärme, 70 Flies total
-- 3 Drift-Keyframes (driftA/B/C) für Schwarm-Bewegung
-- Per-Fly: Flutter-Jitter + Glow-Pulsing
-- Depth-System: `--depth` steuert Größe, Blur, Glow-Intensität
-- `@media (prefers-reduced-motion: reduce)` → statisch
+- Light: `rgba(255,255,255,0.40)`, blur 4px, Border `rgba(148,163,184,0.20)`
+- Dark: `rgba(255,255,255,0.03)`, blur 2px, Border `rgba(255,255,255,0.06)`
+- Targets: `[data-slot="card"]` in globals.css + `card.tsx` (Tailwind-Klassen)
+- Hover: `translateY(-2px)` + stärkerer Shadow
+- **Wichtig:** shadcn `card.tsx` hat eigene Tailwind-Klassen (`backdrop-blur-sm shadow-none border-border/10`), die die globals.css-Werte überschreiben
 
 ## Server & Deployment
 
@@ -171,7 +165,7 @@ Das Deploy-Script (`deploy.sh`) ist **parallel-sicher** via `flock`:
 
 ## Konventionen
 
-- **Farben:** OKLCH-Farbraum, CSS Custom Properties, parametrisiert über `--theme-hue`
+- **Farben:** OKLCH-Farbraum, CSS Custom Properties, feste Palette (kein `--theme-hue` mehr)
 - **Tailwind v4:** Kein `tailwind.config.ts` — Konfiguration in `globals.css` via `@theme inline {}`
 - **shadcn/ui:** Komponenten in `components/ui/`, Styling über `data-slot` Attribute
 - **Neue Seite:** `app/[locale]/routenname/page.tsx` + Content-JSON in `content/data/de/` + `en/` + UI-Strings in `messages/*.json`
